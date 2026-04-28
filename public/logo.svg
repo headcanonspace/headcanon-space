@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 72" width="320" height="72" role="img">
+  <title>Headcanon Space Logo</title>
+  <desc>Abstract mark with two interlocking thought arcs beside the Headcanon Space wordmark</desc>
+
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@400;500&display=swap');
+      .brand-name { font-family: 'DM Serif Display', Georgia, serif; font-size: 22px; fill: #0f172a; letter-spacing: -0.3px; }
+      .brand-sub  { font-family: 'DM Sans', system-ui, sans-serif; font-size: 10px; font-weight: 500; fill: #6366f1; letter-spacing: 2.5px; text-transform: uppercase; }
+    </style>
+  </defs>
+
+  <!-- Abstract mark: two interlocking arcs forming an "H" thought-bubble shape -->
+  <!-- Left arc -->
+  <path d="M 10 48 C 10 20, 32 8, 36 36 C 36 46, 30 52, 24 52 C 16 52, 10 50, 10 48 Z"
+        fill="#6366f1" opacity="1"/>
+  <!-- Right arc, offset and slightly larger -->
+  <path d="M 28 44 C 28 16, 54 4, 58 32 C 58 44, 50 54, 42 54 C 34 54, 28 50, 28 44 Z"
+        fill="#8b5cf6" opacity="0.85"/>
+  <!-- Small dot accent — the "idea" -->
+  <circle cx="44" cy="60" r="3.5" fill="#6366f1"/>
+  <circle cx="36" cy="65" r="2.2" fill="#6366f1" opacity="0.6"/>
+  <circle cx="30" cy="69" r="1.4" fill="#6366f1" opacity="0.35"/>
+
+  <!-- Wordmark -->
+  <text x="74" y="38" class="brand-name">Headcanon</text>
+  <text x="76" y="56" class="brand-sub">Space</text>
+</svg>

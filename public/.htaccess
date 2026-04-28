@@ -1,0 +1,14 @@
+RewriteEngine On
+
+# Redirect old /headcanon-generator path to homepage
+Redirect 301 /headcanon-generator /
+Redirect 301 /headcanon-generator/ /
+
+# Handle SPA-style routing for trailing slash structure
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.*)$ $1.html [L]
+
+# Custom 404
+ErrorDocument 404 /404/index.html

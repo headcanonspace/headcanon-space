@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" role="img">
+  <title>Headcanon Space Favicon</title>
+  <desc>Abstract thought-arc mark for Headcanon Space</desc>
+
+  <!-- Background pill -->
+  <rect width="32" height="32" rx="7" fill="#6366f1"/>
+
+  <!-- Left arc -->
+  <path d="M 5 22 C 5 9, 14 4, 15 15 C 15 20, 13 23, 10 23 C 7 23, 5 22.5, 5 22 Z"
+        fill="white" opacity="0.95"/>
+  <!-- Right arc -->
+  <path d="M 13 21 C 13 8, 23 3, 24 14 C 24 19, 21 24, 18 24 C 15 24, 13 22.5, 13 21 Z"
+        fill="white" opacity="0.72"/>
+  <!-- Thought dots -->
+  <circle cx="18" cy="27" r="1.8" fill="white" opacity="0.85"/>
+  <circle cx="15" cy="29.5" r="1.1" fill="white" opacity="0.55"/>
+</svg>
