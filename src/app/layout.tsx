@@ -43,6 +43,11 @@ export const metadata: Metadata = {
     title: "Free Headcanon Generator",
     description: "Generate creative headcanon ideas instantly with this free headcanon generator.",
   },
+  verification: {
+    other: {
+      "p:domain_verify": "5f1da198f4a7bcd237fb79b58d14891d",
+    },
+  },
 };
 
 export default function RootLayout({

@@ -1,0 +1,346 @@
+================================================================================
+HEADCANON SPACE — COMPLETE SEO & FEATURE FLOW DOCUMENTATION (PART 1)
+Website: https://headcanonspace.com
+================================================================================
+
+TABLE OF CONTENTS:
+  Part 1: Meta Tags, Schema, Technical SEO, Page Feature Flows (Home + Tools)
+  Part 2: Internal Links, Anchor Text, Article Content, FAQ, Footer/Nav
+
+================================================================================
+SECTION 1: GLOBAL / ROOT LAYOUT SEO
+File: src/app/layout.tsx
+================================================================================
+
+--- HTML Lang ---
+lang="en-US"
+
+--- Metadata Base ---
+metadataBase: https://headcanonspace.com
+
+--- Title Tag ---
+"Free Headcanon Generator – Create Ideas Instantly"
+
+--- Meta Description ---
+"Generate creative headcanon ideas instantly with this free headcanon generator. Perfect for fandoms, characters, and stories."
+
+--- Canonical ---
+/
+
+--- Favicon ---
+/icon.svg
+
+--- Open Graph ---
+og:title    = "Free Headcanon Generator – Create Ideas Instantly"
+og:description = "Generate creative headcanon ideas instantly with this free headcanon generator. Perfect for fandoms, characters, and stories."
+og:url      = https://headcanonspace.com
+og:siteName = Headcanon Space
+og:locale   = en_US
+og:type     = website
+
+--- Twitter Card ---
+twitter:card        = summary_large_image
+twitter:title       = "Free Headcanon Generator"
+twitter:description = "Generate creative headcanon ideas instantly with this free headcanon generator."
+
+--- Google Fonts ---
+DM Sans (weights: 300, 400, 500) → --font-sans
+DM Serif Display (weight: 400) → --font-serif
+
+--- Scripts ---
+Google AdSense: pagead2.googlesyndication.com/pagead/js/adsbygoogle.js
+Google Analytics: G-0S0GHTYEEB (gtag.js)
+
+================================================================================
+SECTION 2: ROBOTS.TXT
+File: public/robots.txt
+================================================================================
+User-agent: *
+Allow: /
+Sitemap: https://headcanonspace.com/sitemap.xml
+
+================================================================================
+SECTION 3: SITEMAP.XML
+File: public/sitemap.xml
+================================================================================
+URL                                                  | Priority | Freq
+-----------------------------------------------------|----------|--------
+https://headcanonspace.com/                          | 1.0      | weekly
+/character-headcanon-generator/                      | 0.9      | weekly
+/relationship-headcanon-generator/                   | 0.9      | weekly
+/scenario-headcanon-generator/                       | 0.9      | weekly
+/random-headcanon-generator/                         | 0.9      | weekly
+/about/                                              | 0.6      | monthly
+/contact/                                            | 0.6      | monthly
+/privacy-policy/                                     | 0.4      | yearly
+/terms-of-service/                                   | 0.4      | yearly
+/blog/what-is-a-headcanon/                           | 0.8      | monthly
+
+================================================================================
+SECTION 4: HTACCESS REDIRECTS
+File: public/.htaccess
+================================================================================
+301 Redirect: /headcanon-generator  → /
+301 Redirect: /headcanon-generator/ → /
+Legacy route: /what-is-a-headcanon/ → redirects to /blog/what-is-a-headcanon/
+
+================================================================================
+SECTION 5: HOMEPAGE — FULL FEATURE FLOW & ON-PAGE SEO
+File: src/app/page.tsx
+================================================================================
+
+--- Page Meta ---
+Title: "Headcanon Generator | Free Character, Relationship & Scenario Ideas"
+Description: "Use this free headcanon generator to instantly create unique ideas for characters, relationships, and scenarios."
+
+--- Structured Data (JSON-LD) ---
+@graph contains:
+  1. SoftwareApplication — name: "Headcanon Generator", category: UtilitiesApplication, price: 0 USD
+  2. WebApplication — url: headcanonspace.com, isAccessibleForFree: true, browserRequirements: JS+HTML5
+  3. WebPage — name matches title tag, inLanguage: en-US
+  4. BreadcrumbList — position 1: "Headcanon Generator" → /
+  5. FAQPage — 5 questions (see FAQ section below)
+
+--- FEATURE FLOW SECTIONS (in order) ---
+
+[1] HERO SECTION
+  H1: "Headcanon Generator"
+  Subtext: "Generate headcanons for characters, fandoms, ships, and scenarios instantly."
+  Tagline: "Free to use · No signup required · Instant results"
+
+[2] TOOL UI (above the fold)
+  Component: <HomeHeadcanonTool /> — interactive generator widget
+
+[3] INTRO / WHAT IT DOES
+  Label: "What is this?"
+  H2: "Generate Headcanons for Any Character or Fandom"
+  Body paragraphs:
+    - "This headcanon generator gives you quick prompts you can use right away..."
+    - "It is simple to use, beginner-friendly..."
+    - "Use this AI headcanon generator to move from loose ideas to usable scene direction..."
+  Highlight Items (4 cards):
+    1. "Generate ideas instantly" — "No waiting. Results appear in seconds."
+    2. "Works for any fandom" — "Anime, Marvel, fantasy, books, originals."
+    3. "Characters, ships & scenarios" — "Three generator types in one place."
+    4. "No signup required" — "Completely free, forever."
+
+[4] HOW IT WORKS
+  Label: "How it works"
+  H2: "How to Use the Headcanon Generator"
+  Steps (4):
+    Step 1: "Enter a character" — "Type any name — a canon character or your own OC."
+    Step 2: "Choose tone & context" — "Set the vibe and pick a fandom or setting that fits."
+    Step 3: "Click generate" — "Results appear instantly — no loading screens."
+    Step 4: "Copy or regenerate" — "Keep the best ones; regenerate for fresh ideas anytime."
+
+[5] EXAMPLE HEADCANONS
+  Label: "See what you can make"
+  H2: "Example Headcanons"
+  Lead: "Here's a taste of the kind of ideas the generator creates."
+  3 example cards:
+    - Character Headcanon: "Despite their serious personality, the character secretly enjoys quiet hobbies like cooking or sketching..."
+    - Relationship Headcanon: "These two characters pretend to argue often, but deeply trust and protect each other..."
+    - Scenario Headcanon: "During a stormy night, the characters are forced to work together, revealing hidden emotions..."
+
+[6] WHAT IS A HEADCANON
+  Label: "Understanding headcanons"
+  H2: "✦ What Is a Headcanon?"
+  Body: Explains headcanon concept, fandom use, fanfiction connection
+  Callout: "Example: A fan might imagine a character secretly loves cooking..."
+  Internal link: "Try the headcanon generator →" → /
+
+[7] USE CASES & AUDIENCE
+  Label: "Use cases"
+  H2: "Who should use this headcanon generator?"
+  Lead: "Whether you write fanfiction, run roleplay sessions, or explore fandom creatively..."
+  4 use-case cards:
+    H3: "Fanfiction writers" — "Build character arcs, fill backstory gaps..."
+    H3: "Roleplayers" — "Create consistent personas, reactions, and quirks..."
+    H3: "Anime & fandom fans" — "Explore your favorite characters from a new angle..."
+    H3: "Creative writers" — "Refine original characters, add depth..."
+
+[8] AI HEADCANON GENERATOR SECTION
+  Label: "Built for writers"
+  H2: "AI headcanon generator for fanfiction, roleplay, and fandom writing"
+  Body with inline internal links to all 4 sub-tools (see Internal Links section)
+
+[9] EXPLORE MORE GENERATORS
+  Label: "More tools"
+  H2: "Explore More Generators"
+  Lead: "Each tool is built for a different type of headcanon."
+  4 tool link cards (nav element with aria-label="Generator tools"):
+    - 👤 Character headcanon generator → /character-headcanon-generator/
+    - 💞 Relationship headcanon generator → /relationship-headcanon-generator/
+    - 🎭 Scenario headcanon generator → /scenario-headcanon-generator/
+    - 🎲 Random headcanon generator → /random-headcanon-generator/
+
+[10] FAQ SECTION
+  Label: "Common questions"
+  H2: "Frequently Asked Questions"
+  Component: <FaqAccordion /> — 5 questions
+
+[11] MICRO REINFORCEMENT (bottom CTA)
+  Body: "This headcanon generator keeps brainstorming practical and repeatable..."
+
+================================================================================
+SECTION 6: CHARACTER HEADCANON GENERATOR PAGE
+File: src/app/character-headcanon-generator/page.tsx
+================================================================================
+
+--- Page Meta ---
+Title: "Character Headcanon Generator (Create Unique Ideas)"
+Description: "Generate headcanons for any character instantly."
+Canonical: /character-headcanon-generator/
+OG Title: "Character Headcanon Generator"
+
+--- JSON-LD ---
+SoftwareApplication: name "Character Headcanon Generator", price 0 USD
+
+--- Feature Flow ---
+[1] HERO: H1 "Character Headcanon Generator"
+    Sub: "Give your character a life they never got on screen — generate unique traits, habits, and secrets instantly."
+[2] TOOL UI: <CharacterHeadcanonGenerator />
+[3] WHAT IS IT: Label "Understanding the tool", H2 "👤 What Is a Character Headcanon Generator?"
+    Body: explains personalized ideas, name-weaving into output
+[4] HOW TO USE & WHY:
+    H3 "How to Use This Tool": Type name → Click Generate → Copy or click again
+    H3 "Why Use It?": Generate unique ideas, explore traits, improve fanfiction
+[5] EXPLORE MORE TOOLS: 4 link cards to other generators
+
+================================================================================
+SECTION 7: RELATIONSHIP HEADCANON GENERATOR PAGE
+File: src/app/relationship-headcanon-generator/page.tsx
+================================================================================
+
+--- Page Meta ---
+Title: "Relationship Headcanon Generator (Free & Instant)"
+Description: "Generate relationship headcanons for any two characters instantly. Perfect for fanfiction, roleplay, and storytelling."
+Canonical: /relationship-headcanon-generator/
+OG Title: "Relationship Headcanon Generator"
+
+--- JSON-LD ---
+SoftwareApplication: name "Relationship Headcanon Generator", price 0 USD
+
+--- Feature Flow ---
+[1] HERO: H1 "Relationship Headcanon Generator"
+    Sub: "Explore the dynamics between any two characters and generate ship moments, conflicts, and tender scenes instantly."
+[2] TOOL UI: <RelationshipHeadcanonGenerator />
+[3] WHAT IS IT: H2 "💞 What Is a Relationship Headcanon?"
+    Body: describes interactions beyond official canon, emotional dynamics
+[4] HOW TO USE & WHY:
+    How: Enter two character names → Click generate → Generate more
+    Why: Explore character dynamics, improve storytelling, discover emotional interactions
+[5] EXAMPLE HEADCANONS: H2 "Example Relationship Headcanons" — 3 cards
+[6] USE CASES: H2 "Perfect For"
+    Tags: Fanfiction writing, Character relationship building, Roleplay scenarios, Creative storytelling
+[7] EXPLORE MORE TOOLS: 4 link cards
+
+================================================================================
+SECTION 8: SCENARIO HEADCANON GENERATOR PAGE
+File: src/app/scenario-headcanon-generator/page.tsx
+================================================================================
+
+--- Page Meta ---
+Title: "Scenario Headcanon Generator (Creative Story Ideas)"
+Description: "Generate scenario-based headcanons instantly. Perfect for storytelling, roleplay, and creative writing."
+Canonical: /scenario-headcanon-generator/
+OG Title: "Scenario Headcanon Generator"
+
+--- JSON-LD ---
+SoftwareApplication: name "Scenario Headcanon Generator", price 0 USD
+
+--- Feature Flow ---
+[1] HERO: H1 "Scenario Headcanon Generator"
+    Sub: "Drop your characters into any setting and generate story situations, dramatic twists, and creative scenes instantly."
+[2] TOOL UI: <ScenarioHeadcanonGenerator />
+[3] WHAT IS IT: H2 "🎭 What Is a Scenario Headcanon?"
+[4] HOW TO USE & WHY
+[5] EXAMPLES: H2 "Example Scenario Headcanons" — 3 cards (coffee shop, road trip, high school)
+[6] USE CASES: Tags: Story writing, Roleplay scenarios, Creative prompts, Idea generation
+[7] EXPLORE MORE TOOLS
+
+================================================================================
+SECTION 9: RANDOM HEADCANON GENERATOR PAGE
+File: src/app/random-headcanon-generator/page.tsx
+================================================================================
+
+--- Page Meta ---
+Title: "Random Headcanon Generator (Instant & Free)"
+Description: "Generate random headcanons instantly with this free tool."
+Canonical: /random-headcanon-generator/
+OG Title: "Random Headcanon Generator"
+
+--- JSON-LD ---
+SoftwareApplication: name "Random Headcanon Generator", price 0 USD
+
+--- Feature Flow ---
+[1] HERO: H1 "Random Headcanon Generator"
+    Sub: "No setup and no prompts. Just click and discover a fresh creative idea every time."
+[2] TOOL UI: <RandomHeadcanonTool />
+[3] WHAT IS IT: H2 "🎲 What Is a Random Headcanon Generator?"
+[4] HOW TO USE & WHY:
+    How: Opens with instant headcanon → Click "Generate Again" → Copy and use
+    Why: Instant ideas zero setup, break creative blocks, discover unexpected traits
+[5] EXPLORE MORE TOOLS
+
+================================================================================
+SECTION 10: ABOUT PAGE
+File: src/app/about/page.tsx
+================================================================================
+
+--- Page Meta ---
+Title: "About | Headcanon Generator"
+Description: "Learn more about Headcanon Space and our simple, fast generator tools."
+
+--- Heading Structure ---
+H1: "About Headcanon Space"
+H2: "Our Mission"
+H2: "Why We Built This Tool"
+H2: "Key Features"
+H2: "Commitment to Free Tools"
+
+--- Key Features List ---
+• No login required
+• Four distinct generators (Character, Relationship, Scenario, Random)
+• Unlimited generations
+• Mobile-friendly design
+• Privacy first
+
+================================================================================
+SECTION 11: CONTACT PAGE
+File: src/app/contact/page.tsx
+================================================================================
+Title: "Contact | Headcanon Generator"
+Description: "Get in touch with us for any questions, suggestions, or feedback."
+H1: "Contact"
+H2: "How Can We Help?" — Bug Reports, Feature Requests, General Feedback
+H2: "Get in Touch" — email contact card
+
+================================================================================
+SECTION 12: PRIVACY POLICY PAGE
+File: src/app/privacy-policy/page.tsx
+================================================================================
+Title: "Privacy Policy | Headcanon Generator"
+Description: "Privacy policy for Headcanon Space."
+H1: "Privacy Policy"
+H2: "Information We Don't Collect"
+H2: "Cookies and Analytics"
+H2: "Third-Party Services and Ads"
+H2: "Updates to this Policy"
+
+================================================================================
+SECTION 13: TERMS OF SERVICE PAGE
+File: src/app/terms-of-service/page.tsx
+================================================================================
+Title: "Terms of Service | Headcanon Generator"
+Description: "Terms of service for Headcanon Space."
+H1: "Terms of Service"
+H2: "1. Intended Use and Purpose"
+H2: "2. Generated Content and User Responsibility"
+H2: "3. Fair Use and Automation"
+H2: "4. Intellectual Property"
+H2: "5. Modifications to the Service"
+
+================================================================================
+END OF PART 1
+================================================================================

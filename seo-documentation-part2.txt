@@ -1,0 +1,369 @@
+================================================================================
+HEADCANON SPACE — COMPLETE SEO & FEATURE FLOW DOCUMENTATION (PART 2)
+Internal Links, Anchor Text, Article Content, FAQ, Navigation, Image Alt Text
+================================================================================
+
+================================================================================
+SECTION 14: ALL INTERNAL LINKS & ANCHOR TEXT
+================================================================================
+
+--- NAVBAR (src/components/Navbar.tsx) ---
+  href="/"                                    | Anchor: "Home"
+  href="/character-headcanon-generator/"      | Anchor: "Character"
+  href="/relationship-headcanon-generator/"   | Anchor: "Relationship"
+  href="/scenario-headcanon-generator/"       | Anchor: "Scenario"
+  href="/random-headcanon-generator/"         | Anchor: "Random"
+  Logo link href="/" aria-label="Headcanon Space home" | Brand: "Headcanon Space"
+
+--- FOOTER (src/app/layout.tsx) ---
+  Brand Column:
+    "Headcanon Space" (brand name, no link)
+    Tagline: "Explore different types of headcanon generators to create unique ideas for characters, relationships, and scenarios instantly."
+
+  Generators Column:
+    href="/"                                    | Anchor: "Headcanon Generator"
+    href="/character-headcanon-generator/"      | Anchor: "Character Generator"
+    href="/relationship-headcanon-generator/"   | Anchor: "Relationship Generator"
+    href="/scenario-headcanon-generator/"       | Anchor: "Scenario Generator"
+    href="/random-headcanon-generator/"         | Anchor: "Random Generator"
+
+  Legal & Contact Column:
+    href="/about/"                              | Anchor: "About Us"
+    href="/contact/"                            | Anchor: "Contact"
+    href="/privacy-policy/"                     | Anchor: "Privacy Policy"
+    href="/terms-of-service/"                   | Anchor: "Terms of Service"
+
+  Bottom Bar:
+    href="/privacy-policy/"                     | Anchor: "Privacy"
+    href="/terms-of-service/"                   | Anchor: "Terms"
+    href="/contact/"                            | Anchor: "Contact"
+    Copyright: "© {year} Headcanon Generator. All rights reserved."
+
+--- HOMEPAGE INTERNAL LINKS (src/app/page.tsx) ---
+  Section "What Is a Headcanon":
+    href="/"                                    | Anchor: "Try the headcanon generator →"
+
+  Section "AI headcanon generator":
+    href="/character-headcanon-generator/"      | Anchor: "character headcanon generator"
+    href="/relationship-headcanon-generator/"   | Anchor: "relationship headcanon generator"
+    href="/scenario-headcanon-generator/"       | Anchor: "scenario headcanon generator"
+    href="/random-headcanon-generator/"         | Anchor: "random headcanon generator"
+
+  Section "Explore More Generators" (tool-link-cards):
+    href="/character-headcanon-generator/"      | Anchor: "Character headcanon generator" + "Deep personality traits & backstories"
+    href="/relationship-headcanon-generator/"   | Anchor: "Relationship headcanon generator" + "Ship dynamics & couple moments"
+    href="/scenario-headcanon-generator/"       | Anchor: "Scenario headcanon generator" + "Story settings & creative situations"
+    href="/random-headcanon-generator/"         | Anchor: "Random headcanon generator" + "Instant random ideas, no input needed"
+
+  Section "Micro Reinforcement":
+    href="/"                                    | Anchor: "headcanon generator"
+
+--- CHARACTER PAGE INTERNAL LINKS ---
+  Explore More Tools:
+    href="/"                                    | Anchor: "General Generator" + "All-purpose headcanon ideas"
+    href="/relationship-headcanon-generator/"   | Anchor: "Relationship Generator" + "Ship dynamics & couple moments"
+    href="/scenario-headcanon-generator/"       | Anchor: "Scenario Generator" + "Story settings & situations"
+    href="/random-headcanon-generator/"         | Anchor: "Random Generator" + "Instant random ideas"
+
+--- RELATIONSHIP PAGE INTERNAL LINKS ---
+  Explore More Tools:
+    href="/"                                    | Anchor: "General Generator" + "All-purpose headcanon ideas"
+    href="/character-headcanon-generator/"      | Anchor: "Character Generator" + "Deep traits & backstories"
+    href="/scenario-headcanon-generator/"       | Anchor: "Scenario Generator" + "Story settings & situations"
+    href="/random-headcanon-generator/"         | Anchor: "Random Generator" + "Instant random ideas"
+
+--- SCENARIO PAGE INTERNAL LINKS ---
+  Explore More Tools:
+    href="/"                                    | Anchor: "General Generator" + "All-purpose headcanon ideas"
+    href="/character-headcanon-generator/"      | Anchor: "Character Generator" + "Deep traits & backstories"
+    href="/relationship-headcanon-generator/"   | Anchor: "Relationship Generator" + "Ship dynamics & couple moments"
+    href="/random-headcanon-generator/"         | Anchor: "Random Generator" + "Instant random ideas"
+
+--- RANDOM PAGE INTERNAL LINKS ---
+  Explore More Tools:
+    href="/"                                    | Anchor: "General Generator" + "All-purpose headcanon ideas"
+    href="/character-headcanon-generator/"      | Anchor: "Character Generator" + "Deep traits & backstories"
+    href="/relationship-headcanon-generator/"   | Anchor: "Relationship Generator" + "Ship dynamics & couple moments"
+    href="/scenario-headcanon-generator/"       | Anchor: "Scenario Generator" + "Story settings & situations"
+
+--- BLOG ARTICLE INTERNAL LINKS (src/app/blog/what-is-a-headcanon/page.tsx) ---
+  Section "What is a headcanon in fandom culture":
+    href="/"                                    | Anchor: "headcanon generator"
+
+  Section "Use cases: fanfiction, roleplay, and fandom writing":
+    href="/character-headcanon-generator/"      | Anchor: "character headcanon generator"
+    href="/relationship-headcanon-generator/"   | Anchor: "relationship headcanon generator"
+    href="/scenario-headcanon-generator/"       | Anchor: "scenario headcanon generator"
+    href="/random-headcanon-generator/"         | Anchor: "random headcanon generator"
+
+================================================================================
+SECTION 15: INTERNAL LINK MAP SUMMARY
+================================================================================
+
+Page                           | Outgoing Links To
+-------------------------------|------------------------------------------
+/ (Home)                       | /character-headcanon-generator/
+                               | /relationship-headcanon-generator/
+                               | /scenario-headcanon-generator/
+                               | /random-headcanon-generator/
+                               | / (self-referencing x2)
+/character-headcanon-generator/| /
+                               | /relationship-headcanon-generator/
+                               | /scenario-headcanon-generator/
+                               | /random-headcanon-generator/
+/relationship-headcanon-gen.../| /
+                               | /character-headcanon-generator/
+                               | /scenario-headcanon-generator/
+                               | /random-headcanon-generator/
+/scenario-headcanon-generator/ | /
+                               | /character-headcanon-generator/
+                               | /relationship-headcanon-generator/
+                               | /random-headcanon-generator/
+/random-headcanon-generator/   | /
+                               | /character-headcanon-generator/
+                               | /relationship-headcanon-generator/
+                               | /scenario-headcanon-generator/
+/blog/what-is-a-headcanon/     | /
+                               | /character-headcanon-generator/
+                               | /relationship-headcanon-generator/
+                               | /scenario-headcanon-generator/
+                               | /random-headcanon-generator/
+
+Note: All pages also link to all routes via Navbar + Footer (global)
+
+================================================================================
+SECTION 16: IMAGE ALT TEXT & ARIA LABELS
+================================================================================
+
+--- NOTE: This project uses NO raster images (no .png, .jpg, .webp). ---
+--- All visual elements are SVG icons or emoji. ---
+
+SVG Elements:
+  - Navbar logo SVG: aria-hidden="true" (decorative, no alt text needed)
+  - Homepage highlight icons (star, plus-circle, lines, checkmark): aria-hidden="true"
+  - Step numbers: aria-hidden="true"
+  - FAQ chevron icon: aria-hidden (via ChevronDown component)
+
+Favicon:
+  /icon.svg — set via metadata icons: { icon: "/icon.svg" }
+
+Emoji Used as Visual Icons (tool-link-cards):
+  👤 = Character generator
+  💞 = Relationship generator
+  🎭 = Scenario generator
+  🎲 = Random generator
+  ✦  = General generator
+  ✉️ = Contact email
+
+ARIA Labels:
+  - Logo link: aria-label="Headcanon Space home"
+  - Explore tools nav: aria-label="Generator tools"
+  - Mobile menu button: aria-label="Close menu" / "Open menu"
+
+================================================================================
+SECTION 17: FAQ CONTENT (Homepage + Blog)
+================================================================================
+
+--- HOMEPAGE FAQ (FaqAccordion.tsx + JSON-LD FAQPage schema) ---
+
+Q1: "What is a headcanon?"
+A1: "A headcanon is a personal interpretation, belief, or idea about a fictional character, relationship, or universe that hasn't been officially confirmed by the creator. Fans use headcanons to add depth and explore 'what if' scenarios."
+
+Q2: "How does the Headcanon Generator work?"
+A2: "Our tool uses advanced randomization combined with curated story tropes. You simply input a character's name, their fandom, and choose a specific vibe or 'tone' (like Angst or Fluff). The engine instantly synthesizes fully unique narrative prompts for you to use."
+
+Q3: "Is this tool completely free to use?"
+A3: "Yes! All of our generators—including Character, Relationship, and Scenario headcanons—are 100% free with unlimited generation and no signup required."
+
+Q4: "Can I use these headcanons for my fanfiction or roleplay?"
+A4: "Absolutely! The generated ideas are designed specifically for writers, roleplayers, and creators to use as writing prompts, story starters, or character development exercises."
+
+Q5: "Do you save my character inputs?"
+A5: "No. Our tools run completely in your browser (client-side), meaning what you type is never sent to our servers or saved anywhere. Your privacy and creative ideas are yours alone."
+
+--- BLOG ARTICLE FAQ (what-is-a-headcanon page + JSON-LD FAQPage schema) ---
+
+Q1: "What is a headcanon in simple words?"
+A1: "A headcanon is your personal idea about a character, relationship, or story world that is not officially confirmed in canon."
+
+Q2: "Is headcanon the same as fanfiction?"
+A2: "Not exactly. A headcanon is usually a concept or interpretation, while fanfiction is a full written story. A headcanon can become a fanfiction scene or plot."
+
+Q3: "Can I use a headcanon generator for roleplay?"
+A3: "Yes. A headcanon generator is useful for roleplay because it gives quick character hooks, emotional dynamics, and scene ideas you can use in sessions."
+
+Additional FAQ (on-page only, no schema):
+Q4: "Can a headcanon be wrong?"
+A4: "It can conflict with canon, but it is not 'wrong' as a creative interpretation..."
+
+Q5: "What makes a headcanon feel believable?"
+A5: "Specific behavior + emotional reason + context. When all three are present, the headcanon feels natural and easy to write."
+
+================================================================================
+SECTION 18: BLOG ARTICLE — FULL CONTENT
+File: src/app/blog/what-is-a-headcanon/page.tsx
+================================================================================
+
+--- Page Meta ---
+Title: "What Is a Headcanon? Meaning, Examples, and How to Write One"
+Description: "Learn what a headcanon is, see clear examples, and discover how to write better character and story headcanons for fanfiction and roleplay."
+Canonical: /blog/what-is-a-headcanon/
+OG Title: same as title
+OG Description: "A complete beginner-friendly guide to headcanon meaning, examples, writing tips, and use cases for fanfiction and roleplay."
+
+--- JSON-LD ---
+@graph:
+  1. Article schema — headline, description, author "Headcanon Space", publisher "Headcanon Space"
+  2. FAQPage schema — 3 questions (see above)
+
+--- Article Heading Structure ---
+H1: "What Is a Headcanon?"
+  H2: "What is a headcanon?" (featured definition box)
+  H2: "What is a headcanon in fandom culture?"
+  H2: "Headcanon vs canon vs fanfiction"
+  H2: "Real examples of headcanons"
+  H2: "How to write a strong headcanon"
+    H3: "1) Start with one clear behavior"
+    H3: "2) Add the emotional reason"
+    H3: "3) Place it in a scenario"
+  H2: "Use cases: fanfiction, roleplay, and fandom writing"
+  H2: "Common mistakes to avoid"
+  H2: "FAQ: what is a headcanon?"
+    H3: "What is a headcanon in simple words?"
+    H3: "Is headcanon the same as fanfiction?"
+    H3: "Can a headcanon be wrong?"
+    H3: "Can I use a headcanon generator for roleplay?"
+    H3: "What makes a headcanon feel believable?"
+
+--- Article Body Text (key excerpts) ---
+
+Definition: "A headcanon is a personal interpretation about a fictional character, relationship, or world that is not officially confirmed by the source material."
+
+Fandom culture: "In fandom communities, a headcanon is how you interpret details that canon leaves open. Canon shows official facts... A headcanon starts where official information stops."
+
+Canon vs headcanon vs fanfiction:
+  • Canon: Official content from the original source.
+  • Headcanon: Personal interpretation not officially confirmed.
+  • Fanfiction: A complete story written by fans, often built using one or more headcanons.
+
+5 Examples:
+  1. Quiet character keeps a notebook of things they never say out loud
+  2. Two rivals memorize each other's routines to make sure the other gets home safely
+  3. Confident team leader secretly rehearses difficult conversations
+  4. AU school pair that argues constantly defends each other against outsiders
+  5. After a major event, character collects harmless routines to stay grounded
+
+Writing Tips:
+  1. Start with one clear behavior
+  2. Add the emotional reason
+  3. Place it in a scenario
+
+Common Mistakes:
+  • Too vague without scene-level behavior
+  • Ignoring canon tone entirely
+  • Piling too many traits into one headcanon
+  • Writing concept notes but never testing in dialogue/action
+
+================================================================================
+SECTION 19: COMPLETE HEADING HIERARCHY (ALL PAGES)
+================================================================================
+
+HOMEPAGE (/):
+  H1: Headcanon Generator
+  H2: Generate Headcanons for Any Character or Fandom
+  H2: How to Use the Headcanon Generator
+  H2: Example Headcanons
+  H2: ✦ What Is a Headcanon?
+  H2: Who should use this headcanon generator?
+    H3: Fanfiction writers
+    H3: Roleplayers
+    H3: Anime & fandom fans
+    H3: Creative writers
+  H2: AI headcanon generator for fanfiction, roleplay, and fandom writing
+  H2: Explore More Generators
+  H2: Frequently Asked Questions
+
+/character-headcanon-generator/:
+  H1: Character Headcanon Generator
+  H2: 👤 What Is a Character Headcanon Generator?
+  H3: How to Use This Tool
+  H3: Why Use It?
+  H2: Explore More Tools
+
+/relationship-headcanon-generator/:
+  H1: Relationship Headcanon Generator
+  H2: 💞 What Is a Relationship Headcanon?
+  H3: How to Use This Tool
+  H3: Why Use It?
+  H2: Example Relationship Headcanons
+  H2: Perfect For
+  H2: Explore More Tools
+
+/scenario-headcanon-generator/:
+  H1: Scenario Headcanon Generator
+  H2: 🎭 What Is a Scenario Headcanon?
+  H3: How to Use This Tool
+  H3: Why Use It?
+  H2: Example Scenario Headcanons
+  H2: Perfect For
+  H2: Explore More Tools
+
+/random-headcanon-generator/:
+  H1: Random Headcanon Generator
+  H2: 🎲 What Is a Random Headcanon Generator?
+  H3: How to Use This Tool
+  H3: Why Use It?
+  H2: Explore More Tools
+
+/about/:
+  H1: About Headcanon Space
+  H2: Our Mission
+  H2: Why We Built This Tool
+  H2: Key Features
+  H2: Commitment to Free Tools
+
+/contact/:
+  H1: Contact
+  H2: How Can We Help?
+  H2: Get in Touch
+
+/privacy-policy/:
+  H1: Privacy Policy
+  H2: Information We Don't Collect
+  H2: Cookies and Analytics
+  H2: Third-Party Services and Ads
+  H2: Updates to this Policy
+
+/terms-of-service/:
+  H1: Terms of Service
+  H2: 1. Intended Use and Purpose
+  H2: 2. Generated Content and User Responsibility
+  H2: 3. Fair Use and Automation
+  H2: 4. Intellectual Property
+  H2: 5. Modifications to the Service
+
+/blog/what-is-a-headcanon/:
+  H1: What Is a Headcanon?
+  H2: (6 sections + nested H3s as listed in Section 18)
+
+================================================================================
+SECTION 20: SCHEMA MARKUP SUMMARY (ALL PAGES)
+================================================================================
+
+Page                            | Schema Types Used
+--------------------------------|----------------------------------
+/ (Homepage)                    | SoftwareApplication, WebApplication,
+                                | WebPage, BreadcrumbList, FAQPage
+/character-headcanon-generator/ | SoftwareApplication
+/relationship-headcanon-gen.../ | SoftwareApplication
+/scenario-headcanon-generator/  | SoftwareApplication
+/random-headcanon-generator/    | SoftwareApplication
+/blog/what-is-a-headcanon/      | Article, FAQPage
+/about/                         | (none)
+/contact/                       | (none)
+/privacy-policy/                | (none)
+/terms-of-service/              | (none)
+
+================================================================================
+END OF PART 2 — DOCUMENTATION COMPLETE
+================================================================================

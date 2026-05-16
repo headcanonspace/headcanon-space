@@ -1,0 +1,118 @@
+# Project Documentation: Headcanon Space
+
+## 1. Feature Flow & Interaction Model
+
+Headcanon Space is designed as a high-performance, instant-results creative suite for fandom writers and roleplayers. The feature flow across all tools follows a consistent, frictionless pattern.
+
+### Core Interaction Loop
+1.  **Selection**: Users navigate to a specific generator (Home, Character, Relationship, Scenario, or Random) based on their creative need.
+2.  **Configuration**: 
+    - **Home**: Input character name, fandom, tone (Soft, Dark, Chaotic, etc.), setting, and output focus.
+    - **Character**: Focuses on a single character's traits, habits, and secrets.
+    - **Relationship**: Takes two names and explores ship dynamics, rituals, and tension.
+    - **Scenario**: Places characters in specific settings (War, School, Modern) with dramatic triggers.
+    - **Random**: Zero-input mode for instant inspiration.
+3.  **Generation (Engine Logic)**: 
+    - The client-side engine (`generator.ts`) picks templates from curated pools based on user inputs.
+    - It performs dynamic string replacement (e.g., swapping `{name}` with user input).
+    - It applies "Tone Modifiers" and "Length Extensions" to ensure the output matches the desired vibe and depth.
+4.  **Instant Feedback**: Results appear in seconds without page reloads, using smooth CSS animations (`animate-fade-up`, `animate-scale-in`).
+5.  **Output Management**: 
+    - **Copy**: One-click copy to clipboard.
+    - **Regenerate**: Instantly swap for a new batch of ideas.
+    - **Save**: Persists results to browser LocalStorage so they remain available after a refresh.
+
+---
+
+## 2. SEO Implementation Details
+
+The project follows strict SEO best practices to ensure high visibility in search engines for "headcanon" and "writing prompt" related queries.
+
+### Global Configuration (`layout.tsx`)
+-   **Meta Title**: Free Headcanon Generator – Create Ideas Instantly
+-   **Meta Description**: Generate creative headcanon ideas instantly with this free headcanon generator. Perfect for fandoms, characters, and stories.
+-   **Canonical**: Points to `https://headcanonspace.com`.
+-   **OpenGraph/Twitter**: Configured for rich social media previews.
+-   **Favicon**: Custom SVG icon (`icon.svg`).
+
+### Structured Data (JSON-LD)
+We use complex Schema.org graphs to help Google understand the site's utility:
+-   **SoftwareApplication**: Identifies the tool, its category (Utilities), and its free price.
+-   **FAQPage**: Lists common questions on the home and blog pages to capture "People Also Ask" results.
+-   **BreadcrumbList**: Clarifies site hierarchy.
+-   **Article**: For blog posts to improve indexing in News/Discover.
+
+### Heading Structure & Semantic HTML
+-   **H1**: Each page has exactly one H1 focused on the primary keyword (e.g., "Character Headcanon Generator").
+-   **H2/H3**: Used for feature descriptions, "How it Works" sections, and FAQs.
+-   **Semantic Tags**: `<main>`, `<section>`, `<article>`, `<nav>`, and `<footer>` are used throughout.
+
+---
+
+## 3. Page Content & Metadata
+
+### Home Page (`/`)
+-   **Title**: Headcanon Generator | Free Character, Relationship & Scenario Ideas
+-   **Description**: Use this free headcanon generator to instantly create unique ideas for characters, relationships, and scenarios.
+-   **H1**: Headcanon Generator
+-   **Sections**:
+    - **Hero**: Intro to the tool.
+    - **Tool UI**: The primary `HomeHeadcanonTool`.
+    - **Intro**: "Generate Headcanons for Any Character or Fandom".
+    - **How It Works**: 4-step process (Enter name, Choose tone, Click generate, Copy).
+    - **Examples**: Sample Character, Relationship, and Scenario headcanons.
+    - **What is a Headcanon**: Detailed definition and callout.
+    - **Use Cases**: Fanfiction writers, Roleplayers, Anime fans, Creative writers.
+    - **FAQ**: Common questions about privacy, cost, and usage.
+
+### Character Headcanon Generator (`/character-headcanon-generator/`)
+-   **Title**: Character Headcanon Generator (Create Unique Ideas)
+-   - **Description**: Generate headcanons for any character instantly.
+-   **H1**: Character Headcanon Generator
+-   **Sections**: Focuses on deep personality traits, habits, and secrets. Explains why a name-specific generator is better than a generic one.
+
+### Relationship Headcanon Generator (`/relationship-headcanon-generator/`)
+-   **Title**: Relationship Headcanon Generator (Free & Instant)
+-   **Description**: Generate relationship headcanons for any two characters instantly. Perfect for fanfiction, roleplay, and storytelling.
+-   **H1**: Relationship Headcanon Generator
+-   **Sections**: Dynamic, Private Ritual, Unspoken Tension, and Scene sections. Explains ship dynamics.
+
+### Scenario Headcanon Generator (`/scenario-headcanon-generator/`)
+-   **Title**: Scenario Headcanon Generator (Creative Story Ideas)
+-   **Description**: Generate scenario-based headcanons instantly. Perfect for storytelling, roleplay, and creative writing.
+-   **H1**: Scenario Headcanon Generator
+-   **Sections**: Places characters in specific settings. Ideal for "what if" scenarios.
+
+### Random Headcanon Generator (`/random-headcanon-generator/`)
+-   **Title**: Random Headcanon Generator (Instant & Free)
+-   **Description**: Generate random headcanons instantly with this free tool.
+-   **H1**: Random Headcanon Generator
+-   **Sections**: No input required. Instant "Generate Again" functionality.
+
+### Blog: What Is a Headcanon? (`/blog/what-is-a-headcanon/`)
+-   **Title**: What Is a Headcanon? Meaning, Examples, and How to Write One
+-   **Description**: Learn what a headcanon is, see clear examples, and discover how to write better character and story headcanons.
+-   **H1**: What Is a Headcanon?
+-   **Content**: 
+    - Meaning in fandom culture.
+    - Headcanon vs Canon vs Fanfiction.
+    - Real-world examples.
+    - Tips for writing strong headcanons.
+    - Common mistakes (vague traits, ignoring tone).
+
+### About Us (`/about/`)
+-   **Title**: About | Headcanon Generator
+-   **Description**: Learn more about Headcanon Space and our simple, fast generator tools.
+-   **H1**: About Headcanon Space
+-   **Content**: Mission statement, why we built it (curing writer's block), and commitment to free, privacy-first tools.
+
+### Contact (`/contact/`)
+-   **Title**: Contact | Headcanon Generator
+-   **Description**: Get in touch with us for any questions, suggestions, or feedback.
+-   **H1**: Contact
+-   **Content**: Encourages bug reports and feature requests. Mentions a small, passionate team.
+
+### Legal (Privacy & Terms)
+-   **Title**: Privacy Policy / Terms of Service | Headcanon Generator
+-   **H1**: Privacy Policy / Terms of Service
+-   **Key Points**: No account required, no storage of user inputs, free access, automated bots prohibited.
