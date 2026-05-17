@@ -118,6 +118,9 @@ export default function RootLayout({
                     <Link href="/contact/" className="text-sm hover:text-white transition-colors">Contact</Link>
                   </li>
                   <li>
+                    <Link href="/feedback/" className="text-sm hover:text-white transition-colors">Feedback</Link>
+                  </li>
+                  <li>
                     <Link href="/privacy-policy/" className="text-sm hover:text-white transition-colors">Privacy Policy</Link>
                   </li>
                   <li>
@@ -135,6 +138,7 @@ export default function RootLayout({
                 <Link href="/privacy-policy/" className="hover:text-white/80 transition-colors" style={{ color: "rgba(255,255,255,0.4)" }}>Privacy</Link>
                 <Link href="/terms-of-service/" className="hover:text-white/80 transition-colors" style={{ color: "rgba(255,255,255,0.4)" }}>Terms</Link>
                 <Link href="/contact/" className="hover:text-white/80 transition-colors" style={{ color: "rgba(255,255,255,0.4)" }}>Contact</Link>
+                <Link href="/feedback/" className="hover:text-white/80 transition-colors" style={{ color: "rgba(255,255,255,0.4)" }}>Feedback</Link>
               </div>
             </div>
           </div>
