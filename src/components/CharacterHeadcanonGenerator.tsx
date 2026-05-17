@@ -228,7 +228,7 @@ export default function HeadcanonGenerator() {
             </div>
 
             {results.map((result, index) => (
-              <div key={result.id} className="group relative p-6 bg-white rounded-2xl border border-[var(--color-border)] shadow-sm hover:shadow-md transition-all space-y-4">
+              <div key={result.id} className="group relative p-6 bg-white rounded-2xl border border-[var(--color-border)] shadow-sm transition-all space-y-4">
                 <div className="flex items-start justify-between gap-4">
                   <div>
                     <h4 className="text-lg font-bold text-[var(--color-text)] mb-2">{concept.trim() || "Character"}</h4>

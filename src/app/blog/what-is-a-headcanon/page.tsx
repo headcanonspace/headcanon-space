@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   description:
     "Learn what a headcanon is, see clear examples, and discover how to write better character and story headcanons for fanfiction and roleplay.",
   alternates: {
-    canonical: "/blog/what-is-a-headcanon/",
+    canonical: "https://headcanonspace.com/blog/what-is-a-headcanon/",
   },
   openGraph: {
     title: "What Is a Headcanon? Meaning, Examples, and How to Write One",

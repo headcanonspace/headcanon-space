@@ -3,6 +3,9 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Terms of Service | Headcanon Generator",
   description: "Terms of service for Headcanon Space.",
+  alternates: {
+    canonical: "https://headcanonspace.com/terms-of-service/",
+  },
 };
 
 export default function TermsOfServicePage() {

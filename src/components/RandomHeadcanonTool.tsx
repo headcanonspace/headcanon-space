@@ -77,8 +77,7 @@ export default function RandomHeadcanonTool() {
       <div className="flex flex-col lg:flex-row gap-6 lg:gap-8 items-stretch pt-4">
 
         {/* LEFT PANEL */}
-        <div className="w-full lg:w-[35%] bg-white border border-[var(--color-border)] rounded-xl p-6 md:p-8 flex flex-col gap-6 shadow-xl relative overflow-hidden group">
-          <div className="absolute inset-0 bg-[var(--color-bg)] opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none"></div>
+        <div className="w-full lg:w-[35%] bg-white border border-[var(--color-border)] rounded-xl p-6 md:p-8 flex flex-col gap-6 shadow-xl">
 
           <div className="flex items-center gap-2 mb-2">
             <FlaskConical className="size-5 text-[var(--color-primary)]" strokeWidth={2} aria-hidden />
@@ -145,10 +144,10 @@ export default function RandomHeadcanonTool() {
           <div key={genKey} className="flex-1 flex flex-col gap-4 relative z-10 motion-safe:animate-[fadeIn_0.35s_ease-out_both]">
             {results.length > 0 ? (
               results.map((item, idx) => (
-                <div key={item.id} className="bg-white border border-[var(--color-border)] rounded-lg p-5 flex flex-col gap-3 group transition-all duration-300 hover:border-[var(--color-border-med)] hover:shadow-md" style={{ animationFillMode: "both", animation: `fadeIn 0.3s ease-out ${idx * 0.1}s forwards` }}>
+                <div key={item.id} className="bg-white border border-[var(--color-border)] rounded-lg p-5 flex flex-col gap-3 group transition-all duration-300" style={{ animationFillMode: "both", animation: `fadeIn 0.3s ease-out ${idx * 0.1}s forwards` }}>
                   <div className="flex justify-between items-start mb-0.5">
                     <span className="text-[11px] font-medium uppercase tracking-wider text-[var(--color-primary)] bg-[var(--color-primary-lt)] border border-[var(--color-border)] px-2 py-0.5 rounded shadow-sm">{item.category}</span>
-                    <button onClick={() => handleCopy(item.id, item.text)} className="text-[var(--color-ink-4)] hover:text-[var(--color-text)] transition-colors bg-transparent p-1.5 -mr-1.5 -mt-1.5 rounded-md hover:bg-[var(--color-surface-hover)] active:scale-95" title="Copy to clipboard">
+                    <button onClick={() => handleCopy(item.id, item.text)} className="text-[var(--color-ink-4)] hover:text-[var(--color-primary)] transition-colors bg-transparent p-1.5 -mr-1.5 -mt-1.5 rounded-md hover:bg-[var(--color-primary-lt)] active:scale-95" title="Copy to clipboard">
                       {copiedId === item.id ? (
                         <Check className="size-[18px] text-green-500" strokeWidth={2.5} aria-hidden />
                       ) : (

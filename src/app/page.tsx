@@ -6,120 +6,106 @@ import FaqAccordion from "@/components/FaqAccordion";
 export const metadata: Metadata = {
   title: "Headcanon Generator | Free Character, Relationship & Scenario Ideas",
   description:
-    "Use this free headcanon generator to instantly create unique ideas for characters, relationships, and scenarios.",
+    "Free headcanon generator - instantly create ideas for characters, relationships, and scenarios. No signup, no limits, works for any fandom. Try it now.",
+  alternates: {
+    canonical: "https://headcanonspace.com/",
+  },
 };
 
 export default function HomePage() {
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "SoftwareApplication",
-        "@id": "https://headcanonspace.com/#softwareapplication",
-        name: "Headcanon Generator",
-        description:
-          "Generate creative headcanon ideas instantly with this free headcanon generator. Perfect for fandoms, characters, and stories.",
-        applicationCategory: "UtilitiesApplication",
-        operatingSystem: "Any",
-        offers: {
-          "@type": "Offer",
-          price: "0",
-          priceCurrency: "USD",
-        },
-      },
-      {
-        "@type": "WebApplication",
-        "@id": "https://headcanonspace.com/#webapplication",
-        name: "Headcanon Generator",
-        url: "https://headcanonspace.com/",
-        applicationCategory: "UtilitiesApplication",
-        operatingSystem: "Any",
-        browserRequirements: "Requires JavaScript. Requires HTML5.",
-        isAccessibleForFree: true,
-        offers: {
-          "@type": "Offer",
-          price: "0",
-          priceCurrency: "USD",
-        },
-      },
-      {
-        "@type": "WebPage",
-        "@id": "https://headcanonspace.com/#webpage",
-        url: "https://headcanonspace.com/",
-        name: "Headcanon Generator | Free Character, Relationship & Scenario Ideas",
-        description:
-          "Use this free headcanon generator to instantly create unique ideas for characters, relationships, and scenarios.",
-        inLanguage: "en-US",
-        mainEntity: {
-          "@id": "https://headcanonspace.com/#webapplication",
-        },
-      },
-      {
-        "@type": "BreadcrumbList",
-        "@id": "https://headcanonspace.com/#breadcrumb",
-        itemListElement: [
-          {
-            "@type": "ListItem",
-            position: 1,
-            name: "Headcanon Generator",
-            item: "https://headcanonspace.com/",
-          },
-        ],
-      },
-      {
-        "@type": "FAQPage",
-        "@id": "https://headcanonspace.com/#faq",
-        mainEntity: [
-          {
-            "@type": "Question",
-            name: "What is a headcanon?",
-            acceptedAnswer: {
-              "@type": "Answer",
-              text: "A headcanon is a personal interpretation, belief, or idea about a fictional character, relationship, or universe that hasn't been officially confirmed by the creator. Fans use headcanons to add depth and explore 'what if' scenarios.",
-            },
-          },
-          {
-            "@type": "Question",
-            name: "How does the Headcanon Generator work?",
-            acceptedAnswer: {
-              "@type": "Answer",
-              text: "Our tool uses advanced randomization combined with curated story tropes. You simply input a character's name, their fandom, and choose a specific vibe or 'tone' (like Angst or Fluff). The engine instantly synthesizes fully unique narrative prompts for you to use.",
-            },
-          },
-          {
-            "@type": "Question",
-            name: "Is this tool completely free to use?",
-            acceptedAnswer: {
-              "@type": "Answer",
-              text: "Yes! All of our generators—including Character, Relationship, and Scenario headcanons—are 100% free with unlimited generation and no signup required.",
-            },
-          },
-          {
-            "@type": "Question",
-            name: "Can I use these headcanons for my fanfiction or roleplay?",
-            acceptedAnswer: {
-              "@type": "Answer",
-              text: "Absolutely! The generated ideas are designed specifically for writers, roleplayers, and creators to use as writing prompts, story starters, or character development exercises.",
-            },
-          },
-          {
-            "@type": "Question",
-            name: "Do you save my character inputs?",
-            acceptedAnswer: {
-              "@type": "Answer",
-              text: "No. Our tools run completely in your browser (client-side), meaning what you type is never sent to our servers or saved anywhere. Your privacy and creative ideas are yours alone.",
-            },
-          },
-        ],
-      },
-    ],
-  };
-
   return (
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@graph": [
+              {
+                "@type": "SoftwareApplication",
+                "name": "Headcanon Generator",
+                "url": "https://headcanonspace.com",
+                "applicationCategory": "UtilitiesApplication",
+                "operatingSystem": "Web",
+                "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+                "description": "Free headcanon generator for characters, relationships, and scenarios."
+              },
+              {
+                "@type": "WebApplication",
+                "name": "Headcanon Space",
+                "url": "https://headcanonspace.com",
+                "applicationCategory": "UtilitiesApplication",
+                "operatingSystem": "Web",
+                "browserRequirements": "Requires JavaScript. Requires HTML5."
+              },
+              {
+                "@type": "WebPage",
+                "@id": "https://headcanonspace.com/#webpage",
+                "url": "https://headcanonspace.com",
+                "name": "Headcanon Space - Free Character ship and relationship ideas",
+                "description": "Free headcanon generator - instantly create ideas for characters, relationships, and scenarios. No signup, no limits, works for any fandom. Try it now."
+              },
+              {
+                "@type": "FAQPage",
+                "mainEntity": [
+                  {
+                    "@type": "Question",
+                    "name": "What is a headcanon?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "A headcanon is a personal interpretation, belief, or idea about a fictional character, relationship, or universe that hasn't been officially confirmed by the creator. Fans use headcanons to add depth and explore 'what if' scenarios."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "How does the Headcanon Generator work?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Our tool uses advanced randomization combined with curated story tropes. You simply input a character's name, their fandom, and choose a specific vibe or 'tone' (like Angst or Fluff). The engine instantly synthesizes fully unique narrative prompts for you to use."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "Is this tool completely free to use?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Yes! All of our generators, including Character, Relationship, and Scenario headcanons, are 100% free with unlimited generation and no signup required."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "Can I use these headcanons for my fanfiction or roleplay?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "Absolutely! The generated ideas are designed specifically for writers, roleplayers, and creators to use as writing prompts, story starters, or character development exercises."
+                    }
+                  },
+                  {
+                    "@type": "Question",
+                    "name": "Do you save my character inputs?",
+                    "acceptedAnswer": {
+                      "@type": "Answer",
+                      "text": "No. Our tools run completely in your browser (client-side), meaning what you type is never sent to our servers or saved anywhere. Your privacy and creative ideas are yours alone."
+                    }
+                  }
+                ]
+              },
+              {
+                "@type": "WebSite",
+                "name": "Headcanon Space",
+                "url": "https://headcanonspace.com",
+                "potentialAction": {
+                  "@type": "SearchAction",
+                  "target": {
+                    "@type": "EntryPoint",
+                    "urlTemplate": "https://headcanonspace.com/?q={search_term_string}"
+                  },
+                  "query-input": "required name=search_term_string"
+                }
+              }
+            ]
+          })
+        }}
       />
 
       {/* ── Hero ────────────────────────────────────── */}
@@ -145,7 +131,9 @@ export default function HomePage() {
 
       {/* ── Tool UI (above the fold) ────────────────── */}
       <section className="w-full px-6 pb-12 animate-scale-in" style={{ marginTop: "-20px" }}>
-        <HomeHeadcanonTool />
+        <div style={{ minHeight: '520px', position: 'relative' }}>
+          <HomeHeadcanonTool />
+        </div>
       </section>
 
       {/* ── Intro / What It Does ─────────────────────── */}
@@ -173,7 +161,7 @@ export default function HomePage() {
                 <p>
                   Use this AI headcanon generator to move from loose ideas to usable scene direction.
                   Build deeper characters, shape emotional dynamics, and plan plot-ready moments
-                  across any fandom — instantly.
+                  across any fandom - instantly.
                 </p>
               </div>
             </div>
@@ -233,7 +221,7 @@ export default function HomePage() {
             <div className="step">
               <div className="step__num" aria-hidden="true">1</div>
               <p className="step__title">Enter a character</p>
-              <p className="step__desc">Type any name — a canon character or your own OC.</p>
+              <p className="step__desc">Type any name - a canon character or your own OC.</p>
             </div>
             <div className="step">
               <div className="step__num" aria-hidden="true">2</div>
@@ -243,7 +231,7 @@ export default function HomePage() {
             <div className="step">
               <div className="step__num" aria-hidden="true">3</div>
               <p className="step__title">Click generate</p>
-              <p className="step__desc">Results appear instantly — no loading screens.</p>
+              <p className="step__desc">Results appear instantly - no loading screens.</p>
             </div>
             <div className="step">
               <div className="step__num" aria-hidden="true">4</div>
@@ -256,36 +244,48 @@ export default function HomePage() {
 
       {/* ── Example Headcanons ──────────────────────── */}
       <section className="section section--alt">
-        <div className="mx-auto max-w-[1120px] px-6">
-          <div className="mb-12">
+        <div className="mx-auto max-w-[1000px] px-6">
+          <div className="mb-12 max-w-[760px]">
             <p className="section__label">See what you can make</p>
             <h2 className="section__h2">Example Headcanons</h2>
             <p className="section__lead">Here&apos;s a taste of the kind of ideas the generator creates.</p>
           </div>
 
-          <div className="grid gap-5 sm:grid-cols-2 md:grid-cols-3">
+          <div className="grid sm:grid-cols-3 gap-6 mb-8">
             <article className="example-card">
-              <p className="example-card__type">Character Headcanon</p>
-              <blockquote>
-                &ldquo;Despite their serious personality, the character secretly enjoys quiet hobbies
-                like cooking or sketching — a side no one in their world gets to see.&rdquo;
-              </blockquote>
+              <div className="example-card__quote-container">
+                <span className="example-card__quote-mark">“</span>
+                <blockquote className="example-card__quote">
+                  Despite their serious personality, the character secretly enjoys quiet hobbies like cooking or sketching — a side no one in their world gets to see.
+                </blockquote>
+              </div>
+              <div className="example-card__footer">
+                <span className="example-card__author">Character Headcanon</span>
+              </div>
             </article>
 
             <article className="example-card">
-              <p className="example-card__type">Relationship Headcanon</p>
-              <blockquote>
-                &ldquo;These two characters pretend to argue often, but deeply trust and protect
-                each other in critical moments — the bickering is their love language.&rdquo;
-              </blockquote>
+              <div className="example-card__quote-container">
+                <span className="example-card__quote-mark">“</span>
+                <blockquote className="example-card__quote">
+                  These two characters pretend to argue often, but deeply trust and protect each other in critical moments — the bickering is their love language.
+                </blockquote>
+              </div>
+              <div className="example-card__footer">
+                <span className="example-card__author">Relationship Headcanon</span>
+              </div>
             </article>
 
             <article className="example-card">
-              <p className="example-card__type">Scenario Headcanon</p>
-              <blockquote>
-                &ldquo;During a stormy night, the characters are forced to work together,
-                revealing hidden emotions and past secrets neither expected to share.&rdquo;
-              </blockquote>
+              <div className="example-card__quote-container">
+                <span className="example-card__quote-mark">“</span>
+                <blockquote className="example-card__quote">
+                  During a stormy night, the characters are forced to work together, revealing hidden emotions and past secrets neither expected to share.
+                </blockquote>
+              </div>
+              <div className="example-card__footer">
+                <span className="example-card__author">Scenario Headcanon</span>
+              </div>
             </article>
           </div>
         </div>
@@ -295,7 +295,7 @@ export default function HomePage() {
       <section className="section">
         <div className="mx-auto max-w-[760px] px-6">
           <p className="section__label">Understanding headcanons</p>
-          <h2 className="section__h2">✦ What Is a Headcanon?</h2>
+          <h2 className="section__h2">What Is a Headcanon?</h2>
 
           <div className="space-y-4" style={{ fontSize: "16px", color: "var(--color-ink-3)", lineHeight: 1.8 }}>
             <p>
@@ -308,7 +308,7 @@ export default function HomePage() {
             </p>
 
             <div className="prose-callout">
-              Example: A fan might imagine a character secretly loves cooking — even if it&apos;s
+              Example: A fan might imagine a character secretly loves cooking - even if it&apos;s
               never shown in canon. That personal interpretation is a headcanon.
             </div>
 
@@ -441,11 +441,7 @@ export default function HomePage() {
       <section className="section section--alt">
         <div className="mx-auto max-w-[760px] px-6 text-center">
           <p style={{ fontSize: "16px", color: "var(--color-ink-3)", lineHeight: 1.8 }}>
-            This{" "}
-            <Link href="/" style={{ color: "var(--color-primary)", fontWeight: 500 }}>
-              headcanon generator
-            </Link>{" "}
-            keeps brainstorming practical and repeatable. Generate a batch, pick
+            This headcanon generator keeps brainstorming practical and repeatable. Generate a batch, pick
             one emotional core, add a scenario trigger, then draft your scene.
             This workflow helps you write faster while keeping characters and
             tone consistent across fanfiction, roleplay, and fandom storytelling.

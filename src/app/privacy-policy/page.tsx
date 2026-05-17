@@ -3,6 +3,9 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Privacy Policy | Headcanon Generator",
   description: "Privacy policy for Headcanon Space.",
+  alternates: {
+    canonical: "https://headcanonspace.com/privacy-policy/",
+  },
 };
 
 export default function PrivacyPolicyPage() {
@@ -51,7 +54,30 @@ export default function PrivacyPolicyPage() {
             To keep Headcanon Space entirely free, we may use advertising networks (such as Google AdSense). These third-party providers may use cookies or similar tracking technologies to serve relevant ads based on your browsing behavior across the internet.
           </p>
           <p>
+            This site uses Google AdSense for advertising, which may use DoubleClick cookies to serve relevant ads.
+          </p>
+          <p>
             You can control, manage, or disable these cookies at any time through your browser's security settings.
+          </p>
+        </section>
+
+        <section>
+          <p>
+            <strong>Last Updated:</strong> May 2026
+          </p>
+        </section>
+
+        <section>
+          <h2>GDPR Compliance</h2>
+          <p>
+            If you are located in the European Economic Area (EEA), you have the right to access, correct, or delete your personal data. We use a cookie consent banner to obtain your consent before activating any tracking technologies. To exercise your rights, contact us at: <a href="mailto:hello@headcanonspace.com" style={{ color: "var(--color-primary)", textDecoration: "underline" }}>hello@headcanonspace.com</a>
+          </p>
+        </section>
+
+        <section>
+          <h2>CCPA Compliance</h2>
+          <p>
+            California residents have the right to know what personal data is collected and to opt out of its sale. We do not sell personal data. For questions, contact: <a href="mailto:hello@headcanonspace.com" style={{ color: "var(--color-primary)", textDecoration: "underline" }}>hello@headcanonspace.com</a>
           </p>
         </section>
 

@@ -7,10 +7,10 @@ import { Menu, X } from "lucide-react";
 
 const NAV_LINKS = [
   { href: "/", label: "Home" },
-  { href: "/character-headcanon-generator/", label: "Character" },
-  { href: "/relationship-headcanon-generator/", label: "Relationship" },
-  { href: "/scenario-headcanon-generator/", label: "Scenario" },
-  { href: "/random-headcanon-generator/", label: "Random" },
+  { href: "/character-headcanon-generator/", label: "Character Generator" },
+  { href: "/relationship-headcanon-generator/", label: "Relationship Generator" },
+  { href: "/scenario-headcanon-generator/", label: "Scenario Generator" },
+  { href: "/random-headcanon-generator/", label: "Random Generator" },
 ];
 
 export default function Navbar() {

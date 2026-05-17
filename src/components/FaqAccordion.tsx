@@ -7,7 +7,11 @@ interface FaqItem {
   answer: string;
 }
 
-const faqs: FaqItem[] = [
+interface FaqAccordionProps {
+  items?: FaqItem[];
+}
+
+const defaultFaqs: FaqItem[] = [
   {
     question: "What is a headcanon?",
     answer: "A headcanon is a personal interpretation, belief, or idea about a fictional character, relationship, or universe that hasn't been officially confirmed by the creator. Fans use headcanons to add depth and explore 'what if' scenarios."
@@ -18,7 +22,7 @@ const faqs: FaqItem[] = [
   },
   {
     question: "Is this tool completely free to use?",
-    answer: "Yes! All of our generators—including Character, Relationship, and Scenario headcanons—are 100% free with unlimited generation and no signup required."
+    answer: "Yes! All of our generators, including Character, Relationship, and Scenario headcanons, are 100% free with unlimited generation and no signup required."
   },
   {
     question: "Can I use these headcanons for my fanfiction or roleplay?",
@@ -30,7 +34,7 @@ const faqs: FaqItem[] = [
   }
 ];
 
-export default function FaqAccordion() {
+export default function FaqAccordion({ items = defaultFaqs }: FaqAccordionProps) {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   const toggle = (index: number) => {
@@ -39,7 +43,7 @@ export default function FaqAccordion() {
 
   return (
     <div className="w-full space-y-3">
-      {faqs.map((faq, index) => (
+      {items.map((faq, index) => (
         <div 
           key={index} 
           className="bg-white border border-[var(--color-border)] rounded-xl overflow-hidden transition-all duration-200 shadow-sm"

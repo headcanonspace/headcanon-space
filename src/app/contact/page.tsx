@@ -3,6 +3,9 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Contact | Headcanon Generator",
   description: "Get in touch with us for any questions, suggestions, or feedback.",
+  alternates: {
+    canonical: "https://headcanonspace.com/contact/",
+  },
 };
 
 export default function ContactPage() {

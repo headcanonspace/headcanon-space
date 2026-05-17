@@ -4,6 +4,7 @@ import Script from "next/script";
 import { DM_Sans, DM_Serif_Display } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
+import CookieConsent from "@/components/CookieConsent";
 
 const dmSans = DM_Sans({
   subsets: ["latin"],
@@ -57,32 +58,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en-US">
-      <head>
-        {/* AdSense publisher verification script. Keep this in the root layout; do not remove. */}
-        <Script
-          async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
-          crossOrigin="anonymous"
-          strategy="afterInteractive"
-        />
-        {/* Google Analytics (gtag.js) */}
-        <Script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=G-0S0GHTYEEB"
-          strategy="afterInteractive"
-        />
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-0S0GHTYEEB');
-          `}
-        </Script>
-      </head>
+      <head />
 
       <body className={`${dmSans.variable} ${dmSerif.variable} min-h-screen flex flex-col`} style={{ fontFamily: "var(--font-sans)" }}>
         <Navbar />
+        <CookieConsent />
 
         {/* ── Main ───────────────────────────────────── */}
         <main className="flex-1">{children}</main>

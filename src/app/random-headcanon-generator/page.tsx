@@ -1,40 +1,113 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import RandomHeadcanonTool from "@/components/RandomHeadcanonTool";
+import FaqAccordion from "@/components/FaqAccordion";
 
 export const metadata: Metadata = {
   title: "Random Headcanon Generator (Instant & Free)",
-  description: "Generate random headcanons instantly with this free tool.",
+  description: "Free random headcanon generator - get instant character quirks, relationship moments, and story ideas with one click. No input needed. Unlimited generations.",
   alternates: {
-    canonical: "/random-headcanon-generator/",
+    canonical: "https://headcanonspace.com/random-headcanon-generator/",
   },
   openGraph: {
     title: "Random Headcanon Generator",
-    description: "Generate random headcanons instantly with this free tool.",
+    description: "Free random headcanon generator - get instant character quirks, relationship moments, and story ideas with one click. No input needed. Unlimited generations.",
     url: "/random-headcanon-generator/",
   },
 };
 
-export default function RandomHeadcanonGeneratorPage() {
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "SoftwareApplication",
-    name: "Random Headcanon Generator",
-    description: "Generate random headcanons instantly with this free tool.",
-    applicationCategory: "UtilitiesApplication",
-    operatingSystem: "Any",
-    offers: {
-      "@type": "Offer",
-      price: "0",
-      priceCurrency: "USD",
-    },
-  };
+const randomFaqs = [
+  {
+    question: "What is a random headcanon generator?",
+    answer: "A random headcanon generator creates instant character quirks, couple dynamics, and story prompts without requiring any input or setup. Perfect for quick inspiration."
+  },
+  {
+    question: "How is this different from the other generators?",
+    answer: "Unlike the other specialized tools where you input a name or setting, the random generator is designed for one-click discovery. It mixes traits, ships, and settings together completely randomly."
+  },
+  {
+    question: "Can I use these prompts for writing challenges?",
+    answer: "Yes! Many writers use them for daily writing prompts, 100-word drabbles, or drawing prompts for fanart challenges."
+  },
+  {
+    question: "Do I need to sign up to save my generated prompts?",
+    answer: "No. You can save your favorite prompts directly inside the browser using local storage, completely free and without an account."
+  },
+  {
+    question: "Are the generated random headcanons safe for work?",
+    answer: "Yes. All our prompts focus on emotional depth, character development, and narrative scenarios, keeping the content fully PG-13 and safe for all writing communities."
+  }
+];
 
+export default function RandomHeadcanonGeneratorPage() {
   return (
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "SoftwareApplication",
+            "name": "Random Headcanon Generator",
+            "url": "https://headcanonspace.com/random-headcanon-generator/",
+            "applicationCategory": "UtilitiesApplication",
+            "operatingSystem": "Web",
+            "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+            "description": "Generate random headcanons instantly with this free tool."
+          })
+        }}
+      />
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "What is a random headcanon generator?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "A random headcanon generator creates instant character quirks, couple dynamics, and story prompts without requiring any input or setup. Perfect for quick inspiration."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How is this different from the other generators?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Unlike the other specialized tools where you input a name or setting, the random generator is designed for one-click discovery. It mixes traits, ships, and settings together completely randomly."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Can I use these prompts for writing challenges?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes! Many writers use them for daily writing prompts, 100-word drabbles, or drawing prompts for fanart challenges."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Do I need to sign up to save my generated prompts?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "No. You can save your favorite prompts directly inside the browser using local storage, completely free and without an account."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Are the generated random headcanons safe for work?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. All our prompts focus on emotional depth, character development, and narrative scenarios, keeping the content fully PG-13 and safe for all writing communities."
+                }
+              }
+            ]
+          })
+        }}
       />
 
       {/* ── Hero ────────────────────────────────────── */}
@@ -53,14 +126,16 @@ export default function RandomHeadcanonGeneratorPage() {
 
       {/* ── Tool UI ─────────────────────────────────── */}
       <section className="w-full px-6 pt-8 pb-16 animate-scale-in">
-        <RandomHeadcanonTool />
+        <div style={{ minHeight: '520px', position: 'relative' }}>
+          <RandomHeadcanonTool />
+        </div>
       </section>
 
       {/* ── What Is a Random Headcanon Generator? ───── */}
       <section className="section">
         <div className="mx-auto max-w-[760px] px-6">
           <p className="section__label">Understanding the tool</p>
-          <h2 className="section__h2">🎲 What Is a Random Headcanon Generator?</h2>
+          <h2 className="section__h2">What Is a Random Headcanon Generator?</h2>
           <div className="space-y-4" style={{ fontSize: "16px", color: "var(--color-ink-3)", lineHeight: 1.8 }}>
             <p>
               A random headcanon generator creates unique character ideas,
@@ -124,6 +199,18 @@ export default function RandomHeadcanonGeneratorPage() {
         </div>
       </section>
 
+      {/* ── FAQ ─────────────────────────────────────────── */}
+      <section className="section">
+        <div className="mx-auto max-w-[760px] px-6">
+          <div className="text-center mb-12">
+            <p className="section__label">FAQ</p>
+            <h2 className="section__h2">Frequently Asked Questions</h2>
+          </div>
+
+          <FaqAccordion items={randomFaqs} />
+        </div>
+      </section>
+
       {/* ── Explore More Tools ────────────────────────── */}
       <section className="section">
         <div className="mx-auto max-w-[760px] px-6">
@@ -132,7 +219,7 @@ export default function RandomHeadcanonGeneratorPage() {
           <div className="grid sm:grid-cols-2 gap-4">
             <Link href="/" className="tool-link-card">
               <span className="tool-icon">✦</span>
-              <p className="font-medium text-sm mb-1" style={{ color: "var(--color-text)" }}>General Generator</p>
+              <p className="font-medium text-sm mb-1" style={{ color: "var(--color-text)" }}>Headcanon Generator</p>
               <p className="text-[13px]" style={{ color: "var(--color-ink-4)" }}>All-purpose headcanon ideas</p>
             </Link>
             <Link href="/character-headcanon-generator/" className="tool-link-card">

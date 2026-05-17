@@ -1,41 +1,114 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import ScenarioHeadcanonGenerator from "@/components/ScenarioHeadcanonGenerator";
+import FaqAccordion from "@/components/FaqAccordion";
 
 export const metadata: Metadata = {
   title: "Scenario Headcanon Generator (Creative Story Ideas)",
   description:
-    "Generate scenario-based headcanons instantly. Perfect for storytelling, roleplay, and creative writing.",
+    "Free scenario headcanon generator - place characters into any setting and get dramatic story triggers instantly. Perfect for creative writing and roleplay.",
   alternates: {
-    canonical: "/scenario-headcanon-generator/",
+    canonical: "https://headcanonspace.com/scenario-headcanon-generator/",
   },
   openGraph: {
     title: "Scenario Headcanon Generator",
-    description: "Generate scenario-based headcanons instantly. Perfect for storytelling, roleplay, and creative writing.",
+    description: "Free scenario headcanon generator - place characters into any setting and get dramatic story triggers instantly. Perfect for creative writing and roleplay.",
     url: "/scenario-headcanon-generator/",
   },
 };
 
-export default function ScenarioHeadcanonGeneratorPage() {
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "SoftwareApplication",
-    name: "Scenario Headcanon Generator",
-    description: "Generate scenario-based headcanons instantly. Perfect for storytelling and roleplay.",
-    applicationCategory: "UtilitiesApplication",
-    operatingSystem: "Any",
-    offers: {
-      "@type": "Offer",
-      price: "0",
-      priceCurrency: "USD",
-    },
-  };
+const scenarioFaqs = [
+  {
+    question: "What is a scenario headcanon?",
+    answer: "A scenario headcanon is an idea about how characters would behave, react, or interact in a specific setting or environment (e.g., modern coffee shop AU, fantasy quest, or locked room situation)."
+  },
+  {
+    question: "Can I input my own custom settings?",
+    answer: "Yes! You can type any setting (like 'camping trip' or 'rainy afternoon') into the prompt input, and our tool will adapt the scenarios to match that theme."
+  },
+  {
+    question: "How does the scenario generator help writers?",
+    answer: "It breaks through writer's block by giving you a clear setting, character trigger, and emotional conflict in one click. You can use it as a complete writing prompt."
+  },
+  {
+    question: "Are the scenarios suitable for original universes?",
+    answer: "Yes. They are designed to work perfectly for canon fandom characters as well as your own original characters (OCs) in custom settings."
+  },
+  {
+    question: "Can I save the scenarios I generate?",
+    answer: "Yes! Use the built-in Save feature to store your favorite scenarios in your browser's local storage so you never lose them."
+  }
+];
 
+export default function ScenarioHeadcanonGeneratorPage() {
   return (
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "SoftwareApplication",
+            "name": "Scenario Headcanon Generator",
+            "url": "https://headcanonspace.com/scenario-headcanon-generator/",
+            "applicationCategory": "UtilitiesApplication",
+            "operatingSystem": "Web",
+            "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+            "description": "Generate scenario-based headcanons instantly. Perfect for storytelling and roleplay."
+          })
+        }}
+      />
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "What is a scenario headcanon?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "A scenario headcanon is an idea about how characters would behave, react, or interact in a specific setting or environment (e.g., modern coffee shop AU, fantasy quest, or locked room situation)."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Can I input my own custom settings?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes! You can type any setting (like 'camping trip' or 'rainy afternoon') into the prompt input, and our tool will adapt the scenarios to match that theme."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How does the scenario generator help writers?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "It breaks through writer's block by giving you a clear setting, character trigger, and emotional conflict in one click. You can use it as a complete writing prompt."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Are the scenarios suitable for original universes?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. They are designed to work perfectly for canon fandom characters as well as your own original characters (OCs) in custom settings."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Can I save the scenarios I generate?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes! Use the built-in Save feature to store your favorite scenarios in your browser's local storage so you never lose them."
+                }
+              }
+            ]
+          })
+        }}
       />
 
       {/* ── Hero ────────────────────────────────────── */}
@@ -54,14 +127,16 @@ export default function ScenarioHeadcanonGeneratorPage() {
 
       {/* ── Tool UI ─────────────────────────────────── */}
       <section className="w-full px-6 pt-8 pb-16 animate-scale-in">
-        <ScenarioHeadcanonGenerator />
+        <div style={{ minHeight: '520px', position: 'relative' }}>
+          <ScenarioHeadcanonGenerator />
+        </div>
       </section>
 
       {/* ── What Is a Scenario Headcanon ────────────── */}
       <section className="section">
         <div className="mx-auto max-w-[760px] px-6">
           <p className="section__label">Understanding the tool</p>
-          <h2 className="section__h2">🎭 What Is a Scenario Headcanon?</h2>
+          <h2 className="section__h2">What Is a Scenario Headcanon?</h2>
           <div className="space-y-4" style={{ fontSize: "16px", color: "var(--color-ink-3)", lineHeight: 1.8 }}>
             <p>
               A scenario headcanon explores how characters behave or what happens
@@ -126,23 +201,44 @@ export default function ScenarioHeadcanonGeneratorPage() {
 
       {/* ── Example Scenario Headcanons ─────────────── */}
       <section className="section">
-        <div className="mx-auto max-w-[760px] px-6">
-          <div className="text-center mb-10">
+        <div className="mx-auto max-w-[1000px] px-6">
+          <div className="text-center mb-10 max-w-[760px] mx-auto">
             <p className="section__label">See what you can make</p>
             <h2 className="section__h2">Example Scenario Headcanons</h2>
           </div>
-          <div className="grid sm:grid-cols-3 gap-5">
+          <div className="grid sm:grid-cols-3 gap-6 mb-8">
             <article className="example-card">
-              <p className="example-card__type">Scenario</p>
-              <blockquote>&ldquo;In a coffee shop setting, they keep running into each other but never properly talk.&rdquo;</blockquote>
+              <div className="example-card__quote-container">
+                <span className="example-card__quote-mark">“</span>
+                <blockquote className="example-card__quote">
+                  In a coffee shop setting, they keep running into each other but never properly talk.
+                </blockquote>
+              </div>
+              <div className="example-card__footer">
+                <span className="example-card__author">Coffee Shop Meeting</span>
+              </div>
             </article>
             <article className="example-card">
-              <p className="example-card__type">Scenario</p>
-              <blockquote>&ldquo;During a road trip, unresolved tension finally comes to the surface.&rdquo;</blockquote>
+              <div className="example-card__quote-container">
+                <span className="example-card__quote-mark">“</span>
+                <blockquote className="example-card__quote">
+                  During a road trip, unresolved tension finally comes to the surface.
+                </blockquote>
+              </div>
+              <div className="example-card__footer">
+                <span className="example-card__author">Road Trip Tension</span>
+              </div>
             </article>
             <article className="example-card">
-              <p className="example-card__type">Scenario</p>
-              <blockquote>&ldquo;In a high school setting, they act like rivals but secretly support each other.&rdquo;</blockquote>
+              <div className="example-card__quote-container">
+                <span className="example-card__quote-mark">“</span>
+                <blockquote className="example-card__quote">
+                  In a high school setting, they act like rivals but secretly support each other.
+                </blockquote>
+              </div>
+              <div className="example-card__footer">
+                <span className="example-card__author">Secret Rivals</span>
+              </div>
             </article>
           </div>
         </div>
@@ -162,6 +258,18 @@ export default function ScenarioHeadcanonGeneratorPage() {
         </div>
       </section>
 
+      {/* ── FAQ ─────────────────────────────────────────── */}
+      <section className="section">
+        <div className="mx-auto max-w-[760px] px-6">
+          <div className="text-center mb-12">
+            <p className="section__label">FAQ</p>
+            <h2 className="section__h2">Frequently Asked Questions</h2>
+          </div>
+
+          <FaqAccordion items={scenarioFaqs} />
+        </div>
+      </section>
+
       {/* ── Explore More Tools ────────────────────────── */}
       <section className="section">
         <div className="mx-auto max-w-[760px] px-6">
@@ -170,7 +278,7 @@ export default function ScenarioHeadcanonGeneratorPage() {
           <div className="grid sm:grid-cols-2 gap-4">
             <Link href="/" className="tool-link-card">
               <span className="tool-icon">✦</span>
-              <p className="font-medium text-sm mb-1" style={{ color: "var(--color-text)" }}>General Generator</p>
+              <p className="font-medium text-sm mb-1" style={{ color: "var(--color-text)" }}>Headcanon Generator</p>
               <p className="text-[13px]" style={{ color: "var(--color-ink-4)" }}>All-purpose headcanon ideas</p>
             </Link>
             <Link href="/character-headcanon-generator/" className="tool-link-card">
