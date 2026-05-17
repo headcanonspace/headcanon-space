@@ -201,7 +201,7 @@ export default function CharacterHeadcanonGeneratorPage() {
         </div>
       </section>
 
-      {/* ── SECTION 1 — Example Character Headcanons ── */}
+      {/* ── SECTION 1 - Example Character Headcanons ── */}
       <section className="section">
         <div className="mx-auto max-w-[1000px] px-6">
           <div className="text-center mb-10 max-w-[760px] mx-auto">
@@ -217,7 +217,7 @@ export default function CharacterHeadcanonGeneratorPage() {
               <div className="example-card__quote-container">
                 <span className="example-card__quote-mark">“</span>
                 <blockquote className="example-card__quote">
-                  Despite rarely speaking in groups, this character keeps a worn notebook filled with things they want to say but never do — jokes, confessions, small observations they save for no one.
+                  Despite rarely speaking in groups, this character keeps a worn notebook. It contains jokes, confessions, and small observations they save for no one.
                 </blockquote>
               </div>
               <div className="example-card__footer">
@@ -239,7 +239,7 @@ export default function CharacterHeadcanonGeneratorPage() {
               <div className="example-card__quote-container">
                 <span className="example-card__quote-mark">“</span>
                 <blockquote className="example-card__quote">
-                  They have memorized the other's schedule without meaning to — what time they arrive, where they sit, what they order. Not out of obsession. Just because patterns are hard to ignore.
+                  They have memorized the other's schedule without meaning to. They know what time they arrive, where they sit, and what they order. This is not out of obsession. Patterns are just hard to ignore.
                 </blockquote>
               </div>
               <div className="example-card__footer">
@@ -259,7 +259,7 @@ export default function CharacterHeadcanonGeneratorPage() {
         </div>
       </section>
 
-      {/* ── SECTION 2 — Who Should Use This? ── */}
+      {/* ── SECTION 2 - Who Should Use This? ── */}
       <section className="section section--alt">
         <div className="mx-auto max-w-[760px] px-6">
           <p className="section__label">Use Cases</p>
@@ -333,7 +333,7 @@ export default function CharacterHeadcanonGeneratorPage() {
         </div>
       </section>
 
-      {/* ── SECTION 3 — FAQ ── */}
+      {/* ── SECTION 3 - FAQ ── */}
       <section className="section">
         <div className="mx-auto max-w-[760px] px-6">
           <div className="text-center mb-12">

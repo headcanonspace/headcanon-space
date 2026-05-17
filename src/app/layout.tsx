@@ -22,7 +22,7 @@ const dmSerif = DM_Serif_Display({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://headcanonspace.com"),
-  title: "Free Headcanon Generator – Create Ideas Instantly",
+  title: "Free Headcanon Generator - Create Ideas Instantly",
   description:
     "Generate creative headcanon ideas instantly with this free headcanon generator. Perfect for fandoms, characters, and stories.",
   icons: {
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     canonical: "/",
   },
   openGraph: {
-    title: "Free Headcanon Generator – Create Ideas Instantly",
+    title: "Free Headcanon Generator - Create Ideas Instantly",
     description: "Generate creative headcanon ideas instantly with this free headcanon generator. Perfect for fandoms, characters, and stories.",
     url: "https://headcanonspace.com",
     siteName: "Headcanon Space",
