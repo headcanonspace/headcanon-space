@@ -45,6 +45,7 @@ export const metadata: Metadata = {
     description: "Generate creative headcanon ideas instantly with this free headcanon generator.",
   },
   verification: {
+    google: "KGPWNRciCiabEXW-jn-HLECz6mOaZcjLA8OcNugXziw",
     other: {
       "p:domain_verify": "5f1da198f4a7bcd237fb79b58d14891d",
     },
