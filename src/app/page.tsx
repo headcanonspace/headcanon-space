@@ -109,33 +109,23 @@ export default function HomePage() {
       />
 
       {/* ── Hero ────────────────────────────────────── */}
-      <section className="relative overflow-hidden hero-gradient" style={{ padding: "80px 0 64px", textAlign: "center" }}>
+      <section className="relative overflow-hidden hero-gradient" style={{ padding: "2rem 0 0", textAlign: "center" }}>
         <div className="relative mx-auto max-w-[1120px] px-6">
-          <h1 className="animate-fade-up animate-delay-1" style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(40px, 6vw, 68px)", lineHeight: 1.08, letterSpacing: "-1.5px", color: "var(--color-text)", marginBottom: "20px" }}>
+          <h1 className="animate-fade-up animate-delay-1" style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(40px, 6vw, 68px)", lineHeight: 1.08, letterSpacing: "-1.5px", color: "var(--color-text)", marginBottom: "0.5rem", marginTop: "1.5rem" }}>
             Headcanon Generator
           </h1>
 
-          <p className="animate-fade-up animate-delay-2" style={{ fontSize: "18px", fontWeight: 300, color: "var(--color-ink-3)", maxWidth: "520px", margin: "0 auto 24px", lineHeight: 1.6 }}>
+          <p className="animate-fade-up animate-delay-2" style={{ fontSize: "16px", fontWeight: 400, color: "var(--color-ink-3)", maxWidth: "720px", margin: "0 auto 1.5rem", lineHeight: 1.75, textWrap: "balance", letterSpacing: "-0.1px" }}>
             Generate headcanons for characters, fandoms, ships, and scenarios
-            instantly.
-          </p>
-
-          <p className="animate-fade-up animate-delay-3" style={{ fontSize: "13px", fontWeight: 500, letterSpacing: "1.5px", color: "var(--color-ink-4)", marginBottom: "16px" }}>
-            Free to use · No signup required · Instant results
+            instantly. Enter a character name, pick a tone, and get ideas in seconds.
+            Free to use, no signup required, works for any fandom, including
+            anime, Marvel, fantasy, original fiction, and everything in between.
           </p>
         </div>
       </section>
 
       {/* ── Tool UI (above the fold) ────────────────── */}
-      <section className="w-full px-6 pb-12 animate-scale-in" style={{ marginTop: "-20px" }}>
-        <div className="tool-intro" style={{ marginBottom: "32px", fontSize: "16px", color: "var(--color-ink-3)", lineHeight: 1.75 }}>
-          <p>
-            Enter a character name, pick a tone, and get headcanon
-            ideas instantly. This free headcanon generator works for
-            any fandom, including anime, Marvel, fantasy, original fiction,
-            and everything in between.
-          </p>
-        </div>
+      <section className="w-full px-6 pb-12 animate-scale-in" style={{ marginTop: "0" }}>
         <div style={{ minHeight: '520px', position: 'relative' }}>
           <HomeHeadcanonTool />
         </div>
@@ -146,7 +136,6 @@ export default function HomePage() {
         <div className="mx-auto max-w-[1120px] px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
             <div>
-              <p className="section__label">What is this?</p>
               <h2 className="section__h2">Generate Headcanons for Any Character or Fandom</h2>
               <div className="space-y-4 mt-6" style={{ fontSize: "16px", color: "var(--color-ink-3)", lineHeight: 1.75 }}>
                 <p>
