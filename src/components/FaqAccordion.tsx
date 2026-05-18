@@ -1,17 +1,17 @@
 "use client";
-import { useState } from "react";
-import { ChevronDown } from "lucide-react";
 
-interface FaqItem {
+import { useState } from "react";
+
+interface FAQItem {
   question: string;
   answer: string;
 }
 
-interface FaqAccordionProps {
-  items?: FaqItem[];
+interface FAQAccordionProps {
+  items?: FAQItem[];
 }
 
-const defaultFaqs: FaqItem[] = [
+const defaultFaqs: FAQItem[] = [
   {
     question: "What is a headcanon?",
     answer: "A headcanon is a personal interpretation, belief, or idea about a fictional character, relationship, or universe that hasn't been officially confirmed by the creator. Fans use headcanons to add depth and explore 'what if' scenarios."
@@ -34,45 +34,76 @@ const defaultFaqs: FaqItem[] = [
   }
 ];
 
-export default function FaqAccordion({ items = defaultFaqs }: FaqAccordionProps) {
-  const [openIndex, setOpenIndex] = useState<number | null>(0);
+export default function FaqAccordion({ items = defaultFaqs }: FAQAccordionProps) {
+  const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
-  const toggle = (index: number) => {
-    setOpenIndex(openIndex === index ? null : index);
+  const toggleItem = (index: number) => {
+    setActiveIndex(activeIndex === index ? null : index);
   };
 
   return (
-    <div className="w-full space-y-3">
-      {items.map((faq, index) => (
-        <div 
-          key={index} 
-          className="bg-white border border-[var(--color-border)] rounded-xl overflow-hidden transition-all duration-200 shadow-sm"
-        >
-          <button
-            onClick={() => toggle(index)}
-            className="w-full px-6 py-5 flex justify-between items-center hover:bg-[var(--color-surface-hover)] transition-colors text-left"
+    <div className="space-y-4 w-full">
+      {items.map((item, index) => {
+        const isOpen = activeIndex === index;
+        return (
+          <div
+            key={index}
+            className={`group border rounded-3xl bg-white transition-all duration-300 overflow-hidden ${
+              isOpen
+                ? "border-indigo-200 shadow-md -translate-y-0.5 ring-4 ring-indigo-50/40"
+                : "border-slate-200/70 hover:border-slate-300 hover:shadow-xs"
+            }`}
           >
-            <span className="text-[16px] font-bold pr-8 leading-snug" style={{ color: "var(--color-text)" }}>
-              {faq.question}
-            </span>
-            <span className="shrink-0 transition-transform duration-300" style={{ color: "var(--color-primary)", transform: openIndex === index ? "rotate(180deg)" : "rotate(0deg)" }}>
-              <ChevronDown className="size-5" strokeWidth={2} aria-hidden />
-            </span>
-          </button>
-          
-          <div 
-            className={`transition-all duration-300 ease-in-out overflow-hidden`}
-            style={{ 
-              maxHeight: openIndex === index ? '500px' : '0px',
-              opacity: openIndex === index ? 1 : 0
-            }}
-          >
-            <div className="px-6 pb-5 leading-relaxed text-[15px]" style={{ color: "var(--color-ink-3)" }}>
-              {faq.answer}
+            <button
+              onClick={() => toggleItem(index)}
+              className="w-full flex items-center justify-between p-6 text-left focus:outline-none"
+            >
+              <div className="flex gap-4 items-center">
+                {/* Serif Q indicator */}
+                <span className={`flex items-center justify-center w-8 h-8 rounded-xl font-serif text-sm font-extrabold shrink-0 select-none transition-all duration-300 ${
+                  isOpen
+                    ? "bg-[var(--color-primary)] text-white"
+                    : "bg-slate-100 text-slate-400 group-hover:bg-slate-200 group-hover:text-slate-500"
+                }`}>
+                  Q
+                </span>
+                <span className={`text-base sm:text-lg font-extrabold transition-colors duration-300 ${
+                  isOpen ? "text-[var(--color-primary)]" : "text-[var(--color-text)] group-hover:text-slate-800"
+                }`}>
+                  {item.question}
+                </span>
+              </div>
+
+              {/* Chevron wrapped in a gorgeous circular frame */}
+              <div className={`w-8 h-8 rounded-full flex items-center justify-center transition-all duration-300 shrink-0 ${
+                isOpen
+                  ? "bg-indigo-100 text-[var(--color-primary)] rotate-180"
+                  : "bg-slate-50 text-slate-400 group-hover:bg-slate-100 group-hover:text-slate-600"
+              }`}>
+                <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="3">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+                </svg>
+              </div>
+            </button>
+            
+            <div
+              className={`transition-all duration-300 ease-in-out ${
+                isOpen ? "max-h-[500px] border-t border-slate-100 bg-slate-50/30" : "max-h-0"
+              } overflow-hidden`}
+            >
+              <div className="p-6 flex gap-4">
+                {/* Serif A indicator */}
+                <span className="flex items-center justify-center w-8 h-8 rounded-xl font-serif text-sm font-extrabold shrink-0 select-none bg-slate-100 text-slate-400 border border-slate-200/50">
+                  A
+                </span>
+                <div className="text-sm sm:text-base text-[var(--color-text-muted)] leading-relaxed pt-0.5">
+                  {item.answer}
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      ))}
+        );
+      })}
     </div>
   );
 }

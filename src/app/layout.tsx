@@ -112,6 +112,9 @@ export default function RootLayout({
                 <p className="text-[11px] font-medium tracking-[2px] uppercase mb-4" style={{ color: "rgba(255,255,255,0.3)" }}>Legal &amp; Contact</p>
                 <ul className="flex flex-col gap-2.5">
                   <li>
+                    <Link href="/blog/" className="text-sm hover:text-white transition-colors">Blog Guides</Link>
+                  </li>
+                  <li>
                     <Link href="/about/" className="text-sm hover:text-white transition-colors">About Us</Link>
                   </li>
                   <li>
