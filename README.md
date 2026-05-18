@@ -9,3 +9,4 @@ A Next.js app for generating headcanon ideas for characters, relationships, scen
 - `npm run start` - run production server
 - `npm run check` - run TypeScript type-checking
 
+hello
