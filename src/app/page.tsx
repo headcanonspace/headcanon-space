@@ -506,6 +506,26 @@ export default function HomePage() {
               </span>
             </Link>
 
+            {/* Friendship Generator Card */}
+            <Link
+              href="/friendship-headcanon-generator/"
+              className="group flex flex-col p-6 bg-white border border-[var(--color-border)] rounded-2xl transition-all duration-300 hover:border-[var(--color-border-med)] hover:shadow-md hover:-translate-y-1.5"
+            >
+              <div className="w-11 h-11 rounded-xl bg-indigo-50 flex items-center justify-center mb-5 transition-transform duration-300 group-hover:scale-110">
+                <svg className="w-5 h-5 text-indigo-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M17 20h5V4H2v16h5m10 0v-6a3 3 0 00-6 0v6m6 0H7" />
+                </svg>
+              </div>
+              <p className="font-semibold text-sm mb-1.5 text-[var(--color-text)] group-hover:text-[var(--color-primary)] transition-colors">Friendship Headcanon Generator</p>
+              <p className="text-[13px] leading-relaxed text-[var(--color-ink-4)]">Platonic dynamics, found family, and loyalty moments between any two characters</p>
+              <span className="mt-auto pt-5 text-xs font-semibold text-[var(--color-primary)] flex items-center gap-1.5 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                Try it
+                <svg className="w-3.5 h-3.5 transition-transform duration-300 group-hover:translate-x-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                </svg>
+              </span>
+            </Link>
+
             {/* Scenario Generator Card */}
             <Link
               href="/scenario-headcanon-generator/"
@@ -558,28 +578,28 @@ export default function HomePage() {
             <p>
               This site has four specialized tools for fandom writing.
               The{" "}
-              <Link href="/character-headcanon-generator/" style={{ color: "var(--color-primary)", textDecoration: "underline", textUnderlineOffset: "3px" }}>
+              <Link href="/character-headcanon-generator/">
                 character headcanon generator
               </Link>{" "}
               focuses on individual character depth, including traits, habits, and backstory secrets.
             </p>
             <p>
               The{" "}
-              <Link href="/relationship-headcanon-generator/" style={{ color: "var(--color-primary)", textDecoration: "underline", textUnderlineOffset: "3px" }}>
+              <Link href="/relationship-headcanon-generator/">
                 relationship headcanon generator
               </Link>{" "}
               explores how two characters interact, from ship dynamics to unspoken tension.
             </p>
             <p>
               The{" "}
-              <Link href="/scenario-headcanon-generator/" style={{ color: "var(--color-primary)", textDecoration: "underline", textUnderlineOffset: "3px" }}>
+              <Link href="/scenario-headcanon-generator/">
                 scenario headcanon generator
               </Link>{" "}
               places characters into specific settings.
             </p>
             <p>
               The{" "}
-              <Link href="/random-headcanon-generator/" style={{ color: "var(--color-primary)", textDecoration: "underline", textUnderlineOffset: "3px" }}>
+              <Link href="/random-headcanon-generator/">
                 random headcanon generator
               </Link>{" "}
               delivers instant ideas with no input needed.

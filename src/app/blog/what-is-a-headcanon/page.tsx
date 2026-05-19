@@ -515,6 +515,9 @@ export default function WhatIsAHeadcanonPage() {
                 </Link>{" "}
                 to get instant prompts when you are stuck.
               </p>
+              <p className="text-[var(--color-text-muted)] text-sm sm:text-base leading-relaxed my-0">
+                For platonic character dynamics specifically, the <Link href="/friendship-headcanon-generator/" className="underline decoration-indigo-300 hover:decoration-[var(--color-primary)] transition-all font-semibold text-[var(--color-primary)]">friendship headcanon generator</Link> generates loyalty moments and shared history between any two characters.
+              </p>
             </div>
           </div>
         </section>

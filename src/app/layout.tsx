@@ -99,6 +99,9 @@ export default function RootLayout({
                     <Link href="/relationship-headcanon-generator/" className="text-sm hover:text-white transition-colors">Relationship Generator</Link>
                   </li>
                   <li>
+                    <Link href="/friendship-headcanon-generator/" className="text-sm hover:text-white transition-colors">Friendship Generator</Link>
+                  </li>
+                  <li>
                     <Link href="/scenario-headcanon-generator/" className="text-sm hover:text-white transition-colors">Scenario Generator</Link>
                   </li>
                   <li>

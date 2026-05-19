@@ -798,6 +798,64 @@ select.tool-input option {
   color: var(--color-ink-3);
   line-height: 1.8;
 }
+
+/* ── Internal link styling (content-only) ───────── */
+/* Apply the design only to in-content links: prose, sections, callouts, and tool intros.
+   Excludes header, footer, navbar, and card/link grids. */
+.prose-page a[href^="/"] ,
+.section a[href^="/"],
+.tool-intro a[href^="/"],
+.prose-callout a[href^="/"] {
+  color: var(--color-primary);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 2px;
+  text-decoration-color: var(--color-primary);
+  transition: color var(--transition), text-decoration-color var(--transition);
+}
+.prose-page a[href^="/"],
+.section a[href^="/"],
+.tool-intro a[href^="/"],
+.prose-callout a[href^="/"] {
+  outline: none;
+}
+.prose-page a[href^="/"]:hover,
+.section a[href^="/"]:hover,
+.tool-intro a[href^="/"]:hover,
+.prose-callout a[href^="/"]:hover,
+.prose-page a[href^="/"]:focus,
+.section a[href^="/"]:focus,
+.tool-intro a[href^="/"]:focus,
+.prose-callout a[href^="/"]:focus {
+  color: var(--color-primary-hover);
+}
+
+/* Generator card subtitle: remove underline only (keep card typography/color as-is) */
+nav[aria-label="Generator tools"] a[href^="/"] p {
+  text-decoration: none;
+}
+
+/* Override section link underline for generator cards (higher specificity) */
+nav[aria-label="Generator tools"] a[href^="/"] {
+  text-decoration: none !important;
+  text-decoration-color: transparent !important;
+  text-decoration-thickness: 0 !important;
+}
+nav[aria-label="Generator tools"] a[href^="/"]:hover,
+nav[aria-label="Generator tools"] a[href^="/"]:focus {
+  text-decoration: none !important;
+  text-decoration-color: transparent !important;
+}
+
+/* Remove underline from generator card links across all pages (grid containers in sections) */
+.section > div > .grid a[href^="/"] {
+  text-decoration: none !important;
+}
+.section > div > .grid a[href^="/"]:hover,
+.section > div > .grid a[href^="/"]:focus {
+  text-decoration: none !important;
+}
+
 .prose-page section + section {
   margin-top: 32px;
 }

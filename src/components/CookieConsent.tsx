@@ -90,9 +90,7 @@ export default function CookieConsent() {
       
       <p style={{ margin: "0 0 16px 0", fontSize: "14px", lineHeight: "1.6", color: "rgba(255, 255, 255, 0.9)" }}>
         We use cookies for analytics and ads to keep this tool free. You can accept or decline. Learn more in our{" "}
-        <Link href="/privacy-policy/" style={{ color: "#8b5cf6", textDecoration: "underline", fontWeight: 500 }}>
-          Privacy Policy
-        </Link>.
+        <Link href="/privacy-policy/">Privacy Policy</Link>.
       </p>
       
       <div style={{ display: "flex", gap: "12px", justifyContent: "flex-end", alignItems: "center" }}>
