@@ -23,6 +23,20 @@ export default function BlogListing() {
 
   const posts: BlogPost[] = [
     {
+      title: "Headcanon vs Canon vs Fanfiction: What's the Difference?",
+      description:
+        "Confused about headcanon vs canon vs fanfiction? This guide explains each term clearly with examples so you can use them correctly in fandom discussions.",
+      href: "/blog/headcanon-vs-canon/",
+      date: "May 27, 2026",
+      author: "Headcanon Space Team",
+      readTime: "4 min read",
+      category: "Fandom Culture",
+      emoji: "",
+      gradient: "bg-indigo-50/50",
+      glowColor: "",
+      image: "/images/blog/headcanon-vs-canon.svg",
+    },
+    {
       title: "How to Write Headcanons: A Step-by-Step Guide",
       description:
         "Learn how to write headcanons that feel real and specific. This step-by-step guide covers behavior, emotion, and scenario, with examples for fanfiction and roleplay.",
@@ -34,7 +48,7 @@ export default function BlogListing() {
       emoji: "✍️",
       gradient: "bg-indigo-50/50",
       glowColor: "",
-      image: "/blog-how-to-write-headcanons.png",
+      image: "/images/blog/how-to-write-headcanons.svg",
     },
     {
       title: "What Is a Headcanon? Meaning, Examples, and How to Write One",
@@ -48,7 +62,7 @@ export default function BlogListing() {
       emoji: "💡",
       gradient: "bg-purple-50/50",
       glowColor: "",
-      image: "/blog-what-is-a-headcanon.png",
+      image: "/images/blog/what-is-a-headcanon.svg",
     },
   ];
 

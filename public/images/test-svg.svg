@@ -1,0 +1,22 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <!-- Solid Background -->
+  <rect width="1200" height="630" fill="#e0e7ff" />
+  
+  <!-- Geometric Shapes -->
+  <circle cx="1000" cy="150" r="300" fill="#e11d48" fill-opacity="0.1" /><circle cx="900" cy="400" r="150" fill="#e11d48" fill-opacity="0.15" /><circle cx="100" cy="50" r="5" fill="#e11d48" fill-opacity="0.3" /><circle cx="1247" cy="433" r="6" fill="#e11d48" fill-opacity="0.3" /><circle cx="1194" cy="186" r="7" fill="#e11d48" fill-opacity="0.3" /><circle cx="1141" cy="569" r="8" fill="#e11d48" fill-opacity="0.3" /><circle cx="1088" cy="322" r="9" fill="#e11d48" fill-opacity="0.3" /><rect x="1100" y="500" width="100" height="130" fill="#e11d48" fill-opacity="0.2" rx="20" />
+
+  <!-- Top Accent Bar -->
+  <rect width="100%" height="12" fill="#e11d48" />
+
+  <!-- Tagline / Badge -->
+  <rect x="100" y="100" width="180" height="40" rx="8" fill="#e11d48" fill-opacity="0.1" />
+  <text x="120" y="125" font-family="sans-serif" font-size="16" font-weight="bold" fill="#e11d48" letter-spacing="2">HEADCANON SPACE</text>
+
+  <!-- Title Text -->
+  <text x="100" y="250" font-family="Georgia, serif" font-size="64" font-weight="bold" fill="#0f172a">My First Programmatic SVG Image</text>
+
+  <!-- Footer branding -->
+  <text x="100" y="550" font-family="sans-serif" font-size="24" font-weight="bold" fill="#e11d48">headcanonspace.com</text>
+  
+  <line x1="100" y1="500" x2="1100" y2="500" stroke="#cbd5e1" stroke-width="2" />
+</svg>

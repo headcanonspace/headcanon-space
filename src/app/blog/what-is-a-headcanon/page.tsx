@@ -27,9 +27,11 @@ export default function WhatIsAHeadcanonPage() {
         headline: "What Is a Headcanon? Meaning, Examples, and How to Write One",
         description:
           "Learn what a headcanon is, see clear examples, and discover how to write better character and story headcanons for fanfiction and roleplay.",
+        datePublished: "2026-04-20",
+        dateModified: "2026-05-18",
         author: {
           "@type": "Organization",
-          name: "Headcanon Space",
+          name: "Headcanon Space Team",
         },
         publisher: {
           "@type": "Organization",
@@ -131,21 +133,11 @@ export default function WhatIsAHeadcanonPage() {
               What Is a Headcanon?
             </h1>
 
+            <p className="blog-meta">By Headcanon Space Team · April 2026</p>
+
             <p className="text-[var(--color-text-muted)] text-base sm:text-lg leading-relaxed max-w-xl">
               A clear guide to headcanon meaning, examples, and practical writing tips for fanfiction, roleplay, and fandom storytelling.
             </p>
-
-            {/* Author / Date Info */}
-            <div className="flex items-center gap-3 text-xs text-[var(--color-text-muted)] font-medium pt-4 border-t border-[var(--color-border)] max-w-md">
-              <div className="w-8 h-8 rounded-full bg-slate-900 text-white flex items-center justify-center text-[10px] font-bold shrink-0 font-serif">
-                HT
-              </div>
-              <div className="flex flex-wrap items-center gap-x-2 gap-y-0.5">
-                <span className="font-bold text-[var(--color-text)]">By Headcanon Space Team</span>
-                <span className="text-slate-300">•</span>
-                <span>Published: April 23, 2026</span>
-              </div>
-            </div>
           </div>
 
           {/* Vertical Editorial Column Rule Separator on Desktop */}
@@ -153,7 +145,7 @@ export default function WhatIsAHeadcanonPage() {
 
           {/* Right Column: Featured Image with Creative 3D Layer Offset */}
           <div className="flex-1 w-full max-w-[480px] flex items-center justify-center">
-            <div className="relative w-full aspect-[4/3]">
+            <div className="relative w-full aspect-[1200/630]">
               {/* Creative 3D solid backing layer */}
               <div className="absolute -inset-2 bg-indigo-50 border border-indigo-100/50 rounded-3xl -z-10 transform translate-x-3 translate-y-3" />
 
@@ -161,7 +153,7 @@ export default function WhatIsAHeadcanonPage() {
               <div className="w-full h-full relative overflow-hidden rounded-3xl border border-[var(--color-border)] bg-white shadow-md flex items-center justify-center transition-all duration-300 hover:scale-[1.01] hover:shadow-lg">
 
               <img
-                src="/blog-what-is-a-headcanon.png"
+                src="/images/blog/what-is-a-headcanon.svg"
                 alt="Fandom Culture Illustration"
                 className="w-full h-full object-cover"
               />

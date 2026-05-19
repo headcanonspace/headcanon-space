@@ -446,45 +446,104 @@ export default function HomePage() {
       {/* ── SECTION 9 - Explore More Generators ── */}
       <section className="section section--alt">
         <div className="mx-auto max-w-[1120px] px-6">
-          <div className="text-center mb-12">
+          <div className="mb-10 max-w-[800px]">
             <p className="section__label">More tools</p>
             <h2 className="section__h2">Explore More Generators</h2>
-            <p className="section__lead mt-4">
-              Each tool is built for a different type of headcanon.
-            </p>
+            
+            <div className="mt-5 space-y-4 text-sm sm:text-base text-[var(--color-text-muted)] leading-relaxed">
+              <p className="text-[17px] font-light text-[var(--color-ink-3)] mb-2">
+                Each tool is built for a different type of headcanon.
+              </p>
+              <p>
+                There are four generators on this site.
+                Each one focuses on a specific type of headcanon, such as character depth, relationship dynamics, scenario building, or random ideas.
+              </p>
+              <p>
+                This headcanon generator serves as the main tool.
+                The four options below go deeper.
+              </p>
+            </div>
           </div>
 
-          <div className="space-y-4 max-w-[760px] mx-auto text-center" style={{ fontSize: "16px", color: "var(--color-ink-3)", lineHeight: 1.8 }}>
-            <p>
-              There are four generators on this site.
-              Each one focuses on a specific type of headcanon, such as character depth, relationship dynamics, scenario building, or random ideas.
-            </p>
-            <p>
-              This headcanon generator serves as the main tool.
-              The four options below go deeper.
-            </p>
-          </div>
+          <nav aria-label="Generator tools" className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 mt-10">
+            {/* Character Generator Card */}
+            <Link
+              href="/character-headcanon-generator/"
+              className="group flex flex-col p-6 bg-white border border-[var(--color-border)] rounded-2xl transition-all duration-300 hover:border-[var(--color-border-med)] hover:shadow-md hover:-translate-y-1.5"
+            >
+              <div className="w-11 h-11 rounded-xl bg-[var(--color-primary-lt)] flex items-center justify-center mb-5 transition-transform duration-300 group-hover:scale-110">
+                <svg className="w-5 h-5 text-[var(--color-primary)]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                </svg>
+              </div>
+              <p className="font-semibold text-sm mb-1.5 text-[var(--color-text)] group-hover:text-[var(--color-primary)] transition-colors">Character headcanon generator</p>
+              <p className="text-[13px] leading-relaxed text-[var(--color-ink-4)]">Deep personality traits and backstory ideas</p>
+              <span className="mt-auto pt-5 text-xs font-semibold text-[var(--color-primary)] flex items-center gap-1.5 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                Try it
+                <svg className="w-3.5 h-3.5 transition-transform duration-300 group-hover:translate-x-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                </svg>
+              </span>
+            </Link>
 
-          <nav aria-label="Generator tools" className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-8">
-            <Link href="/character-headcanon-generator/" className="tool-link-card">
-              <span className="tool-icon">👤</span>
-              <p className="font-medium text-sm mb-1.5" style={{ color: "var(--color-text)" }}>Character headcanon generator</p>
-              <p className="text-[13px]" style={{ color: "var(--color-ink-4)" }}>Deep personality traits and backstory ideas</p>
+            {/* Relationship Generator Card */}
+            <Link
+              href="/relationship-headcanon-generator/"
+              className="group flex flex-col p-6 bg-white border border-[var(--color-border)] rounded-2xl transition-all duration-300 hover:border-[var(--color-border-med)] hover:shadow-md hover:-translate-y-1.5"
+            >
+              <div className="w-11 h-11 rounded-xl bg-rose-50 flex items-center justify-center mb-5 transition-transform duration-300 group-hover:scale-110">
+                <svg className="w-5 h-5 text-rose-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                </svg>
+              </div>
+              <p className="font-semibold text-sm mb-1.5 text-[var(--color-text)] group-hover:text-[var(--color-primary)] transition-colors">Relationship headcanon generator</p>
+              <p className="text-[13px] leading-relaxed text-[var(--color-ink-4)]">Ship dynamics, rituals, and unspoken tension</p>
+              <span className="mt-auto pt-5 text-xs font-semibold text-[var(--color-primary)] flex items-center gap-1.5 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                Try it
+                <svg className="w-3.5 h-3.5 transition-transform duration-300 group-hover:translate-x-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                </svg>
+              </span>
             </Link>
-            <Link href="/relationship-headcanon-generator/" className="tool-link-card">
-              <span className="tool-icon">💞</span>
-              <p className="font-medium text-sm mb-1.5" style={{ color: "var(--color-text)" }}>Relationship headcanon generator</p>
-              <p className="text-[13px]" style={{ color: "var(--color-ink-4)" }}>Ship dynamics, rituals, and unspoken tension</p>
+
+            {/* Scenario Generator Card */}
+            <Link
+              href="/scenario-headcanon-generator/"
+              className="group flex flex-col p-6 bg-white border border-[var(--color-border)] rounded-2xl transition-all duration-300 hover:border-[var(--color-border-med)] hover:shadow-md hover:-translate-y-1.5"
+            >
+              <div className="w-11 h-11 rounded-xl bg-amber-50 flex items-center justify-center mb-5 transition-transform duration-300 group-hover:scale-110">
+                <svg className="w-5 h-5 text-amber-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                </svg>
+              </div>
+              <p className="font-semibold text-sm mb-1.5 text-[var(--color-text)] group-hover:text-[var(--color-primary)] transition-colors">Scenario headcanon generator</p>
+              <p className="text-[13px] leading-relaxed text-[var(--color-ink-4)]">Story settings and dramatic creative situations</p>
+              <span className="mt-auto pt-5 text-xs font-semibold text-[var(--color-primary)] flex items-center gap-1.5 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                Try it
+                <svg className="w-3.5 h-3.5 transition-transform duration-300 group-hover:translate-x-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                </svg>
+              </span>
             </Link>
-            <Link href="/scenario-headcanon-generator/" className="tool-link-card">
-              <span className="tool-icon">🎭</span>
-              <p className="font-medium text-sm mb-1.5" style={{ color: "var(--color-text)" }}>Scenario headcanon generator</p>
-              <p className="text-[13px]" style={{ color: "var(--color-ink-4)" }}>Story settings and dramatic creative situations</p>
-            </Link>
-            <Link href="/random-headcanon-generator/" className="tool-link-card">
-              <span className="tool-icon">🎲</span>
-              <p className="font-medium text-sm mb-1.5" style={{ color: "var(--color-text)" }}>Random headcanon generator</p>
-              <p className="text-[13px]" style={{ color: "var(--color-ink-4)" }}>Random ideas with no input required</p>
+
+            {/* Random Generator Card */}
+            <Link
+              href="/random-headcanon-generator/"
+              className="group flex flex-col p-6 bg-white border border-[var(--color-border)] rounded-2xl transition-all duration-300 hover:border-[var(--color-border-med)] hover:shadow-md hover:-translate-y-1.5"
+            >
+              <div className="w-11 h-11 rounded-xl bg-emerald-50 flex items-center justify-center mb-5 transition-transform duration-300 group-hover:scale-110">
+                <svg className="w-5 h-5 text-emerald-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+                </svg>
+              </div>
+              <p className="font-semibold text-sm mb-1.5 text-[var(--color-text)] group-hover:text-[var(--color-primary)] transition-colors">Random headcanon generator</p>
+              <p className="text-[13px] leading-relaxed text-[var(--color-ink-4)]">Random ideas with no input required</p>
+              <span className="mt-auto pt-5 text-xs font-semibold text-[var(--color-primary)] flex items-center gap-1.5 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                Try it
+                <svg className="w-3.5 h-3.5 transition-transform duration-300 group-hover:translate-x-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                </svg>
+              </span>
             </Link>
           </nav>
         </div>

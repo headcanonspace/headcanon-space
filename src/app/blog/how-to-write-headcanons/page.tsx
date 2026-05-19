@@ -164,14 +164,14 @@ export default function HowToWriteHeadcanonsPage() {
 
           {/* Right Column: Featured Image with Creative 3D Layer Offset */}
           <div className="flex-1 w-full max-w-[480px] flex items-center justify-center">
-            <div className="relative w-full aspect-[4/3]">
+            <div className="relative w-full aspect-[1200/630]">
               {/* Creative 3D solid backing layer */}
               <div className="absolute -inset-2 bg-indigo-50 border border-indigo-100/50 rounded-3xl -z-10 transform translate-x-3 translate-y-3" />
               
               {/* Main image card wrapper */}
               <div className="w-full h-full relative overflow-hidden rounded-3xl border border-[var(--color-border)] bg-white shadow-md flex items-center justify-center transition-all duration-300 hover:scale-[1.01] hover:shadow-lg">
                 <img
-                  src="/blog-how-to-write-headcanons.png"
+                  src="/images/blog/how-to-write-headcanons.svg"
                   alt="Creative Writing Illustration"
                   className="w-full h-full object-cover"
                 />
