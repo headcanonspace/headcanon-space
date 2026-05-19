@@ -9,6 +9,7 @@ const NAV_LINKS = [
   { href: "/", label: "Home" },
   { href: "/character-headcanon-generator/", label: "Character Generator" },
   { href: "/relationship-headcanon-generator/", label: "Relationship Generator" },
+  { href: "/friendship-headcanon-generator/", label: "Friendship Generator" },
   { href: "/scenario-headcanon-generator/", label: "Scenario Generator" },
   { href: "/random-headcanon-generator/", label: "Random Generator" },
 ];
