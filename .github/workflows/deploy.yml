@@ -33,7 +33,7 @@ jobs:
         run: test -f out/index.html
 
       - name: Upload /out to cPanel (FTP)
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.6
         with:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
