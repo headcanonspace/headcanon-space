@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="250" viewBox="0 0 400 250">
+  <!-- Background: site surface color #ffffff -->
+  <rect width="400" height="250" rx="16" fill="#ffffff"/>
+  <!-- Outer border: site border color #e8eaed -->
+  <rect width="398" height="248" x="1" y="1" rx="15" fill="none" stroke="#e8eaed" stroke-width="1.5"/>
+  <!-- Top accent bar: 4px solid primary like .example-card border-top -->
+  <rect width="400" height="4" rx="0" fill="#6366f1"/>
+  <rect width="72" height="4" x="0" y="0" rx="2" fill="#6366f1"/>
+
+  <!-- Type label (matches .example-card__type style) -->
+  <rect width="100" height="22" x="28" y="24" rx="11" fill="#eef2ff" stroke="#6366f199" stroke-width="1"/>
+  <circle cx="40" cy="35" r="2.5" fill="#6366f1"/>
+  <text x="55" y="39" font-family="DM Sans, Arial, sans-serif" font-size="10" fill="#6366f1" font-weight="600" letter-spacing="0.8">CHARACTER</text>
+
+  <!-- Character name -->
+  <text x="28" y="78" font-family="DM Serif Display, Georgia, serif" font-size="22" fill="#0a0e1a" letter-spacing="-0.5">Aria Voss</text>
+
+  <!-- Divider -->
+  <rect width="344" height="1" x="28" y="88" fill="#e8eaed"/>
+
+  <!-- Headcanon body text (matches blockquote style) -->
+  <text x="28" y="114" font-family="DM Sans, Arial, sans-serif" font-size="13.5" fill="#2d3142" line-height="1.65">
+    <tspan x="28" dy="0">Aria secretly collects vintage maps of cities</tspan>
+    <tspan x="28" dy="21">she will never visit, tracing routes with her</tspan>
+    <tspan x="28" dy="21">finger before bed - dreaming of a life she</tspan>
+    <tspan x="28" dy="21">never let herself have.</tspan>
+  </text>
+
+  <!-- Footer rule -->
+  <rect width="344" height="1" x="28" y="200" fill="#e8eaed"/>
+
+  <!-- Footer label -->
+  <text x="28" y="220" font-family="DM Sans, Arial, sans-serif" font-size="11" fill="#8c93a3" letter-spacing="0.3">Personality Trait</text>
+  <text x="372" y="220" font-family="DM Sans, Arial, sans-serif" font-size="10" fill="#8c93a3" text-anchor="end">headcanon.space</text>
+
+  <!-- Decorative large quote mark (matches .example-card::after) -->
+  <text x="355" y="100" font-family="DM Serif Display, Georgia, serif" font-size="72" fill="#6366f1" opacity="0.08" text-anchor="end">"</text>
+</svg>

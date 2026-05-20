@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import type { Metadata } from "next";
 import HomeHeadcanonTool from "@/components/HomeHeadcanonTool";
 import FaqAccordion from "@/components/FaqAccordion";
@@ -10,6 +11,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://headcanonspace.com/",
   },
+  openGraph: {
+    images: [{ url: '/images/headcanon-generator-example-character.svg', width: 800, height: 500, alt: 'Headcanon Space — Free Headcanon Generator' }]
+  }
 };
 
 export default function HomePage() {
@@ -280,6 +284,15 @@ export default function HomePage() {
                 <span className="example-card__author">Scenario headcanon</span>
               </div>
             </article>
+          </div>
+
+          <div className="example-images" aria-label="Headcanon generator example outputs">
+            <p className="example-images-label">Example outputs from the generator:</p>
+            <div className="image-grid">
+              <Image src="/images/headcanon-generator-example-character.svg" alt="Headcanon generator example — character headcanon showing unique personality trait output" width={400} height={250} />
+              <Image src="/images/headcanon-generator-example-relationship.svg" alt="Headcanon generator example — relationship headcanon showing ship dynamic between two characters" width={400} height={250} />
+              <Image src="/images/headcanon-generator-example-scenario.svg" alt="Headcanon generator example — scenario headcanon placing characters in a specific setting" width={400} height={250} />
+            </div>
           </div>
         </div>
       </section>
@@ -622,13 +635,13 @@ export default function HomePage() {
 
       {/* ── Micro Reinforcement ─────────────────────── */}
       <section className="section section--alt">
-        <div className="mx-auto max-w-[760px] px-6 text-center">
-          <div className="space-y-4" style={{ fontSize: "16px", color: "var(--color-ink-3)", lineHeight: 1.8 }}>
-            <p>
+        <div className="mx-auto max-w-[640px] px-6">
+          <div className="micro-callout">
+            <p className="micro-callout__text">
               This tool keeps brainstorming practical.
               Generate a batch, choose one core, and draft your scene.
             </p>
-            <p>
+            <p className="micro-callout__sub">
               This workflow helps you write faster across fanfiction, roleplay, and fandom storytelling.
             </p>
           </div>

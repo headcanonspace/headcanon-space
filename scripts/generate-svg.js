@@ -5,7 +5,7 @@ const path = require('path');
 const args = process.argv.slice(2);
 let title = "Generated Image";
 let outputFilename = "generated-image.svg";
-let template = "writer"; 
+let template = "writer";
 
 for (let i = 0; i < args.length; i++) {
   if (args[i] === '--title' && args[i + 1]) title = args[i + 1];
@@ -182,10 +182,55 @@ function generateContrast() {
   `;
 }
 
+function generateIdeasGrid(titleText) {
+  // Split title if it's too long
+  let line1 = titleText;
+  let line2 = "";
+  if (titleText.length > 25) {
+    const words = titleText.split(' ');
+    const mid = Math.floor(words.length / 2);
+    line1 = words.slice(0, mid).join(' ');
+    line2 = words.slice(mid).join(' ');
+  }
+
+  return `
+    <svg width="${width}" height="${height}" viewBox="0 0 ${width} ${height}" xmlns="http://www.w3.org/2000/svg">
+      <rect x="0" y="0" width="${width}" height="${height}" fill="${DARK}" />
+      
+      <!-- Abstract Grid Background -->
+      <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse">
+        <path d="M 60 0 L 0 0 0 60" fill="none" stroke="${DARK_MUTED}" stroke-width="1" opacity="0.5"/>
+      </pattern>
+      <rect x="0" y="0" width="${width}" height="${height}" fill="url(#grid)" />
+
+      <!-- Center Title Card -->
+      <g transform="translate(150, 150)">
+        <rect x="15" y="15" width="900" height="330" fill="${PRIMARY}" rx="24" />
+        <rect x="0" y="0" width="900" height="330" fill="${WHITE}" stroke="${PRIMARY}" stroke-width="6" rx="24" />
+        
+        <!-- Bulb Icon -->
+        <g transform="translate(450, 80) scale(1.5)">
+           <circle cx="0" cy="0" r="30" fill="${PRIMARY_LT}" />
+           <text x="0" y="8" font-family="sans-serif" font-size="24" text-anchor="middle">💡</text>
+        </g>
+        
+        <text x="450" y="180" font-family="serif" font-size="64" font-weight="900" fill="${DARK}" text-anchor="middle" letter-spacing="-1">${line1}</text>
+        ${line2 ? '<text x="450" y="250" font-family="serif" font-size="64" font-weight="900" fill="' + PRIMARY + '" text-anchor="middle" letter-spacing="-1">' + line2 + '</text>' : ''}
+      </g>
+
+      <!-- Decorative Elements -->
+      ${drawSparkle(200, 100, 1.5, ACCENT)}
+      ${drawSparkle(1000, 500, 2, PRIMARY_LT)}
+      ${drawSparkle(150, 480, 1, WHITE)}
+    </svg>
+  `;
+}
+
 let finalSvg = '';
 if (template === 'writer') finalSvg = generateWriterDesk();
 else if (template === 'definition') finalSvg = generateDefinitionCard();
 else if (template === 'contrast') finalSvg = generateContrast();
+else if (template === 'ideas') finalSvg = generateIdeasGrid(title);
 
 const outputPath = path.resolve(process.cwd(), outputFilename);
 fs.writeFileSync(outputPath, finalSvg.trim());

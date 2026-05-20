@@ -889,3 +889,84 @@ nav[aria-label="Generator tools"] a[href^="/"]:focus {
   color: #6B6B80;
   line-height: 1.7;
 }
+
+/* ── Example images section ──────────────────────── */
+/* ── Micro callout (closing reinforcement block) ─── */
+.micro-callout {
+  text-align: center;
+  padding: 40px 36px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-top: 3px solid var(--color-primary);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-sm);
+}
+.micro-callout__text {
+  font-family: var(--font-serif);
+  font-size: clamp(18px, 2.5vw, 22px);
+  color: var(--color-text);
+  line-height: 1.55;
+  letter-spacing: -0.3px;
+  margin: 0 0 14px;
+}
+.micro-callout__sub {
+  font-size: 14px;
+  color: var(--color-ink-4);
+  line-height: 1.7;
+  margin: 0;
+  max-width: 460px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ── Example images section ──────────────────────── */
+.example-images {
+  margin: 2.5rem 0 0;
+}
+.example-images-label {
+  font-family: var(--font-sans);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--color-primary);
+  text-align: center;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+.example-images-label::before,
+.example-images-label::after {
+  content: '';
+  display: block;
+  width: 32px;
+  height: 1px;
+  background: var(--color-primary);
+  opacity: 0.4;
+  border-radius: 1px;
+}
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+.image-grid img {
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border);
+  width: 100%;
+  height: auto;
+  box-shadow: var(--shadow-sm);
+  transition: box-shadow var(--transition), transform var(--transition), border-color var(--transition);
+}
+.image-grid img:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-3px);
+  border-color: var(--color-border-med);
+}
+@media (max-width: 768px) {
+  .image-grid {
+    grid-template-columns: 1fr;
+  }
+}

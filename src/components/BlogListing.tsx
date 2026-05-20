@@ -23,6 +23,19 @@ export default function BlogListing() {
 
   const posts: BlogPost[] = [
     {
+      title: "50 Headcanon Ideas for Any Character or Fandom",
+      description: "50 specific, behavioral headcanon prompts for characters, relationships, scenarios, and OCs — across any fandom.",
+      href: "/blog/headcanon-ideas/",
+      date: "May 29, 2026",
+      author: "Headcanon Space Team",
+      readTime: "5 min read",
+      category: "Writing Guides",
+      emoji: "💡",
+      gradient: "bg-indigo-50/50",
+      glowColor: "",
+      image: "/images/blog/headcanon-ideas.svg",
+    },
+    {
       title: "Headcanon vs Canon vs Fanfiction: What's the Difference?",
       description:
         "Confused about headcanon vs canon vs fanfiction? This guide explains each term clearly with examples so you can use them correctly in fandom discussions.",
