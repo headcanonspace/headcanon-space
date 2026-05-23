@@ -128,11 +128,12 @@ export default function HomeHeadcanonTool() {
 
           <div className="flex flex-col gap-5">
             <div className="flex flex-col gap-2">
-              <label className="text-[13px] font-medium text-[var(--color-text-muted)]">
+              <label htmlFor="character-name" className="text-[13px] font-medium text-[var(--color-text-muted)]">
                 Character Name <span className="text-[var(--color-primary)]">*</span>
               </label>
               <div className="relative">
                 <input
+                  id="character-name"
                   type="text"
                   value={name}
                   onChange={(e) => setName(e.target.value)}
@@ -147,9 +148,9 @@ export default function HomeHeadcanonTool() {
             </div>
 
             <div className="flex flex-col gap-2">
-              <label className="text-[13px] font-medium text-[var(--color-text-muted)]">Fandom</label>
+              <label htmlFor="fandom" className="text-[13px] font-medium text-[var(--color-text-muted)]">Fandom</label>
               <div className="relative">
-                <select value={fandom} onChange={(e) => setFandom(e.target.value)} className="w-full bg-[var(--color-bg)] border border-[var(--color-border)] rounded-lg px-4 py-3.5 text-[var(--color-text)] font-semibold focus:outline-none focus:border-[var(--color-primary)] focus:ring-1 focus:ring-[var(--color-primary)] appearance-none cursor-pointer text-[14px] transition-all shadow-inner">
+                <select id="fandom" value={fandom} onChange={(e) => setFandom(e.target.value)} className="w-full bg-[var(--color-bg)] border border-[var(--color-border)] rounded-lg px-4 py-3.5 text-[var(--color-text)] font-semibold focus:outline-none focus:border-[var(--color-primary)] focus:ring-1 focus:ring-[var(--color-primary)] appearance-none cursor-pointer text-[14px] transition-all shadow-inner">
                   <option value="Original Work">Original Work</option>
                   <option value="Anime">Anime</option>
                   <option value="Marvel">Marvel</option>
@@ -164,9 +165,9 @@ export default function HomeHeadcanonTool() {
             </div>
 
             <div className="flex flex-col gap-2">
-              <label className="text-[13px] font-medium text-[var(--color-text-muted)]">Tone / Vibe</label>
+              <label htmlFor="tone" className="text-[13px] font-medium text-[var(--color-text-muted)]">Tone / Vibe</label>
               <div className="relative">
-                <select value={tone} onChange={(e) => setTone(e.target.value)} className="w-full bg-[var(--color-bg)] border border-[var(--color-border)] rounded-lg px-4 py-3.5 text-[var(--color-text)] font-semibold focus:outline-none focus:border-[var(--color-primary)] focus:ring-1 focus:ring-[var(--color-primary)] appearance-none cursor-pointer text-[14px] transition-all shadow-inner">
+                <select id="tone" value={tone} onChange={(e) => setTone(e.target.value)} className="w-full bg-[var(--color-bg)] border border-[var(--color-border)] rounded-lg px-4 py-3.5 text-[var(--color-text)] font-semibold focus:outline-none focus:border-[var(--color-primary)] focus:ring-1 focus:ring-[var(--color-primary)] appearance-none cursor-pointer text-[14px] transition-all shadow-inner">
                   <option value="soft">Soft</option>
                   <option value="dark">Dark</option>
                   <option value="chaotic">Chaotic</option>
@@ -180,9 +181,9 @@ export default function HomeHeadcanonTool() {
             </div>
 
             <div className="flex flex-col gap-2">
-              <label className="text-[13px] font-medium text-[var(--color-text-muted)]">Setting / Context</label>
+              <label htmlFor="setting" className="text-[13px] font-medium text-[var(--color-text-muted)]">Setting / Context</label>
               <div className="relative">
-                <select value={setting} onChange={(e) => setSetting(e.target.value)} className="w-full bg-[var(--color-bg)] border border-[var(--color-border)] rounded-lg px-4 py-3.5 text-[var(--color-text)] font-semibold focus:outline-none focus:border-[var(--color-primary)] focus:ring-1 focus:ring-[var(--color-primary)] appearance-none cursor-pointer text-[14px] transition-all shadow-inner">
+                <select id="setting" value={setting} onChange={(e) => setSetting(e.target.value)} className="w-full bg-[var(--color-bg)] border border-[var(--color-border)] rounded-lg px-4 py-3.5 text-[var(--color-text)] font-semibold focus:outline-none focus:border-[var(--color-primary)] focus:ring-1 focus:ring-[var(--color-primary)] appearance-none cursor-pointer text-[14px] transition-all shadow-inner">
                   <option value="none">None</option>
                   <option value="modern">Modern</option>
                   <option value="fantasy">Fantasy</option>
@@ -197,9 +198,9 @@ export default function HomeHeadcanonTool() {
             </div>
 
             <div className="flex flex-col gap-2">
-              <label className="text-[13px] font-medium text-[var(--color-text-muted)]">Output Focus</label>
+              <label htmlFor="focus" className="text-[13px] font-medium text-[var(--color-text-muted)]">Output Focus</label>
               <div className="relative">
-                <select value={focus} onChange={(e) => setFocus(e.target.value)} className="w-full bg-[var(--color-bg)] border border-[var(--color-border)] rounded-lg px-4 py-3.5 text-[var(--color-text)] font-semibold focus:outline-none focus:border-[var(--color-primary)] focus:ring-1 focus:ring-[var(--color-primary)] appearance-none cursor-pointer text-[14px] transition-all shadow-inner">
+                <select id="focus" value={focus} onChange={(e) => setFocus(e.target.value)} className="w-full bg-[var(--color-bg)] border border-[var(--color-border)] rounded-lg px-4 py-3.5 text-[var(--color-text)] font-semibold focus:outline-none focus:border-[var(--color-primary)] focus:ring-1 focus:ring-[var(--color-primary)] appearance-none cursor-pointer text-[14px] transition-all shadow-inner">
                   <option value="none">None</option>
                   <option value="personality">Personality</option>
                   <option value="habits">Habits</option>

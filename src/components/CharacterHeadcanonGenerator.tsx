@@ -110,9 +110,10 @@ export default function HeadcanonGenerator() {
 
         <div className="space-y-6">
           <div className="space-y-2">
-            <label className="block text-sm font-semibold text-[var(--color-text)]">Character Name or Concept</label>
+            <label htmlFor="char-concept" className="block text-sm font-semibold text-[var(--color-text)]">Character Name or Concept</label>
             <div className="relative flex items-center">
               <input
+                id="char-concept"
                 type="text"
                 value={concept}
                 onChange={(e) => setConcept(e.target.value)}
@@ -126,9 +127,9 @@ export default function HeadcanonGenerator() {
           </div>
 
           <div className="space-y-2">
-            <label className="text-sm font-semibold text-[var(--color-text)]">Headcanon Type</label>
+            <label htmlFor="char-category" className="text-sm font-semibold text-[var(--color-text)]">Headcanon Type</label>
             <div className="relative">
-              <select value={category} onChange={(e) => setCategory(e.target.value)} className="w-full p-3 bg-white border border-[var(--color-border)] rounded-xl text-[var(--color-text)] focus:ring-2 focus:ring-[var(--color-primary)] focus:border-transparent outline-none appearance-none font-medium cursor-pointer">
+              <select id="char-category" value={category} onChange={(e) => setCategory(e.target.value)} className="w-full p-3 bg-white border border-[var(--color-border)] rounded-xl text-[var(--color-text)] focus:ring-2 focus:ring-[var(--color-primary)] focus:border-transparent outline-none appearance-none font-medium cursor-pointer">
                 <option value="Personality">Personality</option>
                 <option value="Backstory">Backstory</option>
                 <option value="Quirk">Quirk & Habits</option>
@@ -152,8 +153,8 @@ export default function HeadcanonGenerator() {
             {showAdvanced && (
               <div className="p-4 pt-0 grid grid-cols-1 sm:grid-cols-2 gap-4 border-t border-[var(--color-border)]">
                 <div className="space-y-1.5">
-                  <label className="text-xs font-semibold text-black">Tone</label>
-                  <select value={tone} onChange={(e) => setTone(e.target.value)} className="w-full p-2 bg-white border border-[var(--color-border)] rounded-lg text-sm focus:ring-2 focus:ring-[var(--color-primary)] outline-none text-black font-medium">
+                  <label htmlFor="char-tone" className="text-xs font-semibold text-black">Tone</label>
+                  <select id="char-tone" value={tone} onChange={(e) => setTone(e.target.value)} className="w-full p-2 bg-white border border-[var(--color-border)] rounded-lg text-sm focus:ring-2 focus:ring-[var(--color-primary)] outline-none text-black font-medium">
                     <option value="Default">Default</option>
                     <option value="Humorous">Humorous</option>
                     <option value="Dark">Dark</option>
@@ -163,16 +164,16 @@ export default function HeadcanonGenerator() {
                   </select>
                 </div>
                 <div className="space-y-1.5">
-                  <label className="text-xs font-semibold text-black">Length</label>
-                  <select value={length} onChange={(e) => setLength(e.target.value)} className="w-full p-2 bg-white border border-[var(--color-border)] rounded-lg text-sm focus:ring-2 focus:ring-[var(--color-primary)] outline-none text-black font-medium">
+                  <label htmlFor="char-length" className="text-xs font-semibold text-black">Length</label>
+                  <select id="char-length" value={length} onChange={(e) => setLength(e.target.value)} className="w-full p-2 bg-white border border-[var(--color-border)] rounded-lg text-sm focus:ring-2 focus:ring-[var(--color-primary)] outline-none text-black font-medium">
                     <option value="short">Short</option>
                     <option value="medium">Medium</option>
                     <option value="detailed">Detailed</option>
                   </select>
                 </div>
                 <div className="space-y-1.5 sm:col-span-2">
-                  <label className="text-xs font-semibold text-black">Output Count</label>
-                  <select value={count} onChange={(e) => setCount(Number(e.target.value))} className="w-full p-2 bg-white border border-[var(--color-border)] rounded-lg text-sm focus:ring-2 focus:ring-[var(--color-primary)] outline-none text-black font-medium">
+                  <label htmlFor="char-count" className="text-xs font-semibold text-black">Output Count</label>
+                  <select id="char-count" value={count} onChange={(e) => setCount(Number(e.target.value))} className="w-full p-2 bg-white border border-[var(--color-border)] rounded-lg text-sm focus:ring-2 focus:ring-[var(--color-primary)] outline-none text-black font-medium">
                     <option value={1}>1 Idea</option>
                     <option value={3}>3 Ideas</option>
                     <option value={5}>5 Ideas</option>

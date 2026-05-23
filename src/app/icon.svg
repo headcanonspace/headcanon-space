@@ -3,7 +3,7 @@
   <desc>Abstract thought-arc mark for Headcanon Space</desc>
 
   <!-- Background pill -->
-  <rect width="32" height="32" rx="7" fill="#6366f1"/>
+  <rect width="32" height="32" rx="7" fill="#4f46e5"/>
 
   <!-- Left arc -->
   <path d="M 5 22 C 5 9, 14 4, 15 15 C 15 20, 13 23, 10 23 C 7 23, 5 22.5, 5 22 Z"

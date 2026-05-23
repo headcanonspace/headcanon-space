@@ -164,7 +164,7 @@ export default function HomePage() {
             <div className="flex flex-col gap-4">
               <div className="highlight-item">
                 <div className="highlight-icon" aria-hidden="true">
-                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 1l1.8 3.6L14 5.6l-3 2.9.7 4.1L8 10.5l-3.7 2.1.7-4.1-3-2.9 4.2-.9L8 1z" stroke="#6366f1" strokeWidth="1.3" strokeLinejoin="round"/></svg>
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 1l1.8 3.6L14 5.6l-3 2.9.7 4.1L8 10.5l-3.7 2.1.7-4.1-3-2.9 4.2-.9L8 1z" stroke="#4f46e5" strokeWidth="1.3" strokeLinejoin="round"/></svg>
                 </div>
                 <div>
                   <strong className="block text-sm font-medium" style={{ color: "var(--color-text)", marginBottom: "2px" }}>Instant results</strong>
@@ -173,7 +173,7 @@ export default function HomePage() {
               </div>
               <div className="highlight-item">
                 <div className="highlight-icon" aria-hidden="true">
-                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="6.5" stroke="#6366f1" strokeWidth="1.3"/><path d="M5 8h6M8 5v6" stroke="#6366f1" strokeWidth="1.3" strokeLinecap="round"/></svg>
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="6.5" stroke="#4f46e5" strokeWidth="1.3"/><path d="M5 8h6M8 5v6" stroke="#4f46e5" strokeWidth="1.3" strokeLinecap="round"/></svg>
                 </div>
                 <div>
                   <strong className="block text-sm font-medium" style={{ color: "var(--color-text)", marginBottom: "2px" }}>Any fandom</strong>
@@ -182,7 +182,7 @@ export default function HomePage() {
               </div>
               <div className="highlight-item">
                 <div className="highlight-icon" aria-hidden="true">
-                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2 4h12M2 8h8M2 12h10" stroke="#6366f1" strokeWidth="1.3" strokeLinecap="round"/></svg>
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2 4h12M2 8h8M2 12h10" stroke="#4f46e5" strokeWidth="1.3" strokeLinecap="round"/></svg>
                 </div>
                 <div>
                   <strong className="block text-sm font-medium" style={{ color: "var(--color-text)", marginBottom: "2px" }}>Four generator types</strong>
@@ -191,7 +191,7 @@ export default function HomePage() {
               </div>
               <div className="highlight-item">
                 <div className="highlight-icon" aria-hidden="true">
-                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 2a6 6 0 100 12A6 6 0 008 2z" stroke="#6366f1" strokeWidth="1.3"/><path d="M6 8l1.5 1.5L10 6" stroke="#6366f1" strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round"/></svg>
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 2a6 6 0 100 12A6 6 0 008 2z" stroke="#4f46e5" strokeWidth="1.3"/><path d="M6 8l1.5 1.5L10 6" stroke="#4f46e5" strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round"/></svg>
                 </div>
                 <div>
                   <strong className="block text-sm font-medium" style={{ color: "var(--color-text)", marginBottom: "2px" }}>No signup</strong>
