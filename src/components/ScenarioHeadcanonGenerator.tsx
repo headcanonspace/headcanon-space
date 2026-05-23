@@ -164,7 +164,7 @@ export default function ScenarioHeadcanonGenerator() {
           {results.length === 0 && (
             <div className="h-full min-h-[500px] flex flex-col items-center justify-center p-8 bg-white rounded-3xl border-2 border-dashed border-[var(--color-border)]">
               <div className="mb-6 bg-white p-4 rounded-full shadow-sm border border-[var(--color-border)]"><Sparkles className="size-8 text-[var(--color-ink-4)]" strokeWidth={2} aria-hidden /></div>
-              <h3 className="text-xl font-bold text-[var(--color-text)] mb-2">Try an Example</h3>
+              <p className="text-xl font-bold text-[var(--color-text)] mb-2">Try an Example</p>
               <p className="text-sm text-[var(--color-ink-3)] mb-6 text-center max-w-xs">Click one of these presets to instantly generate a scenario and see how it works.</p>
               <div className="flex flex-wrap justify-center gap-3">
                 {SCENARIO_EXAMPLES.map((ex) => (

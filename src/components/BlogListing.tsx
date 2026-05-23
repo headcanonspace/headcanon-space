@@ -23,6 +23,20 @@ export default function BlogListing() {
 
   const posts: BlogPost[] = [
     {
+      title: "Relationship Headcanons: A Guide for Writers and Roleplayers",
+      description:
+        "What relationship headcanons are, how to write them, and examples across ships, friendships, and rivalries.",
+      href: "/blog/relationship-headcanons/",
+      date: "June 1, 2026",
+      author: "Headcanon Space Team",
+      readTime: "5 min read",
+      category: "Writing Guides",
+      emoji: "💖",
+      gradient: "bg-pink-50/50",
+      glowColor: "",
+      image: "/images/blog/relationship-headcanons.svg",
+    },
+    {
       title: "50 Headcanon Ideas for Any Character or Fandom",
       description: "50 specific, behavioral headcanon prompts for characters, relationships, scenarios, and OCs — across any fandom.",
       href: "/blog/headcanon-ideas/",

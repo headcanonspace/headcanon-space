@@ -178,7 +178,7 @@ export default function RelationshipHeadcanonGenerator() {
               <div className="w-8 h-8 rounded-lg bg-[var(--color-primary-lt)] flex items-center justify-center border border-[var(--color-border)]">
                 <PenLine className="size-4 text-[var(--color-primary)]" strokeWidth={2} aria-hidden />
               </div>
-              <h2 className="text-lg font-bold text-[var(--color-text)]">The Foundry</h2>
+              <p className="text-lg font-bold text-[var(--color-text)]">The Foundry</p>
             </div>
 
             <div className="space-y-3">
@@ -231,7 +231,7 @@ export default function RelationshipHeadcanonGenerator() {
                   <CircleDollarSign className="size-8" strokeWidth={1.5} aria-hidden />
                 </div>
                 <div className="space-y-3">
-                  <h3 className="text-xl font-bold text-[var(--color-text)]">Awaiting Submissions</h3>
+                  <p className="text-xl font-bold text-[var(--color-text)]">Awaiting Submissions</p>
                   <p className="text-sm text-[var(--color-ink-4)] leading-relaxed">The forge remains dormant. Enter subject parameters in the adjoining console to synthesize new relationship pathways.</p>
                 </div>
               </div>

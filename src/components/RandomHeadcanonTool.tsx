@@ -81,7 +81,7 @@ export default function RandomHeadcanonTool() {
 
           <div className="flex items-center gap-2 mb-2">
             <FlaskConical className="size-5 text-[var(--color-primary)]" strokeWidth={2} aria-hidden />
-            <h2 className="text-[18px] font-semibold text-[var(--color-text)]">Randomizer Setup</h2>
+            <p className="text-[18px] font-semibold text-[var(--color-text)]">Randomizer Setup</p>
           </div>
 
           <div className="flex flex-col gap-5">
@@ -128,7 +128,7 @@ export default function RandomHeadcanonTool() {
           <div className="absolute top-0 right-0 w-64 h-64 bg-[var(--color-primary-lt)] blur-[120px] rounded-full pointer-events-none" />
 
           <div className="flex justify-between items-center mb-8 relative z-10">
-            <h2 className="text-[17px] font-semibold text-[var(--color-text)]">Pulled Results</h2>
+            <p className="text-[17px] font-semibold text-[var(--color-text)]">Pulled Results</p>
             {results.length > 0 && (
               <div className="flex items-center gap-2">
                 <button onClick={handleSave} className="text-[13px] font-medium text-[var(--color-ink-3)] hover:text-[var(--color-text)] transition-colors">Save</button>
@@ -163,7 +163,7 @@ export default function RandomHeadcanonTool() {
                 <div className="w-14 h-14 bg-white border border-[var(--color-border)] shadow-sm rounded-xl flex items-center justify-center mb-5 text-[var(--color-primary)]">
                   <FlaskConical className="size-7" strokeWidth={1.5} aria-hidden />
                 </div>
-                <h3 className="text-[16px] font-semibold text-[var(--color-text)] mb-1.5">Try an Example</h3>
+                <p className="text-[16px] font-semibold text-[var(--color-text)] mb-1.5">Try an Example</p>
                 <p className="text-[var(--color-ink-3)] text-[14px] max-w-[300px] leading-relaxed mb-6">
                   Pick a preset to set vibe and quantity and roll ideas, or choose your own on the left.
                 </p>

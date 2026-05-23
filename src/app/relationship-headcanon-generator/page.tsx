@@ -33,6 +33,26 @@ const relationshipFaqs = [
   {
     question: "How do I save the results?",
     answer: "Click the Save button on any generated result to keep it in your browser's local storage for future reference."
+  },
+  {
+    question: "What is a relationship headcanon generator?",
+    answer: "A relationship headcanon generator is a tool that creates personal interpretations of how two fictional characters interact, relate, and behave with each other: beyond what canon officially shows."
+  },
+  {
+    question: "Can I use this for friendships, not just romance?",
+    answer: "Yes. Enter any two characters, friends, rivals, siblings, or a romantic pair. The relationship headcanon generator works for any type of relationship dynamic, not just romantic ships."
+  },
+  {
+    question: "How do I get better results?",
+    answer: "Use both characters' names and pick the tone that matches your story. Soft for tender moments, Dark for angst, Chaotic for unpredictable dynamics. This works whether you need a ship headcanon generator result or a platonic dynamic."
+  },
+  {
+    question: "Is this the same as a two person headcanon generator?",
+    answer: "Yes, any tool that generates headcanons for a pair of characters is a two person headcanon generator. Enter two names, pick a tone, and get results focused on the dynamic between them specifically."
+  },
+  {
+    question: "Can I generate multiple headcanons at once?",
+    answer: "Yes. Click Generate again to get a new set of ideas. Each click produces a unique result from the curated template pool, no limits on how many you can create."
   }
 ];
 
@@ -51,6 +71,57 @@ export default function RelationshipHeadcanonGeneratorPage() {
             "operatingSystem": "Web",
             "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
             "description": "Generate relationship-based headcanons instantly."
+          })
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "What is a relationship headcanon generator?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "A relationship headcanon generator is a tool that creates personal interpretations of how two fictional characters interact, relate, and behave with each other: beyond what canon officially shows."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Can I use this for friendships, not just romance?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. Enter any two characters, friends, rivals, siblings, or a romantic pair. The relationship headcanon generator works for any type of relationship dynamic, not just romantic ships."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How do I get better results?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Use both characters' names and pick the tone that matches your story. Soft for tender moments, Dark for angst, Chaotic for unpredictable dynamics. This works whether you need a ship headcanon generator result or a platonic dynamic."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Is this the same as a two person headcanon generator?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes, any tool that generates headcanons for a pair of characters is a two person headcanon generator. Enter two names, pick a tone, and get results focused on the dynamic between them specifically."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Can I generate multiple headcanons at once?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. Click Generate again to get a new set of ideas. Each click produces a unique result from the curated template pool, no limits on how many you can create."
+                }
+              }
+            ]
           })
         }}
       />
@@ -75,67 +146,111 @@ export default function RelationshipHeadcanonGeneratorPage() {
 
       <section className="section">
         <div className="mx-auto max-w-[760px] px-6">
-          <p className="section__label">Understanding the tool</p>
-          <h2 className="section__h2">What Is a Relationship Headcanon?</h2>
-          <div className="space-y-4" style={{ fontSize: "16px", color: "var(--color-ink-3)", lineHeight: 1.8 }}>
-            <p>
-              A relationship headcanon describes how two characters interact,
+          <p className="text-xs font-bold uppercase tracking-[2px] text-[var(--color-primary)] mb-3 text-center sm:text-left">
+            Understanding the tool
+          </p>
+          <h2 className="section__h2 mb-8 text-center sm:text-left">
+            What Is a Relationship Headcanon Generator?
+          </h2>
+          
+          <div className="relative border-l-4 border-[var(--color-primary)] bg-slate-50 p-6 sm:p-8 rounded-r-3xl rounded-l-md shadow-xs transition-all hover:bg-slate-100/70">
+            <p className="text-slate-700 text-base sm:text-lg leading-relaxed font-normal mb-6">
+              <span className="float-left mr-3.5 mt-1.5 flex items-center justify-center w-14 h-14 rounded-2xl bg-[var(--color-primary)] text-white text-3xl font-extrabold font-serif shadow-xs select-none">
+                A
+              </span>
+              relationship headcanon describes how two characters interact,
               behave, or feel about each other beyond what is officially shown.
             </p>
-            <p>
+            <p className="text-slate-700 text-base sm:text-lg leading-relaxed font-normal">
               Fans use relationship headcanons to explore emotional dynamics, hidden
               connections, and unique character interactions. For results focused entirely on platonic dynamics,
-              the <Link href="/friendship-headcanon-generator/">friendship headcanon generator</Link> focuses
+              the <Link href="/friendship-headcanon-generator/" className="font-semibold text-[var(--color-primary)] hover:underline decoration-2 underline-offset-4 transition-colors">friendship headcanon generator</Link> focuses
               specifically on loyalty, found family, and shared history between characters.
             </p>
           </div>
         </div>
       </section>
 
-      <section className="section section--alt">
+      <section className="section">
         <div className="mx-auto max-w-[760px] px-6">
-          <div className="grid sm:grid-cols-2 gap-6">
-            <div style={{ background: "var(--color-surface)", border: "1px solid var(--color-border)", borderRadius: "var(--radius-xl)", padding: "24px 28px" }}>
-              <h3 className="text-lg font-medium mb-4 flex items-center gap-2" style={{ color: "var(--color-text)" }}>
-                <span className="w-8 h-8 flex items-center justify-center text-sm rounded-lg" style={{ background: "var(--color-primary-lt)", color: "var(--color-primary)" }}>1</span>
-                How to Use This Tool
-              </h3>
-              <ul className="space-y-3 text-sm" style={{ color: "var(--color-ink-3)" }}>
-                <li className="flex items-start gap-2">
-                  <span style={{ color: "var(--color-primary)", marginTop: "2px" }}>•</span>
+          <h2 className="section__h2 mb-6">
+            How to Use This Tool
+          </h2>
+          
+          <div className="border-l-2 border-indigo-100/70 ml-5 my-8">
+            {/* Step 1 */}
+            <div className="relative pl-8 pb-8 last:pb-0 animate-fade-up">
+              <span className="absolute left-0 top-0 flex items-center justify-center w-10 h-10 rounded-2xl bg-[var(--color-primary)] text-white font-black text-sm -ml-[21px] border-4 border-white shadow-xs select-none">
+                1
+              </span>
+              <div className="bg-slate-50/40 border border-slate-100/50 p-5 rounded-2xl transition-all duration-300 hover:bg-slate-50 hover:shadow-xs">
+                <h3 className="text-base sm:text-lg font-bold text-[var(--color-text)] mb-1">
                   Enter two character names
-                </li>
-                <li className="flex items-start gap-2">
-                  <span style={{ color: "var(--color-primary)", marginTop: "2px" }}>•</span>
-                  Click generate to create a headcanon
-                </li>
-                <li className="flex items-start gap-2">
-                  <span style={{ color: "var(--color-primary)", marginTop: "2px" }}>•</span>
-                  Generate more ideas instantly
-                </li>
-              </ul>
+                </h3>
+              </div>
             </div>
-            <div style={{ background: "var(--color-surface)", border: "1px solid var(--color-border)", borderRadius: "var(--radius-xl)", padding: "24px 28px" }}>
-              <h3 className="text-lg font-medium mb-4 flex items-center gap-2" style={{ color: "var(--color-text)" }}>
-                <span className="w-8 h-8 flex items-center justify-center text-sm rounded-lg" style={{ background: "#ecfdf5", color: "#059669" }}>✓</span>
-                Why Use It?
-              </h3>
-              <ul className="space-y-3 text-sm" style={{ color: "var(--color-ink-3)" }}>
-                <li className="flex items-start gap-2">
-                  <span style={{ color: "#10b981", marginTop: "2px" }}>•</span>
-                  Explore character dynamics instantly
-                </li>
-                <li className="flex items-start gap-2">
-                  <span style={{ color: "#10b981", marginTop: "2px" }}>•</span>
-                  Improve storytelling and fanfiction
-                </li>
-                <li className="flex items-start gap-2">
-                  <span style={{ color: "#10b981", marginTop: "2px" }}>•</span>
-                  Discover new emotional interactions
-                </li>
-              </ul>
+
+            {/* Step 2 */}
+            <div className="relative pl-8 pb-8 last:pb-0 animate-fade-up">
+              <span className="absolute left-0 top-0 flex items-center justify-center w-10 h-10 rounded-2xl bg-[var(--color-primary)] text-white font-black text-sm -ml-[21px] border-4 border-white shadow-xs select-none">
+                2
+              </span>
+              <div className="bg-slate-50/40 border border-slate-100/50 p-5 rounded-2xl transition-all duration-300 hover:bg-slate-50 hover:shadow-xs">
+                <h3 className="text-base sm:text-lg font-bold text-[var(--color-text)] mb-1">
+                  Click generate to create a headcanon
+                </h3>
+              </div>
+            </div>
+
+            {/* Step 3 */}
+            <div className="relative pl-8 pb-0 animate-fade-up">
+              <span className="absolute left-0 top-0 flex items-center justify-center w-10 h-10 rounded-2xl bg-[var(--color-primary)] text-white font-black text-sm -ml-[21px] border-4 border-white shadow-xs select-none">
+                3
+              </span>
+              <div className="bg-slate-50/40 border border-slate-100/50 p-5 rounded-2xl transition-all duration-300 hover:bg-slate-50 hover:shadow-xs">
+                <h3 className="text-base sm:text-lg font-bold text-[var(--color-text)] mb-1">
+                  Generate more ideas instantly
+                </h3>
+              </div>
             </div>
           </div>
+
+          <h2 className="section__h2 mt-12 mb-6">
+            Why Use This Headcanon Generator for Relationships?
+          </h2>
+          
+          <ul className="space-y-4 list-none pl-0 my-6">
+            <li className="flex items-start gap-3.5 p-4 rounded-2xl bg-slate-50/40 border border-slate-100/50 transition-all duration-300 hover:bg-slate-50 hover:shadow-xs">
+              <span className="flex items-center justify-center w-6 h-6 rounded-full bg-indigo-50 border border-indigo-100 text-[var(--color-primary)] shrink-0 mt-0.5 select-none shadow-xs">
+                <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="3">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                </svg>
+              </span>
+              <span className="text-[var(--color-text-muted)] text-sm sm:text-base font-semibold leading-relaxed">
+                Explore character dynamics instantly
+              </span>
+            </li>
+            <li className="flex items-start gap-3.5 p-4 rounded-2xl bg-slate-50/40 border border-slate-100/50 transition-all duration-300 hover:bg-slate-50 hover:shadow-xs">
+              <span className="flex items-center justify-center w-6 h-6 rounded-full bg-indigo-50 border border-indigo-100 text-[var(--color-primary)] shrink-0 mt-0.5 select-none shadow-xs">
+                <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="3">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                </svg>
+              </span>
+              <span className="text-[var(--color-text-muted)] text-sm sm:text-base font-semibold leading-relaxed">
+                Improve storytelling and fanfiction
+              </span>
+            </li>
+            <li className="flex items-start gap-3.5 p-4 rounded-2xl bg-slate-50/40 border border-slate-100/50 transition-all duration-300 hover:bg-slate-50 hover:shadow-xs">
+              <span className="flex items-center justify-center w-6 h-6 rounded-full bg-indigo-50 border border-indigo-100 text-[var(--color-primary)] shrink-0 mt-0.5 select-none shadow-xs">
+                <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="3">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                </svg>
+              </span>
+              <span className="text-[var(--color-text-muted)] text-sm sm:text-base font-semibold leading-relaxed">
+                Discover new emotional interactions
+              </span>
+            </li>
+          </ul>
         </div>
       </section>
 
@@ -143,7 +258,7 @@ export default function RelationshipHeadcanonGeneratorPage() {
         <div className="mx-auto max-w-[1000px] px-6">
           <div className="text-center mb-10 max-w-[760px] mx-auto">
             <p className="section__label">See what you can make</p>
-            <h2 className="section__h2">Example Relationship Headcanons</h2>
+            <h2 className="section__h2">Example Results from the Character Relationship Headcanon Generator</h2>
           </div>
           <div className="grid sm:grid-cols-3 gap-6 mb-8">
             <article className="example-card">
@@ -183,15 +298,50 @@ export default function RelationshipHeadcanonGeneratorPage() {
         </div>
       </section>
 
+      <section className="section">
+        <div className="mx-auto max-w-[760px] px-6">
+          <h2 className="section__h2 mb-6">Use It as a Couple Headcanon Generator</h2>
+          
+          <div className="relative border-l-4 border-[var(--color-primary)] bg-slate-50 p-6 sm:p-8 rounded-r-3xl rounded-l-md shadow-xs my-8 transition-all duration-300 hover:bg-slate-100/50">
+            <div className="space-y-4 text-[var(--color-text-muted)] text-base sm:text-lg leading-relaxed">
+              <p>
+                This tool works equally well as a couple headcanon generator for romantic ships. Enter both characters' names to get relationship moments, shared habits, and tender scenes focused on the romantic dynamic between them.
+              </p>
+              <p>
+                Whether you are writing slow burn, established relationship, or enemies-to-lovers, the generator adapts to the tone you choose. Pick Romantic or Soft for tender moments. Pick Dark or Chaotic for tension-heavy dynamics. The headcanon generator relationship between tone and output means every result matches the story you are writing.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="section section--alt">
         <div className="mx-auto max-w-[760px] px-6">
-          <p className="section__label">Use cases</p>
-          <h2 className="section__h2 mb-6">Perfect For</h2>
-          <div className="flex flex-wrap gap-2">
-            <span className="feature-tag">Fanfiction</span>
-            <span className="feature-tag">Roleplay scenarios</span>
-            <span className="feature-tag">Character shipping</span>
-            <span className="feature-tag">Idea generation</span>
+          <p className="text-xs font-bold uppercase tracking-[2px] text-[var(--color-primary)] mb-3 text-center sm:text-left">
+            Use cases
+          </p>
+          <h2 className="section__h2 mb-6 text-center sm:text-left">Perfect For Ship Writers and Roleplayers</h2>
+          
+          <div className="flex flex-wrap gap-2 mb-10 justify-center sm:justify-start">
+            <span className="feature-tag shadow-xs">Fanfiction</span>
+            <span className="feature-tag shadow-xs">Roleplay scenarios</span>
+            <span className="feature-tag shadow-xs">Character shipping</span>
+            <span className="feature-tag shadow-xs">Idea generation</span>
+          </div>
+
+          <div className="grid sm:grid-cols-2 gap-6 items-stretch">
+            <div className="p-6 sm:p-8 bg-white border border-[var(--color-border)] rounded-3xl transition-all duration-300 hover:-translate-y-1.5 hover:shadow-md flex flex-col">
+              <h3 className="text-lg sm:text-xl font-extrabold text-[var(--color-text)] mb-3">Ship writers on AO3 and Wattpad</h3>
+              <p className="text-sm sm:text-base text-[var(--color-text-muted)] leading-relaxed">
+                Writing a multi-chapter fic and need to stay consistent with how a ship behaves across chapters? Use this character relationship headcanon generator to build a reference sheet before you start writing. Every result gives you a specific behavior or dynamic to reference.
+              </p>
+            </div>
+            <div className="p-6 sm:p-8 bg-white border border-[var(--color-border)] rounded-3xl transition-all duration-300 hover:-translate-y-1.5 hover:shadow-md flex flex-col">
+              <h3 className="text-lg sm:text-xl font-extrabold text-[var(--color-text)] mb-3">Discord and forum roleplayers</h3>
+              <p className="text-sm sm:text-base text-[var(--color-text-muted)] leading-relaxed">
+                In collaborative RP, consistency matters. Generate headcanons for your pairing before a session so both players understand the dynamic: what they argue about, what they would never say, what they do without thinking.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -199,9 +349,12 @@ export default function RelationshipHeadcanonGeneratorPage() {
       <section className="section">
         <div className="mx-auto max-w-[760px] px-6">
           <div className="text-center mb-12">
-            <p className="section__label">FAQ</p>
             <h2 className="section__h2">Frequently Asked Questions</h2>
+            <p className="text-sm text-[var(--color-ink-3)] text-center max-w-md mx-auto mt-4">
+              Got more questions about the generator and its features? Here is everything else you need to know.
+            </p>
           </div>
+          
           <FaqAccordion items={relationshipFaqs} />
         </div>
       </section>

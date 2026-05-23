@@ -123,7 +123,7 @@ export default function HomeHeadcanonTool() {
 
           <div className="flex items-center gap-2 mb-2">
             <Sparkles className="size-5 text-[var(--color-text)]" strokeWidth={2} aria-hidden />
-            <h2 className="text-[18px] font-semibold text-[var(--color-text)]">Character Details</h2>
+            <p className="text-[18px] font-semibold text-[var(--color-text)]">Character Details</p>
           </div>
 
           <div className="flex flex-col gap-5">
@@ -227,7 +227,7 @@ export default function HomeHeadcanonTool() {
         {/* RIGHT PANEL */}
         <div className="w-full lg:w-[65%] bg-[var(--color-bg)] border border-[var(--color-border)] rounded-xl p-6 md:p-8 flex flex-col min-h-[450px] shadow-2xl">
           <div className="flex justify-between items-center mb-8">
-            <h2 className="text-[17px] font-semibold text-[var(--color-text)]">Generated Text</h2>
+            <p className="text-[17px] font-semibold text-[var(--color-text)]">Generated Text</p>
             {results.length > 0 && (
               <div className="flex items-center gap-2">
                 <button onClick={handleSave} className="text-[13px] font-medium text-[var(--color-ink-3)] hover:text-[var(--color-text)] transition-colors">Save</button>
@@ -262,9 +262,9 @@ export default function HomeHeadcanonTool() {
                 <div className="w-14 h-14 bg-white border border-[var(--color-border)] shadow-inner rounded-xl flex items-center justify-center mb-5 text-[var(--color-ink-4)]">
                   <Sparkles className="size-7" strokeWidth={1.5} aria-hidden />
                 </div>
-                <h3 className="text-[16px] font-semibold text-[var(--color-text)] mb-1.5">
+                <p className="text-[16px] font-semibold text-[var(--color-text)] mb-1.5">
                   Try an Example
-                </h3>
+                </p>
                 <p className="text-[var(--color-ink-3)] text-[14px] max-w-[320px] leading-relaxed mb-6">
                   Pick a preset to fill the form and generate headcanons
                   instantly, or enter your own details on the left.

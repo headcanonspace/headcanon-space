@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Competitor Backlink Research Plan - Headcanon Space</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap');
+    
+    :root {
+      --primary: #4f46e5;
+      --primary-light: #e0e7ff;
+      --text-main: #0f172a;
+      --text-muted: #475569;
+      --border: #e2e8f0;
+      --bg-alt: #f8fafc;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      color: var(--text-main);
+      line-height: 1.6;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      background: #ffffff;
+    }
+
+    .header {
+      border-bottom: 2px solid var(--primary);
+      padding-bottom: 24px;
+      margin-bottom: 40px;
+    }
+
+    .title {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: var(--primary);
+      margin: 0 0 10px 0;
+      letter-spacing: -0.5px;
+    }
+
+    .subtitle {
+      font-size: 1.1rem;
+      color: var(--text-muted);
+      margin: 0;
+      font-weight: 500;
+    }
+
+    h2 {
+      font-family: 'Inter', sans-serif;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--text-main);
+      margin: 40px 0 20px 0;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    h2 .step {
+      background: var(--primary-light);
+      color: var(--primary);
+      font-size: 0.9rem;
+      padding: 4px 10px;
+      border-radius: 8px;
+      font-weight: 800;
+      letter-spacing: 1px;
+    }
+
+    .query-list, .search-list {
+      background: var(--bg-alt);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 24px 32px;
+      margin-bottom: 30px;
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 12px;
+      color: var(--text-muted);
+    }
+
+    li:last-child {
+      margin-bottom: 0;
+    }
+
+    code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      background: #f1f5f9;
+      padding: 3px 8px;
+      border-radius: 4px;
+      color: #334155;
+      font-size: 0.9em;
+      border: 1px solid #e2e8f0;
+    }
+
+    .pitch-box {
+      background: linear-gradient(135deg, #f8fafc 0%, #e0e7ff 100%);
+      border-left: 4px solid var(--primary);
+      padding: 24px 32px;
+      border-radius: 0 12px 12px 0;
+      font-size: 1.05rem;
+      color: #1e293b;
+      margin-bottom: 30px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    }
+
+    .pitch-box strong {
+      color: var(--primary);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+      background: white;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    }
+
+    th {
+      background: var(--text-main);
+      color: white;
+      text-align: left;
+      padding: 14px 16px;
+      font-size: 0.9rem;
+      font-weight: 600;
+    }
+
+    td {
+      padding: 14px 16px;
+      border-bottom: 1px solid var(--border);
+      font-size: 0.95rem;
+      color: var(--text-muted);
+    }
+
+    tr:last-child td {
+      border-bottom: none;
+    }
+
+    tr:hover td {
+      background: var(--bg-alt);
+    }
+
+    .tag {
+      background: #f1f5f9;
+      color: #64748b;
+      padding: 4px 8px;
+      border-radius: 4px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      text-align: center;
+      display: inline-block;
+    }
+
+    @media print {
+      body {
+        padding: 0;
+        background: white;
+      }
+      .pitch-box {
+        break-inside: avoid;
+      }
+      table {
+        break-inside: auto;
+      }
+      tr {
+        break-inside: avoid;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <h1 class="title">Competitor Backlink Plan</h1>
+    <p class="subtitle">Prepared for Headcanon Space (headcanonspace.com)</p>
+  </div>
+
+  <h2><span class="step">STEP 1</span> Competitor Search Queries</h2>
+  <div class="query-list">
+    <ul>
+      <li><code>"headcanon.io" OR "aiheadcanon.com" "writing tools" OR "resources"</code></li>
+      <li><code>site:tumblr.com "headcanongenerator.co" OR "headcanonai.com"</code></li>
+      <li><code>"best headcanon generators" -site:headcanonspace.com -site:headcanon.io</code></li>
+      <li><code>"aiheadcanon.com" OR "headcanongenerator.co" -site:aiheadcanon.com -site:headcanongenerator.co</code></li>
+      <li><code>inurl:resources "headcanon.io" OR "headcanongenerators.com"</code></li>
+      <li><code>"headcanon generator" intitle:tools OR intitle:resources</code></li>
+      <li><code>site:reddit.com/r/FanFiction "headcanon generator" OR "headcanon.io"</code></li>
+      <li><code>site:archiveofourown.org "headcanon.io" OR "aiheadcanon.com"</code></li>
+      <li><code>"headcanongenerator.co" inurl:links OR inurl:blog</code></li>
+      <li><code>intitle:"writing resources" "headcanon.io"</code></li>
+    </ul>
+  </div>
+
+  <h2><span class="step">STEP 2</span> The Outreach Pitch</h2>
+  <div class="pitch-box">
+    <p>"Hi <strong>[Name]</strong>, I loved your roundup of fandom writing resources, especially your mention of <strong>[Competitor Name]</strong>.</p>
+    <p>I wanted to suggest adding Headcanon Space to your list: we offer four highly-specialized generators (Character, Relationship, Scenario, and Random) that are 100% free with no signup, and we process everything client-side so user ideas are never stored on a server.</p>
+    <p>We also run a growing blog with in-depth guides on writing strong headcanons, which I think your readers would find incredibly useful alongside the tools!"</p>
+  </div>
+
+  <h2><span class="step">STEP 3</span> Finding Fandom Resource Pages</h2>
+  <div class="search-list">
+    <ul>
+      <li><code>"fandom writing resources" OR "rp resources" list</code></li>
+      <li><code>site:tumblr.com "writing resources" "generator" OR "prompts"</code></li>
+      <li><code>"best writing tools for fanfiction" 2025 OR 2026</code></li>
+      <li><code>intitle:"fanfiction resources" OR intitle:"roleplay resources"</code></li>
+      <li><code>"helpful links for writers" "fanfiction" OR "rp"</code></li>
+      <li><code>site:medium.com "tools for fanfiction writers"</code></li>
+      <li><code>inurl:writing-resources "character creation" AND "generators"</code></li>
+      <li><code>"ultimate list of roleplay resources" OR "rp masterlist"</code></li>
+      <li><code>"headcanon prompts" "tools" -site:pinterest.com</code></li>
+      <li><code>"resources for writers" fandom OR fanfic</code></li>
+    </ul>
+  </div>
+
+  <h2><span class="step">STEP 4</span> Tracking Sheet</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Site URL</th>
+        <th>DA</th>
+        <th>Competitor Mentioned</th>
+        <th>Contacted</th>
+        <th>Acquired</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>tumblr.com/fandom-writing-resources</td>
+        <td>98</td>
+        <td>headcanon.io</td>
+        <td><span class="tag">N</span></td>
+        <td><span class="tag">N</span></td>
+      </tr>
+      <tr>
+        <td>reddit.com/r/FanFiction/wiki/resources</td>
+        <td>92</td>
+        <td>aiheadcanon.com</td>
+        <td><span class="tag">N</span></td>
+        <td><span class="tag">N</span></td>
+      </tr>
+      <tr>
+        <td>wattpad.com/story/writing-tips-masterlist</td>
+        <td>90</td>
+        <td>headcanongenerator.co</td>
+        <td><span class="tag">N</span></td>
+        <td><span class="tag">N</span></td>
+      </tr>
+      <tr>
+        <td>roleplay-directory.com/resources</td>
+        <td>45</td>
+        <td>headcanonai.com</td>
+        <td><span class="tag">N</span></td>
+        <td><span class="tag">N</span></td>
+      </tr>
+      <tr>
+        <td>writing-prompts-hub.com/character-tools</td>
+        <td>38</td>
+        <td>headcanongenerators.com</td>
+        <td><span class="tag">N</span></td>
+        <td><span class="tag">N</span></td>
+      </tr>
+    </tbody>
+  </table>
+
+</body>
+</html>

@@ -103,10 +103,10 @@ export default function HeadcanonGenerator() {
     <div className="w-full max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 items-start relative z-10 pb-24">
       {/* LEFT COLUMN */}
       <div className="lg:col-span-5 bg-white rounded-2xl shadow-sm border border-[var(--color-border)] p-6 sm:p-8 sticky top-6">
-        <h2 className="text-xl font-bold text-[var(--color-text)] mb-6 flex items-center gap-2">
+        <p className="text-xl font-bold text-[var(--color-text)] mb-6 flex items-center gap-2">
           <Sparkles className="w-5 h-5 text-[var(--color-primary)]" />
           Generation Settings
-        </h2>
+        </p>
 
         <div className="space-y-6">
           <div className="space-y-2">
@@ -195,7 +195,7 @@ export default function HeadcanonGenerator() {
             <div className="w-16 h-16 bg-[var(--color-bg)] rounded-full flex items-center justify-center mb-4">
               <Wand2 className="w-8 h-8 text-[var(--color-text)]" />
             </div>
-            <h3 className="text-xl font-bold text-[var(--color-text)] mb-2">Try an Example</h3>
+            <p className="text-xl font-bold text-[var(--color-text)] mb-2">Try an Example</p>
             <p className="text-[var(--color-ink-2)] max-w-sm mb-6">
               Tap a preset to load a concept and generate ideas, or use the form on the left with your own character.
             </p>
@@ -217,7 +217,7 @@ export default function HeadcanonGenerator() {
         {results && (
           <div key={genKey} className="space-y-4 motion-safe:animate-[charFade_0.35s_ease-out_both]">
             <div className="flex items-center justify-between mb-2">
-              <h3 className="text-lg font-bold text-[var(--color-text)]">Generated Results</h3>
+              <p className="text-lg font-bold text-[var(--color-text)]">Generated Results</p>
               <div className="flex items-center gap-3">
                 <button onClick={handleSave} className="text-sm font-semibold text-[var(--color-ink-3)] hover:text-[var(--color-ink-2)] transition-colors">Save</button>
                 <button onClick={handleClearHistory} className="text-sm font-semibold text-rose-600 hover:text-rose-700 transition-colors">Clear history</button>
