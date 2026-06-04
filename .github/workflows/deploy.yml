@@ -41,6 +41,10 @@ jobs:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
+          protocol: ftps
+          security: loose
+          port: 21
+          timeout: 300000
           local-dir: ./out/
           # Must match the domain’s real web root on the host (not a similarly named folder).
           # headcanonspace.com document root → headcanonspace.com/public_html
