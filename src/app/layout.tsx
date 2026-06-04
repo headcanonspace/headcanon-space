@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import Script from "next/script";
 import { DM_Sans, DM_Serif_Display } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
@@ -59,7 +58,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en-US">
-      <head />
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+      </head>
 
       <body className={`${dmSans.variable} ${dmSerif.variable} min-h-screen flex flex-col`} style={{ fontFamily: "var(--font-sans)" }}>
         <Navbar />

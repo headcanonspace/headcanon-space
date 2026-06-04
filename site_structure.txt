@@ -1,0 +1,33 @@
+Site Structure & Semantic Map Information
+
+Total Active Pages: 19
+
+1. Homepage & Generators (8 Pages)
+- / (Homepage / All-purpose Generator)
+- /character-headcanon-generator/
+- /relationship-headcanon-generator/
+- /scenario-headcanon-generator/
+- /random-headcanon-generator/
+- /friendship-headcanon-generator/
+- /sibling-headcanon-generator/
+- /oc-headcanon-generator/
+
+2. Blog & Guides (6 Pages)
+- /blog/ (Blog Index Page)
+- /blog/what-is-a-headcanon/
+- /blog/how-to-write-headcanons/
+- /blog/headcanon-vs-canon/
+- /blog/headcanon-ideas/
+- /blog/relationship-headcanons/
+
+3. Informational & Legal Pages (5 Pages)
+- /about/
+- /contact/
+- /feedback/
+- /privacy-policy/
+- /terms-of-service/
+
+Current URL Structure:
+- The site uses Next.js App Router with a flat, clean hierarchy.
+- Main tool pages and informational pages sit directly at the root (e.g., domain.com/tool-name/).
+- Blog posts are grouped under the /blog/ directory (e.g., domain.com/blog/post-name/).

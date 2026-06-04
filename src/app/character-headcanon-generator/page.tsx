@@ -4,15 +4,15 @@ import CharacterHeadcanonGenerator from "@/components/CharacterHeadcanonGenerato
 import FaqAccordion from "@/components/FaqAccordion";
 
 export const metadata: Metadata = {
-  title: "Character Headcanon Generator (Create Unique Ideas)",
-  description: "Free character headcanon generator - create unique personality traits, habits, and backstory ideas for any character or OC instantly. No signup needed. Try it now.",
+  title: "Character Headcanon Generator — Any Fandom [2026]",
+  description: "Free character headcanon generator for OCs, canon characters & any fandom. No signup, no limits. Works on mobile. Start generating now.",
+  openGraph: {
+    title: "Character Headcanon Generator — Any Fandom [2026]",
+    description: "Free character headcanon generator for OCs, canon characters & any fandom. No signup, no limits. Works on mobile. Start generating now.",
+    url: "https://headcanonspace.com/character-headcanon-generator/",
+  },
   alternates: {
     canonical: "https://headcanonspace.com/character-headcanon-generator/",
-  },
-  openGraph: {
-    title: "Character Headcanon Generator",
-    description: "Free character headcanon generator - create unique personality traits, habits, and backstory ideas for any character or OC instantly. No signup needed. Try it now.",
-    url: "/character-headcanon-generator/",
   },
 };
 

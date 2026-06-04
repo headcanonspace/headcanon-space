@@ -5,15 +5,15 @@ import HomeHeadcanonTool from "@/components/HomeHeadcanonTool";
 import FaqAccordion from "@/components/FaqAccordion";
 
 export const metadata: Metadata = {
-  title: "Headcanon Generator | Free Character, Relationship & Scenario Ideas",
-  description:
-    "Free headcanon generator - create unique ideas for characters, relationships, and scenarios instantly. No signup, no limits, works for any fandom. Try it now.",
+  title: "Headcanon Generator — Free AI Tool for Any Fandom [2026]",
+  description: "Free headcanon generator for characters, ships, OCs & relationships. No signup. Works on mobile. AO3, Tumblr & Discord writers love it. Generate now.",
+  openGraph: {
+    title: "Headcanon Generator — Free AI Tool for Any Fandom [2026]",
+    description: "Free headcanon generator for characters, ships, OCs & relationships. No signup. Works on mobile. AO3, Tumblr & Discord writers love it. Generate now.",
+  },
   alternates: {
     canonical: "https://headcanonspace.com/",
   },
-  openGraph: {
-    images: [{ url: '/images/headcanon-generator-example-character.svg', width: 800, height: 500, alt: 'Headcanon Space — Free Headcanon Generator' }]
-  }
 };
 
 export default function HomePage() {
@@ -234,6 +234,54 @@ export default function HomePage() {
               <div className="step__num" aria-hidden="true">4</div>
               <h3 className="step__title">Copy, save, or regenerate</h3>
               <p className="step__desc">Copy the result in one click. Save it to your browser for later. Or click generate again for a completely different idea.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── SECTION 3B - What This Tool Does (Features) ── */}
+      <section className="section section--alt">
+        <div className="mx-auto max-w-[1120px] px-6">
+          <div className="text-center mb-12">
+            <p className="section__label">Features</p>
+            <h2 className="section__h2">What This Tool Does</h2>
+            <p className="section__lead mt-4">
+              Eight things that make this tool different from a generic AI chatbot.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="usecase-item">
+              <h3>Instant results</h3>
+              <p>Results appear in under a second. No loading bars, no waiting, no page reloads.</p>
+            </div>
+            <div className="usecase-item">
+              <h3>Works for any fandom</h3>
+              <p>Anime, Marvel, DC, fantasy novels, video games, original fiction. Enter any character name and the tool adapts to fit.</p>
+            </div>
+            <div className="usecase-item">
+              <h3>Four generator types in one place</h3>
+              <p>Character traits, relationship dynamics, scenario settings, and random ideas, all available without switching between different tools.</p>
+            </div>
+            <div className="usecase-item">
+              <h3>Tone control</h3>
+              <p>Choose Soft, Dark, Chaotic, Romantic, or Fluffy to match the energy of your story before generating results.</p>
+            </div>
+            <div className="usecase-item">
+              <h3>Name-woven output</h3>
+              <p>Your character's name appears inside the results, not generic placeholder text that could belong to anyone.</p>
+            </div>
+            <div className="usecase-item">
+              <h3>Save to browser</h3>
+              <p>Results save to your browser's local storage. Come back later and find your best ideas still waiting.</p>
+            </div>
+            <div className="usecase-item">
+              <h3>Privacy first</h3>
+              <p>Nothing you type is sent to a server. Your character names and story ideas stay in your browser only.</p>
+            </div>
+            <div className="usecase-item">
+              <h3>Completely free</h3>
+              <p>No signup, no payment wall, no generation limits. Every tool on this site is free.</p>
             </div>
           </div>
         </div>
@@ -616,6 +664,26 @@ export default function HomePage() {
                 random headcanon generator
               </Link>{" "}
               delivers instant ideas with no input needed.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* ── SECTION 10B - AI Headcanon Generator vs Generic Chatbot (Comparison) ── */}
+      <section className="section section--alt">
+        <div className="mx-auto max-w-[760px] px-6">
+          <p className="section__label">Comparison</p>
+          <h2 className="section__h2">AI Headcanon Generator vs Generic Chatbot</h2>
+
+          <div className="space-y-4 mt-6" style={{ fontSize: "16px", color: "var(--color-ink-3)", lineHeight: 1.8 }}>
+            <p>
+              Generic AI chatbots produce generic output. Ask one to write a headcanon and you get something that could describe any character in any fandom. This ai headcanon generator uses curated fandom-specific templates. Results are specific, usable, and ready to write from without editing.
+            </p>
+            <p>
+              Chatbots also require a detailed prompt before they give you something useful. You need to know what to ask. This headcanons generator works with just a character name. It handles the creative direction so you can focus on the writing.
+            </p>
+            <p>
+              There is also a privacy difference. AI chatbots store your conversations on their servers. This tool runs entirely in your browser. Nothing is sent anywhere, nothing is saved to a server. What you type stays with you.
             </p>
           </div>
         </div>

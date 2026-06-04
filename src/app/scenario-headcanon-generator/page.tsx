@@ -71,6 +71,58 @@ export default function ScenarioHeadcanonGeneratorPage() {
                 "name": "What is a scenario headcanon?",
                 "acceptedAnswer": {
                   "@type": "Answer",
+                  "text": "A scenario headcanon places characters in a specific setting or situation and explores how they would behave, react, or feel in that context. It is a 'what if' moment, grounded in who the characters are, set somewhere new."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What settings can I use?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Any setting. The tool works with realistic modern settings, fantasy worlds, sci-fi environments, historical periods, and alternate universes. The setting is your choice, and the tool creates the moment inside it."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Can I use this for AU ideas?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. This is one of the most useful applications. Use it to find a specific scenario that becomes the seed of your alternate universe. The best AU ideas come from one concrete moment, not a general premise."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How many scenarios can I generate?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Unlimited. Each click produces a new result from the curated prompt pool. Generate as many times as you need."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Can I combine this with the character headcanon generator?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. Generate a character headcanon first to establish who your character is, then use this tool to place them in a specific situation. The character headcanon generator and this tool work well as a pair."
+                }
+              }
+            ]
+          })
+        }}
+      />
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "What is a scenario headcanon?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
                   "text": "A scenario headcanon is an idea about how characters would behave, react, or interact in a specific setting or environment (e.g., modern coffee shop AU, fantasy quest, or locked room situation)."
                 }
               },
@@ -146,6 +198,41 @@ export default function ScenarioHeadcanonGeneratorPage() {
               Fans use scenario-based ideas to build stories, create prompts, and
               explore different environments.
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* ── Popular Scenario Types in Fandom Writing ──── */}
+      <section className="section section--alt">
+        <div className="mx-auto max-w-[1120px] px-6">
+          <p className="section__label">Scenario types</p>
+          <h2 className="section__h2">Popular Scenario Types in Fandom Writing</h2>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-8">
+            <article style={{ background: "var(--color-surface)", border: "1px solid var(--color-border)", borderRadius: "var(--radius-xl)", padding: "24px" }}>
+              <h3 className="text-lg font-medium mb-3" style={{ color: "var(--color-text)" }}>Coffee shop AU</h3>
+              <p className="text-sm leading-relaxed" style={{ color: "var(--color-ink-3)" }}>
+                One of the most-used settings in fandom writing. Two characters meet, or re-meet, in a mundane space that strips away whatever made them complicated. This tool creates the specific moment that defines who they are to each other in this version of the world: the first exchange, the thing one of them notices, the reason they come back.
+              </p>
+            </article>
+            <article style={{ background: "var(--color-surface)", border: "1px solid var(--color-border)", borderRadius: "var(--radius-xl)", padding: "24px" }}>
+              <h3 className="text-lg font-medium mb-3" style={{ color: "var(--color-text)" }}>War and conflict settings</h3>
+              <p className="text-sm leading-relaxed" style={{ color: "var(--color-ink-3)" }}>
+                High-stakes scenarios where survival, loyalty, and moral choices get forced into a single moment. Canon characters in war AUs reveal things that ordinary life never surfaces. This tool creates the dramatic trigger: the order given, the decision made, the cost that follows.
+              </p>
+            </article>
+            <article style={{ background: "var(--color-surface)", border: "1px solid var(--color-border)", borderRadius: "var(--radius-xl)", padding: "24px" }}>
+              <h3 className="text-lg font-medium mb-3" style={{ color: "var(--color-text)" }}>School and academy AU</h3>
+              <p className="text-sm leading-relaxed" style={{ color: "var(--color-ink-3)" }}>
+                Structured environments with social hierarchies, secret lives, and the weight of other people's expectations. High school AU and academy settings work because the pressure is constant and inescapable. This tool places characters inside those pressures and creates a moment that reveals something true about them.
+              </p>
+            </article>
+            <article style={{ background: "var(--color-surface)", border: "1px solid var(--color-border)", borderRadius: "var(--radius-xl)", padding: "24px" }}>
+              <h3 className="text-lg font-medium mb-3" style={{ color: "var(--color-text)" }}>Modern AU</h3>
+              <p className="text-sm leading-relaxed" style={{ color: "var(--color-ink-3)" }}>
+                Canon characters lifted out of their original setting and placed into the present day. The powers are gone, the stakes are smaller, but the personalities remain. Modern AU headcanons work because who someone is does not change with the world around them. This tool creates the everyday moment that carries the full weight of who they are.
+              </p>
+            </article>
           </div>
         </div>
       </section>
@@ -254,6 +341,89 @@ export default function ScenarioHeadcanonGeneratorPage() {
             <span className="feature-tag">Roleplay scenarios</span>
             <span className="feature-tag">Creative prompts</span>
             <span className="feature-tag">Idea generation</span>
+          </div>
+        </div>
+      </section>
+
+      {/* ── Who Uses This Tool? ────────────────────────── */}
+      <section className="section">
+        <div className="mx-auto max-w-[1120px] px-6">
+          <p className="section__label">Audience</p>
+          <h2 className="section__h2">Who Uses This Tool?</h2>
+          <p className="section__lead mt-3">
+            This tool is used by anyone who needs a specific story moment fast.
+          </p>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-8">
+            <article style={{ background: "var(--color-surface)", border: "1px solid var(--color-border)", borderRadius: "var(--radius-xl)", padding: "24px" }}>
+              <h3 className="text-lg font-medium mb-3" style={{ color: "var(--color-text)" }}>Fanfiction writers planning a chapter</h3>
+              <p className="text-sm leading-relaxed" style={{ color: "var(--color-ink-3)" }}>
+                Use it to find the setting before you plan the plot. The environment shapes the scene, and the scene shapes the character. AO3 writers use scenario headcanons to build the specific moment a chapter turns on.
+              </p>
+            </article>
+            <article style={{ background: "var(--color-surface)", border: "1px solid var(--color-border)", borderRadius: "var(--radius-xl)", padding: "24px" }}>
+              <h3 className="text-lg font-medium mb-3" style={{ color: "var(--color-text)" }}>Roleplayers setting a scene</h3>
+              <p className="text-sm leading-relaxed" style={{ color: "var(--color-ink-3)" }}>
+                Generate a scenario before a Discord RP or forum session to give both players a concrete situation to react to. Specific is always better than "we are somewhere in the city."
+              </p>
+            </article>
+            <article style={{ background: "var(--color-surface)", border: "1px solid var(--color-border)", borderRadius: "var(--radius-xl)", padding: "24px" }}>
+              <h3 className="text-lg font-medium mb-3" style={{ color: "var(--color-text)" }}>Artists looking for a scene to draw</h3>
+              <p className="text-sm leading-relaxed" style={{ color: "var(--color-ink-3)" }}>
+                A specific scenario, like two characters in a power cut, in a train station, or in a borrowed coat, is easier to visualize and draw than an abstract mood. This tool gives you the moment, not just the feeling.
+              </p>
+            </article>
+            <article style={{ background: "var(--color-surface)", border: "1px solid var(--color-border)", borderRadius: "var(--radius-xl)", padding: "24px" }}>
+              <h3 className="text-lg font-medium mb-3" style={{ color: "var(--color-text)" }}>Writers building AU ideas</h3>
+              <p className="text-sm leading-relaxed" style={{ color: "var(--color-ink-3)" }}>
+                Use it to find a scenario type you have not tried, then build an alternate universe around it. The best AUs on Tumblr and Wattpad start from one specific moment, not a vague premise.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      {/* ── Scenario Headcanon Generator — FAQ ─────────── */}
+      <section className="section section--alt">
+        <div className="mx-auto max-w-[760px] px-6">
+          <div className="text-center mb-12">
+            <p className="section__label">Common questions</p>
+            <h2 className="section__h2">Scenario Headcanon Generator - FAQ</h2>
+          </div>
+
+          <div className="space-y-6">
+            <div style={{ background: "var(--color-surface)", border: "1px solid var(--color-border)", borderRadius: "var(--radius-xl)", padding: "24px" }}>
+              <h3 className="text-lg font-medium mb-3" style={{ color: "var(--color-text)" }}>What is a scenario headcanon?</h3>
+              <p className="text-sm leading-relaxed" style={{ color: "var(--color-ink-3)" }}>
+                A scenario headcanon places characters in a specific setting or situation and explores how they would behave, react, or feel in that context. It is a "what if" moment, grounded in who the characters are, set somewhere new.
+              </p>
+            </div>
+            <div style={{ background: "var(--color-surface)", border: "1px solid var(--color-border)", borderRadius: "var(--radius-xl)", padding: "24px" }}>
+              <h3 className="text-lg font-medium mb-3" style={{ color: "var(--color-text)" }}>What settings can I use?</h3>
+              <p className="text-sm leading-relaxed" style={{ color: "var(--color-ink-3)" }}>
+                Any setting. The tool works with realistic modern settings, fantasy worlds, sci-fi environments, historical periods, and alternate universes. The setting is your choice, and the tool creates the moment inside it.
+              </p>
+            </div>
+            <div style={{ background: "var(--color-surface)", border: "1px solid var(--color-border)", borderRadius: "var(--radius-xl)", padding: "24px" }}>
+              <h3 className="text-lg font-medium mb-3" style={{ color: "var(--color-text)" }}>Can I use this for AU ideas?</h3>
+              <p className="text-sm leading-relaxed" style={{ color: "var(--color-ink-3)" }}>
+                Yes. This is one of the most useful applications. Use it to find a specific scenario that becomes the seed of your alternate universe. The best AU ideas come from one concrete moment, not a general premise.
+              </p>
+            </div>
+            <div style={{ background: "var(--color-surface)", border: "1px solid var(--color-border)", borderRadius: "var(--radius-xl)", padding: "24px" }}>
+              <h3 className="text-lg font-medium mb-3" style={{ color: "var(--color-text)" }}>How many scenarios can I generate?</h3>
+              <p className="text-sm leading-relaxed" style={{ color: "var(--color-ink-3)" }}>
+                Unlimited. Each click produces a new result from the curated prompt pool. Generate as many times as you need.
+              </p>
+            </div>
+            <div style={{ background: "var(--color-surface)", border: "1px solid var(--color-border)", borderRadius: "var(--radius-xl)", padding: "24px" }}>
+              <h3 className="text-lg font-medium mb-3" style={{ color: "var(--color-text)" }}>Can I combine this with the character headcanon generator?</h3>
+              <p className="text-sm leading-relaxed" style={{ color: "var(--color-ink-3)" }}>
+                Yes. Generate a character headcanon first to establish who your character is, then use this tool to place them in a specific situation. The{" "}
+                <Link href="/character-headcanon-generator/">character headcanon generator</Link>
+                {" "}and this tool work well as a pair.
+              </p>
+            </div>
           </div>
         </div>
       </section>

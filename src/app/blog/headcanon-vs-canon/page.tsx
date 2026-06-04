@@ -70,6 +70,22 @@ export default function HeadcanonVsCanonPage() {
               text: "Yes. Headcanons are personal. Two fans can hold completely different headcanons about the same character and both be valid.",
             },
           },
+          {
+            "@type": "Question",
+            name: "What is the difference between canon and headcanon?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Canon is the official content — what the author actually wrote or confirmed. Headcanon is a fan's personal interpretation that fills in the gaps canon left open. Neither is more valid for creative purposes; they just serve different roles in how fans engage with a story.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "What does headcanon mean in fanfiction?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "In fanfiction, headcanon refers to details a writer treats as true for their story even without official confirmation. It might be a character's childhood, a relationship dynamic, or a personality trait — anything the original work left ambiguous. Most fanfiction is built almost entirely on headcanon.",
+            },
+          },
         ],
       },
     ],
@@ -90,6 +106,16 @@ export default function HeadcanonVsCanonPage() {
       question: "Is it okay to disagree with someone's headcanon?",
       answer:
         "Yes. Headcanons are personal. Two fans can hold completely different headcanons about the same character and both be valid.",
+    },
+    {
+      question: "What is the difference between canon and headcanon?",
+      answer:
+        "Canon is the official content — what the author actually wrote or confirmed. Headcanon is a fan's personal interpretation that fills in the gaps canon left open. Neither is more valid for creative purposes; they just serve different roles in how fans engage with a story.",
+    },
+    {
+      question: "What does headcanon mean in fanfiction?",
+      answer:
+        "In fanfiction, headcanon refers to details a writer treats as true for their story even without official confirmation. It might be a character's childhood, a relationship dynamic, or a personality trait — anything the original work left ambiguous. Most fanfiction is built almost entirely on headcanon.",
     },
   ];
 
@@ -224,6 +250,29 @@ export default function HeadcanonVsCanonPage() {
           <h2 className="section__h2 mb-4">
             A Side-by-Side Comparison
           </h2>
+
+          <h3>What's the Difference Between Canon and Headcanon?</h3>
+
+          <p>
+          Canon is the official story — what actually happens in the 
+          source material. Headcanon is what a fan personally believes 
+          to be true, even if the author never confirmed it. The 
+          headcanon vs canon divide is where fandom creativity lives: 
+          canon gives you the skeleton, headcanon fills in everything 
+          the story left unsaid.
+          </p>
+
+          <p>
+          In headcanon in fanfiction, writers treat their personal 
+          interpretations as emotional truth. A character's backstory, 
+          their fears, their habits — none of it needs a citation 
+          from the original work. If you want to explore that space 
+          for your own characters or ships, try the{" "}
+          <a href="/relationship-headcanon-generator/">
+            relationship headcanon generator
+          </a>
+          {" "}to get started instantly.
+          </p>
 
           {/* Comparison Card Deck */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 my-10 items-stretch">
