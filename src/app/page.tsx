@@ -112,7 +112,7 @@ export default function HomePage() {
         }}
       />
 
-      {/* ── Hero ────────────────────────────────────── */}
+      {/* -- Hero -------------------------------------- */}
       <section className="relative overflow-hidden hero-gradient" style={{ padding: "2rem 0 0", textAlign: "center" }}>
         <div className="relative mx-auto max-w-[1120px] px-6">
           <h1 className="animate-fade-up animate-delay-1" style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(40px, 6vw, 68px)", lineHeight: 1.08, letterSpacing: "-1.5px", color: "var(--color-text)", marginBottom: "0.5rem", marginTop: "1.5rem" }}>
@@ -125,14 +125,14 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── Tool UI (above the fold) ────────────────── */}
+      {/* -- Tool UI (above the fold) ------------------ */}
       <section className="w-full px-6 pb-12 animate-scale-in" style={{ marginTop: "0" }}>
         <div style={{ minHeight: '520px', position: 'relative' }}>
           <HomeHeadcanonTool />
         </div>
       </section>
 
-      {/* ── SECTION 2 - Generate Headcanons for Any Character or Fandom ── */}
+      {/* -- SECTION 2 - Generate Headcanons for Any Character or Fandom -- */}
       <section className="section section--alt">
         <div className="mx-auto max-w-[1120px] px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
@@ -200,7 +200,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── SECTION 3 - How to Use the Tool ── */}
+      {/* -- SECTION 3 - How to Use the Tool -- */}
       <section className="section">
         <div className="mx-auto max-w-[1120px] px-6">
           <div className="text-center mb-12">
@@ -236,7 +236,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── SECTION 3B - What This Tool Does (Features) ── */}
+      {/* -- SECTION 3B - What This Tool Does (Features) -- */}
       <section className="section section--alt">
         <div className="mx-auto max-w-[1120px] px-6">
           <div className="text-center mb-12">
@@ -284,7 +284,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── SECTION 4 - Example Headcanons ── */}
+      {/* -- SECTION 4 - Example Headcanons -- */}
       <section className="section section--alt">
         <div className="mx-auto max-w-[1000px] px-6">
           <div className="mb-12 max-w-[760px]">
@@ -342,7 +342,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── SECTION 5 - What Is a Headcanon? ── */}
+      {/* -- SECTION 5 - What Is a Headcanon? -- */}
       <section className="section">
         <div className="mx-auto max-w-[760px] px-6">
           <p className="section__label">Understanding headcanons</p>
@@ -374,7 +374,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── SECTION 6 - Who Should Use This Tool? ── */}
+      {/* -- SECTION 6 - Who Should Use This Tool? -- */}
       <section className="section section--alt">
         <div className="mx-auto max-w-[1120px] px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
@@ -421,7 +421,7 @@ export default function HomePage() {
       </section>
 
 
-      {/* ── SECTION 8 - AI Headcanon Generator vs Generic Chatbot ── */}
+      {/* -- SECTION 8 - AI Headcanon Generator vs Generic Chatbot -- */}
       <section className="section section--alt">
         <div className="mx-auto max-w-[760px] px-6">
           <p className="section__label">Comparison</p>
@@ -454,7 +454,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── SECTION 9 - Explore More Generators ── */}
+      {/* -- SECTION 9 - Explore More Generators -- */}
       <section className="section section--alt">
         <div className="mx-auto max-w-[1120px] px-6">
           <div className="mb-10 max-w-[800px]">
@@ -580,7 +580,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── SECTION 10 - Built for Fanfiction, Roleplay, and Fandom Writing ── */}
+      {/* -- SECTION 10 - Built for Fanfiction, Roleplay, and Fandom Writing -- */}
       <section className="section">
         <div className="mx-auto max-w-[760px] px-6">
           <p className="section__label">Specialized tools</p>
@@ -620,7 +620,7 @@ export default function HomePage() {
       </section>
 
 
-      {/* ── FAQ ─────────────────────────────────────── */}
+      {/* -- FAQ --------------------------------------- */}
       <section className="section">
         <div className="mx-auto max-w-[760px] px-6">
           <div className="text-center mb-12">
@@ -632,7 +632,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── Micro Reinforcement ─────────────────────── */}
+      {/* -- Micro Reinforcement ----------------------- */}
       <section className="section section--alt">
         <div className="mx-auto max-w-[640px] px-6">
           <div className="micro-callout">

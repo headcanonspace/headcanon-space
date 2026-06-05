@@ -1,4 +1,4 @@
-// ─── Shared Utilities ────────────────────────────────────────────────────────
+// --- Shared Utilities --------------------------------------------------------
 
 export function pick<T>(arr: T[]): T {
   return arr[Math.floor(Math.random() * arr.length)];
@@ -32,7 +32,7 @@ export function pickFresh<T>(arr: T[], key: string, window = 5): T {
   return arr[idx];
 }
 
-// ─── Config Types (Discriminated Union) ──────────────────────────────────────
+// --- Config Types (Discriminated Union) --------------------------------------
 
 export interface HomeConfig {
   type: "home";
@@ -86,7 +86,7 @@ export type GeneratorConfig =
   | RelationshipConfig
   | ScenarioConfig;
 
-// ─── Result Types ────────────────────────────────────────────────────────────
+// --- Result Types ------------------------------------------------------------
 
 export interface HomeResult {
   id: string;
@@ -136,7 +136,7 @@ export interface ScenarioResult {
   sceneDescription: string;
 }
 
-// ─── Result Map (links config type to result type) ───────────────────────────
+// --- Result Map (links config type to result type) ---------------------------
 
 export type GeneratorResultMap = {
   home: HomeResult[];

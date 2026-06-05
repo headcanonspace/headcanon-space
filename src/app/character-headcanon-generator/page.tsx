@@ -54,7 +54,7 @@ export default function CharacterHeadcanonGeneratorPage() {
         }}
       />
 
-      {/* ── Hero ────────────────────────────────────── */}
+      {/* -- Hero -------------------------------------- */}
       <section className="relative overflow-hidden hero-gradient" style={{ padding: "80px 0 64px", textAlign: "center" }}>
         <div className="relative mx-auto max-w-[760px] px-6">
 
@@ -67,7 +67,7 @@ export default function CharacterHeadcanonGeneratorPage() {
         </div>
       </section>
 
-      {/* ── Tool UI ─────────────────────────────────── */}
+      {/* -- Tool UI ----------------------------------- */}
       <section className="w-full px-6 pt-8 pb-16 animate-scale-in">
         <div style={{ minHeight: '520px', position: 'relative' }}>
           <CharacterHeadcanonGenerator />
@@ -118,7 +118,7 @@ export default function CharacterHeadcanonGeneratorPage() {
         }}
       />
 
-      {/* ── What Is a Character Headcanon Generator? ───── */}
+      {/* -- What Is a Character Headcanon Generator? ----- */}
       <section className="section">
         <div className="mx-auto max-w-[760px] px-6">
           <p className="section__label">Understanding the tool</p>
@@ -137,7 +137,7 @@ export default function CharacterHeadcanonGeneratorPage() {
         </div>
       </section>
 
-      {/* ── How to Use & Why Use It ─────────────────────── */}
+      {/* -- How to Use & Why Use It ----------------------- */}
       <section className="section section--alt">
         <div className="mx-auto max-w-[760px] px-6">
           <div className="grid sm:grid-cols-2 gap-6">
@@ -188,7 +188,7 @@ export default function CharacterHeadcanonGeneratorPage() {
         </div>
       </section>
 
-      {/* ── SECTION 1 - Example Character Headcanons ── */}
+      {/* -- SECTION 1 - Example Character Headcanons -- */}
       <section className="section">
         <div className="mx-auto max-w-[1000px] px-6">
           <div className="text-center mb-10 max-w-[760px] mx-auto">
@@ -246,7 +246,7 @@ export default function CharacterHeadcanonGeneratorPage() {
         </div>
       </section>
 
-      {/* ── SECTION 2 - Who Should Use This? ── */}
+      {/* -- SECTION 2 - Who Should Use This? -- */}
       <section className="section section--alt">
         <div className="mx-auto max-w-[760px] px-6">
           <p className="section__label">Use Cases</p>
@@ -320,7 +320,7 @@ export default function CharacterHeadcanonGeneratorPage() {
         </div>
       </section>
 
-      {/* ── SECTION 3 - FAQ ── */}
+      {/* -- SECTION 3 - FAQ -- */}
       <section className="section">
         <div className="mx-auto max-w-[760px] px-6">
           <div className="text-center mb-12">
@@ -335,7 +335,7 @@ export default function CharacterHeadcanonGeneratorPage() {
         </div>
       </section>
 
-      {/* ── Explore More Tools ────────────────────────── */}
+      {/* -- Explore More Tools -------------------------- */}
       <section className="section section--alt">
         <div className="mx-auto max-w-[760px] px-6">
           <p className="section__label">More tools</p>

@@ -11,7 +11,7 @@ import { afterMs } from "@/lib/afterMs";
 import { SelectChevron } from "@/components/SelectChevron";
 import { loadFromLocalStorage, removeFromLocalStorage, saveToLocalStorage } from "@/lib/localStorage";
 
-// ─── Types ───────────────────────────────────────────────────────────────────────
+// --- Types -----------------------------------------------------------------------
 
 interface ExamplePreset {
   title: string;
@@ -22,7 +22,7 @@ interface ExamplePreset {
   context: string;
 }
 
-// ─── Constants ───────────────────────────────────────────────────────────────────
+// --- Constants -------------------------------------------------------------------
 
 const TONES = RELATIONSHIP_TONES;
 const LENGTHS = ["Short", "Medium", "Long"];
@@ -34,7 +34,7 @@ const EXAMPLE_PRESETS: ExamplePreset[] = [
   { title: "Peter & Tony", characters: ["Peter Parker", "Tony Stark"], fandom: "Marvel", type: "Mentor-Student", tone: "Dramatic", context: "" },
 ];
 
-// ─── Sub-Components ──────────────────────────────────────────────────────────────
+// --- Sub-Components --------------------------------------------------------------
 
 function SelectField({ label, value, onChange, options }: { label: string; value: string; onChange: (v: string) => void; options: string[] }) {
   return (
@@ -80,7 +80,7 @@ function ExampleCard({ preset, onClick }: { preset: ExamplePreset; onClick: () =
   );
 }
 
-// ─── Main Component ──────────────────────────────────────────────────────────────
+// --- Main Component --------------------------------------------------------------
 
 export default function RelationshipHeadcanonGenerator() {
   const [characters, setCharacters] = useState<string[]>([""]);

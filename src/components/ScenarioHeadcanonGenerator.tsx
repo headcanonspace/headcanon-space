@@ -15,7 +15,7 @@ const LENGTHS = ["Short", "Medium", "Long"];
 const COUNTS = [1, 3, 5, 7];
 const STORAGE_KEY = "headcanon.scenario.lastResults";
 
-// ─── Styled Select ───────────────────────────────────────────────────────────────
+// --- Styled Select ---------------------------------------------------------------
 
 function SelectDropdown({ label, value, onChange, options }: { label: string; value: string; onChange: (val: string) => void; options: { value: string; label: string }[] }) {
   return (
@@ -31,7 +31,7 @@ function SelectDropdown({ label, value, onChange, options }: { label: string; va
   );
 }
 
-// ─── Main Component ──────────────────────────────────────────────────────────────
+// --- Main Component --------------------------------------------------------------
 
 export default function ScenarioHeadcanonGenerator() {
   const [characters, setCharacters] = useState("");

@@ -150,7 +150,9 @@ export default function ScenarioHeadcanonGeneratorPage() {
         }}
       />
 
-
+      {/* -- Hero -------------------------------------- */}
+      <section className="relative overflow-hidden hero-gradient" style={{ padding: "48px 0 24px", textAlign: "center" }}>
+        <div className="relative mx-auto max-w-[760px] px-6">
           <h1 className="animate-fade-up animate-delay-1" style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(36px, 5vw, 56px)", lineHeight: 1.08, letterSpacing: "-1.2px", color: "var(--color-text)", marginBottom: "20px" }}>
             Scenario Headcanon Generator
           </h1>
@@ -161,14 +163,14 @@ export default function ScenarioHeadcanonGeneratorPage() {
         </div>
       </section>
 
-      {/* ── Tool UI ─────────────────────────────────── */}
+      {/* -- Tool UI ----------------------------------- */}
       <section className="w-full px-6 pt-8 pb-16 animate-scale-in">
         <div style={{ minHeight: '520px', position: 'relative' }}>
           <ScenarioHeadcanonGenerator />
         </div>
       </section>
 
-      {/* ── What Is a Scenario Headcanon ────────────── */}
+      {/* -- What Is a Scenario Headcanon -------------- */}
       <section className="section">
         <div className="mx-auto max-w-[760px] px-6">
           <p className="section__label">Understanding the tool</p>
@@ -186,7 +188,7 @@ export default function ScenarioHeadcanonGeneratorPage() {
         </div>
       </section>
 
-      {/* ── Popular Scenario Types in Fandom Writing ──── */}
+      {/* -- Popular Scenario Types in Fandom Writing ---- */}
       <section className="section section--alt">
         <div className="mx-auto max-w-[1120px] px-6">
           <p className="section__label">Scenario types</p>
@@ -221,7 +223,7 @@ export default function ScenarioHeadcanonGeneratorPage() {
         </div>
       </section>
 
-      {/* ── How to Use & Why Use It ─────────────────────── */}
+      {/* -- How to Use & Why Use It ----------------------- */}
       <section className="section section--alt">
         <div className="mx-auto max-w-[760px] px-6">
           <div className="grid sm:grid-cols-2 gap-6">
@@ -270,7 +272,7 @@ export default function ScenarioHeadcanonGeneratorPage() {
         </div>
       </section>
 
-      {/* ── Example Scenario Headcanons ─────────────── */}
+      {/* -- Example Scenario Headcanons --------------- */}
       <section className="section">
         <div className="mx-auto max-w-[1000px] px-6">
           <div className="text-center mb-10 max-w-[760px] mx-auto">
@@ -315,7 +317,7 @@ export default function ScenarioHeadcanonGeneratorPage() {
         </div>
       </section>
 
-      {/* ── Use Cases ─────────────────────────────────── */}
+      {/* -- Use Cases ----------------------------------- */}
       <section className="section section--alt">
         <div className="mx-auto max-w-[760px] px-6">
           <p className="section__label">Use cases</p>
@@ -329,7 +331,7 @@ export default function ScenarioHeadcanonGeneratorPage() {
         </div>
       </section>
 
-      {/* ── Who Uses This Tool? ────────────────────────── */}
+      {/* -- Who Uses This Tool? -------------------------- */}
       <section className="section">
         <div className="mx-auto max-w-[1120px] px-6">
           <p className="section__label">Audience</p>
@@ -367,7 +369,7 @@ export default function ScenarioHeadcanonGeneratorPage() {
         </div>
       </section>
 
-      {/* ── Scenario Headcanon Generator — FAQ ─────────── */}
+      {/* -- Scenario Headcanon Generator — FAQ ----------- */}
       <section className="section section--alt">
         <div className="mx-auto max-w-[760px] px-6">
           <div className="text-center mb-12">
@@ -412,7 +414,7 @@ export default function ScenarioHeadcanonGeneratorPage() {
         </div>
       </section>
 
-      {/* ── FAQ ─────────────────────────────────────────── */}
+      {/* -- FAQ ------------------------------------------- */}
       <section className="section">
         <div className="mx-auto max-w-[760px] px-6">
           <div className="text-center mb-12">
@@ -424,7 +426,7 @@ export default function ScenarioHeadcanonGeneratorPage() {
         </div>
       </section>
 
-      {/* ── Explore More Tools ────────────────────────── */}
+      {/* -- Explore More Tools -------------------------- */}
       <section className="section">
         <div className="mx-auto max-w-[760px] px-6">
           <p className="section__label">More tools</p>

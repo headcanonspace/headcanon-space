@@ -77,7 +77,7 @@ export default function OCHeadcanonGeneratorPage() {
         }}
       />
 
-      {/* ── Hero & Intro ────────────────────────────────────── */}
+      {/* -- Hero & Intro -------------------------------------- */}
       <section className="relative overflow-hidden" style={{ padding: "40px 0 0px", textAlign: "center" }}>
         <div className="relative mx-auto max-w-[760px] px-6">
           <h1 className="font-serif text-4xl sm:text-5xl font-extrabold text-[var(--color-text)] tracking-tight mb-5 animate-fade-up animate-delay-1">
@@ -89,14 +89,14 @@ export default function OCHeadcanonGeneratorPage() {
         </div>
       </section>
 
-      {/* ── Tool UI ─────────────────────────────────── */}
+      {/* -- Tool UI ----------------------------------- */}
       <section className="w-full px-6 pt-4 pb-0 animate-scale-in">
         <div style={{ minHeight: '520px', position: 'relative' }}>
           <CharacterHeadcanonGenerator />
         </div>
       </section>
 
-      {/* ── Section 1 ───────────────────────────────── */}
+      {/* -- Section 1 --------------------------------- */}
       <section className="section" style={{ paddingTop: '24px' }}>
         <div className="mx-auto max-w-[760px] px-6">
           <h2 className="section__h2">What Is an OC Headcanon Generator?</h2>
@@ -120,7 +120,7 @@ export default function OCHeadcanonGeneratorPage() {
         </div>
       </section>
 
-      {/* ── Section 2 ───────────────────────────────── */}
+      {/* -- Section 2 --------------------------------- */}
       <section className="section section--alt">
         <div className="mx-auto max-w-[760px] px-6">
           <h2 className="section__h2">Why OC Headcanons Matter</h2>
@@ -138,7 +138,7 @@ export default function OCHeadcanonGeneratorPage() {
         </div>
       </section>
 
-      {/* ── Section 3 ───────────────────────────────── */}
+      {/* -- Section 3 --------------------------------- */}
       <section className="section">
         <div className="mx-auto max-w-[1000px] px-6">
           <div className="text-center mb-10 max-w-[760px] mx-auto">
@@ -186,7 +186,7 @@ export default function OCHeadcanonGeneratorPage() {
         </div>
       </section>
 
-      {/* ── Section 4 ───────────────────────────────── */}
+      {/* -- Section 4 --------------------------------- */}
       <section className="section section--alt">
         <div className="mx-auto max-w-[760px] px-6">
           <h2 className="section__h2">OC Development vs Canon Character Headcanons</h2>
@@ -201,7 +201,7 @@ export default function OCHeadcanonGeneratorPage() {
         </div>
       </section>
 
-      {/* ── Section 5 - FAQ ─────────────────────────── */}
+      {/* -- Section 5 - FAQ --------------------------- */}
       <section className="section">
         <div className="mx-auto max-w-[760px] px-6">
           <div className="text-center mb-12">
@@ -231,7 +231,7 @@ export default function OCHeadcanonGeneratorPage() {
         </div>
       </section>
 
-      {/* ── Explore More Tools ────────────────────────── */}
+      {/* -- Explore More Tools -------------------------- */}
       <section className="section section--alt">
         <div className="mx-auto max-w-[760px] px-6">
           <p className="section__label">More tools</p>

@@ -110,7 +110,7 @@ export default function RandomHeadcanonGeneratorPage() {
         }}
       />
 
-      {/* ── Hero ────────────────────────────────────── */}
+      {/* -- Hero -------------------------------------- */}
       <section className="relative overflow-hidden hero-gradient" style={{ padding: "48px 0 24px", textAlign: "center" }}>
         <div className="relative mx-auto max-w-[760px] px-6">
 
@@ -125,14 +125,14 @@ export default function RandomHeadcanonGeneratorPage() {
         </div>
       </section>
 
-      {/* ── Tool UI ─────────────────────────────────── */}
+      {/* -- Tool UI ----------------------------------- */}
       <section className="w-full px-6 pt-2 pb-16 animate-scale-in">
         <div style={{ minHeight: '520px', position: 'relative' }}>
           <RandomHeadcanonTool />
         </div>
       </section>
 
-      {/* ── SECTION 1 — Example Random Headcanons ───── */}
+      {/* -- SECTION 1 — Example Random Headcanons ----- */}
       <section className="section">
         <div className="mx-auto max-w-[1000px] px-6">
           <div className="text-center mb-10 max-w-[760px] mx-auto">
@@ -162,7 +162,7 @@ export default function RandomHeadcanonGeneratorPage() {
         </div>
       </section>
 
-      {/* ── SECTION 2 — Who Uses the Random Headcanons Generator? ───── */}
+      {/* -- SECTION 2 — Who Uses the Random Headcanons Generator? ----- */}
       <section className="section">
         <div className="mx-auto max-w-[1000px] px-6">
           <div className="text-center mb-16 max-w-[760px] mx-auto">
@@ -232,7 +232,7 @@ export default function RandomHeadcanonGeneratorPage() {
         </div>
       </section>
 
-      {/* ── SECTION 3 — Random Headcanons vs Character-Specific Generators ───── */}
+      {/* -- SECTION 3 — Random Headcanons vs Character-Specific Generators ----- */}
       <section className="section">
         <div className="mx-auto max-w-[1000px] px-6">
           <div className="text-center mb-16 max-w-[760px] mx-auto">
@@ -270,7 +270,7 @@ export default function RandomHeadcanonGeneratorPage() {
         </div>
       </section>
 
-      {/* ── SECTION 4 — FAQ ─────────────────────────────────────────── */}
+      {/* -- SECTION 4 — FAQ ------------------------------------------- */}
       <section className="section">
         <div className="mx-auto max-w-[760px] px-6">
           <div className="text-center mb-12">
@@ -284,7 +284,7 @@ export default function RandomHeadcanonGeneratorPage() {
         </div>
       </section>
 
-      {/* ── Explore More Tools ────────────────────────── */}
+      {/* -- Explore More Tools -------------------------- */}
       <section className="section">
         <div className="mx-auto max-w-[760px] px-6">
           <p className="section__label">More tools</p>

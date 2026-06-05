@@ -67,10 +67,10 @@ export default function RootLayout({
         <Navbar />
         <CookieConsent />
 
-        {/* ── Main ───────────────────────────────────── */}
+        {/* -- Main ------------------------------------- */}
         <main className="flex-1">{children}</main>
 
-        {/* ── Footer ─────────────────────────────────── */}
+        {/* -- Footer ----------------------------------- */}
         <footer className="mt-24" style={{ background: "#0a0e1a", color: "rgba(255,255,255,0.5)" }}>
           <div className="mx-auto max-w-[1120px] px-6 pt-14 pb-10">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
