@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About | Headcanon Generator",
-  description: "Learn more about Headcanon Space and our simple, fast generator tools.",
+  title: "About Headcanon Space — Free Character Headcanon Generator",
+  description: "Learn about Headcanon Space — a free character headcanon generator built for fanfiction writers, roleplayers, and fandom creators. No signup, no paywalls, any fandom.",
   alternates: {
     canonical: "https://headcanonspace.com/about/",
   },

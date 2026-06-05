@@ -44,26 +44,26 @@ export default function SiblingHeadcanonGeneratorPage() {
             mainEntity: [
               {
                 "@type": "Question",
-                name: "What kind of sibling dynamics does this tool generate?",
+                name: "What is a sibling headcanon generator?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "The tool generates headcanons for any sibling dynamic: protective bonds, rival siblings, estranged pairs, found family relationships, and childhood habits that carried into adulthood."
+                  text: "A sibling headcanon generator creates ideas about sibling dynamics, shared history, and family tension between any two characters — biological siblings, step-siblings, or found family bonds."
                 }
               },
               {
                 "@type": "Question",
-                name: "Can I use this for found family dynamics?",
+                name: "Does this work for found family dynamics?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "Yes. Found family siblings work exactly the same way. The bond formed through time and crisis rather than biology, so enter any two names and the tool generates dynamics specific to that pair."
+                  text: "Yes. The tool works for biological siblings, found family, and any bond with the emotional weight of siblinghood — even if the characters are not related by blood."
                 }
               },
               {
                 "@type": "Question",
-                name: "Does this work for canon sibling pairs?",
+                name: "Can I use this for original characters?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "Yes. Enter any canon sibling pair from any fandom, like anime, Marvel, fantasy, or games, and get headcanon ideas that extend what canon already established between them."
+                  text: "Yes. Enter any two names — canon characters, OCs, or a mix. The tool adapts to any pairing."
                 }
               },
               {
@@ -71,7 +71,7 @@ export default function SiblingHeadcanonGeneratorPage() {
                 name: "Is this tool free?",
                 acceptedAnswer: {
                   "@type": "Answer",
-                  text: "Yes. Completely free, no signup required, no generation limits. Everything runs in your browser, meaning nothing you type is saved anywhere."
+                  text: "Completely free. No signup required, no generation limits. Everything runs in your browser."
                 }
               }
             ]

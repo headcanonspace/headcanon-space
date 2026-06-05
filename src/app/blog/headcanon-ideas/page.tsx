@@ -153,16 +153,18 @@ export default function HeadcanonIdeasPage() {
               "They know which floorboards creak in every place they have ever lived. They use that knowledge more than they admit.",
               "They write things down and then never look at them again. The writing is the point. Not the remembering.",
               "They make themselves useful in a crisis so that no one has time to ask if they are fine.",
-            ].map((idea, index) => (
-              <div key={index} className="flex gap-4 items-start group">
-                <span className="text-3xl font-serif font-black text-indigo-100 transition-colors group-hover:text-[var(--color-primary)] select-none">
-                  {(index + 1).toString().padStart(2, '0')}
-                </span>
-                <p className="text-slate-700 leading-relaxed pt-1.5 font-medium">
-                  {idea}
-                </p>
-              </div>
-            ))}
+            ].map((idea, index) => {
+              return (
+                <div key={index} className="flex gap-4 items-start group">
+                  <span className="text-3xl font-serif font-black text-indigo-100 transition-colors group-hover:text-[var(--color-primary)] select-none">
+                    {(index + 1).toString().padStart(2, '0')}
+                  </span>
+                  <p className="text-slate-700 leading-relaxed pt-1.5 font-medium">
+                    {idea}
+                  </p>
+                </div>
+              );
+            })}
           </div>
         </section>
 
@@ -193,16 +195,18 @@ export default function HeadcanonIdeasPage() {
               "They are always slightly braced for bad news. Good news takes longer to land.",
               "They have one memory they return to when things are bad. They have never told anyone what it is.",
               "They do not know how to accept care without immediately trying to earn it.",
-            ].map((idea, index) => (
-              <div key={index} className="bg-slate-50 border border-slate-200/60 p-5 rounded-2xl transition-all hover:bg-slate-100/80 hover:border-indigo-100">
-                <span className="text-[9px] font-extrabold text-slate-400 uppercase tracking-[1.5px] block mb-2">
-                  Idea {index + 16}
-                </span>
-                <p className="text-sm text-slate-700 leading-relaxed font-medium">
-                  {idea}
-                </p>
-              </div>
-            ))}
+            ].map((idea, index) => {
+              return (
+                <div key={index} className="bg-slate-50 border border-slate-200/60 p-5 rounded-2xl transition-all hover:bg-slate-100/80 hover:border-indigo-100">
+                  <span className="text-[9px] font-extrabold text-slate-400 uppercase tracking-[1.5px] block mb-2">
+                    Idea {index + 16}
+                  </span>
+                  <p className="text-sm text-slate-700 leading-relaxed font-medium">
+                    {idea}
+                  </p>
+                </div>
+              );
+            })}
           </div>
         </section>
 
@@ -233,19 +237,21 @@ export default function HeadcanonIdeasPage() {
               "One of them is better at goodbyes. The other has never figured out how to start them.",
               "They have separate playlists they have never shared that were made entirely for the other person.",
               "One of them always knows when the other is lying. They choose when to say so very carefully.",
-            ].map((idea, index) => (
-              <div key={index} className="flex flex-col sm:flex-row bg-white border border-slate-200/80 rounded-xl overflow-hidden shadow-xs hover:shadow-md transition-shadow">
-                <div className="bg-slate-50 px-4 py-3 sm:w-20 flex items-center justify-center border-b sm:border-b-0 sm:border-r border-slate-200/80">
-                  <span className="text-xs font-bold text-slate-400">#{index + 26}</span>
+            ].map((idea, index) => {
+              return (
+                <div key={index} className="flex flex-col sm:flex-row bg-white border border-slate-200/80 rounded-xl overflow-hidden shadow-xs hover:shadow-md transition-shadow">
+                  <div className="bg-slate-50 px-4 py-3 sm:w-20 flex items-center justify-center border-b sm:border-b-0 sm:border-r border-slate-200/80">
+                    <span className="text-xs font-bold text-slate-400">#{index + 26}</span>
+                  </div>
+                  <div className="p-4 sm:p-5 flex-1 relative">
+                    <div className="absolute left-0 top-0 bottom-0 w-1 bg-indigo-100/50"></div>
+                    <p className="text-sm text-slate-700 leading-relaxed font-medium pl-2">
+                      {idea}
+                    </p>
+                  </div>
                 </div>
-                <div className="p-4 sm:p-5 flex-1 relative">
-                  <div className="absolute left-0 top-0 bottom-0 w-1 bg-indigo-100/50"></div>
-                  <p className="text-sm text-slate-700 leading-relaxed font-medium pl-2">
-                    {idea}
-                  </p>
-                </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
 
           <div className="mt-8 p-4 bg-indigo-50/30 rounded-xl border border-indigo-100/50">
@@ -282,16 +288,18 @@ export default function HeadcanonIdeasPage() {
               "When they have to deliver bad news, they practice in the mirror. It never helps.",
               "They are the person everyone calls in a crisis. They have never once called anyone else in theirs.",
               "On the last day of something, they always look back once. Just once. Then they do not look again.",
-            ].map((idea, index) => (
-              <div key={index} className="bg-white border border-slate-200/60 p-5 rounded-2xl shadow-xs transition-all hover:bg-slate-50">
-                <span className="text-[9px] font-extrabold text-[var(--color-primary)] uppercase tracking-[1.5px] block mb-2">
-                  Scenario {index + 36}
-                </span>
-                <p className="text-sm text-slate-700 leading-relaxed font-medium">
-                  {idea}
-                </p>
-              </div>
-            ))}
+            ].map((idea, index) => {
+              return (
+                <div key={index} className="bg-white border border-slate-200/60 p-5 rounded-2xl shadow-xs transition-all hover:bg-slate-50">
+                  <span className="text-[9px] font-extrabold text-[var(--color-primary)] uppercase tracking-[1.5px] block mb-2">
+                    Scenario {index + 36}
+                  </span>
+                  <p className="text-sm text-slate-700 leading-relaxed font-medium">
+                    {idea}
+                  </p>
+                </div>
+              );
+            })}
           </div>
 
           <div className="mt-8 p-4 bg-slate-50 rounded-xl border border-slate-200/60">
@@ -323,19 +331,26 @@ export default function HeadcanonIdeasPage() {
               "They have a specific order for how they do everything. If the order is interrupted, the whole day feels wrong.",
               "They remember the exact clothes people were wearing during important conversations. They do not know why.",
               "They have never thrown away a note someone wrote them. Not one.",
-            ].map((idea, index) => (
-              <div key={index} className="relative bg-indigo-50/20 p-6 rounded-2xl border border-indigo-100/30 transition-all hover:bg-indigo-50/40">
-                <span className="absolute -top-3 left-4 text-5xl font-serif text-[var(--color-primary)] opacity-20 select-none">
-                  “
-                </span>
-                <div className="flex gap-4">
-                  <span className="text-xs font-bold text-slate-400 mt-1">{index + 46}</span>
-                  <p className="text-slate-800 font-medium italic text-sm sm:text-base leading-relaxed">
-                    {idea}
-                  </p>
+              "They never answer the first question you ask them. They always answer the second.",
+              "When they are lying, they hold unnervingly still. When they are telling the truth, they fidget.",
+              "They have a small collection of useless objects from places they have survived.",
+              "They are terrible at remembering names, but they never forget a promise.",
+              "They fall asleep best in noisy rooms. Silence keeps them awake."
+            ].map((idea, index) => {
+              return (
+                <div key={index} className="relative bg-indigo-50/20 p-6 rounded-2xl border border-indigo-100/30 transition-all hover:bg-indigo-50/40">
+                  <span className="absolute -top-3 left-4 text-5xl font-serif text-[var(--color-primary)] opacity-20 select-none">
+                    “
+                  </span>
+                  <div className="flex gap-4">
+                    <span className="text-xs font-bold text-slate-400 mt-1">{index + 46}</span>
+                    <p className="text-slate-800 font-medium italic text-sm sm:text-base leading-relaxed">
+                      {idea}
+                    </p>
+                  </div>
                 </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
 
           <div className="mt-8 p-4 bg-slate-50 rounded-xl border border-slate-200/60">
@@ -412,6 +427,32 @@ export default function HeadcanonIdeasPage() {
                   For ideas tailored to a specific character name, the <Link href="/character-headcanon-generator/" className="text-[var(--color-primary)] font-bold hover:underline">character headcanon generator</Link> weaves your character's name into every result - so the output feels personal to your character, not generic.
                 </p>
               </div>
+            </div>
+          </div>
+        </section>
+
+        {/* CTA Section */}
+        <section className="mb-8 mt-16">
+          <div className="bg-indigo-50/50 border border-indigo-200 p-8 sm:p-10 rounded-3xl text-center shadow-sm">
+            <h2 className="section__h2 mb-4">
+              Generate More Headcanon Ideas Instantly
+            </h2>
+            <p className="text-[var(--color-text-muted)] leading-relaxed text-sm sm:text-base max-w-2xl mx-auto mb-8">
+              These 50 headcanon ideas are starting points. For ideas tailored to your specific character's name, the character headcanon generator weaves your character directly into every result — so nothing feels generic.
+            </p>
+            <div className="flex flex-col sm:flex-row justify-center gap-4">
+              <Link
+                href="/character-headcanon-generator/"
+                className="inline-flex items-center justify-center px-6 py-3 rounded-xl bg-[var(--color-primary)] text-white font-bold text-sm transition-transform hover:-translate-y-0.5 shadow-sm"
+              >
+                Try the Character Headcanon Generator →
+              </Link>
+              <Link
+                href="/oc-headcanon-generator/"
+                className="inline-flex items-center justify-center px-6 py-3 rounded-xl bg-white text-[var(--color-primary)] border border-indigo-200 font-bold text-sm transition-transform hover:-translate-y-0.5 shadow-sm"
+              >
+                OC Headcanon Generator (for original characters) →
+              </Link>
             </div>
           </div>
         </section>

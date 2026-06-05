@@ -10,9 +10,8 @@ export const metadata: Metadata = {
     canonical: "https://headcanonspace.com/friendship-headcanon-generator/",
   },
   openGraph: {
-    title: "Platonic Headcanon Tool (Free & Instant)",
-    description:
-      "Explore platonic bonds, found family dynamics, and loyalty moments between any two characters. Free tool, no signup, works for any fandom — results in seconds.",
+    title: "Friendship Headcanon Generator (Free & Instant)",
+    description: "Free friendship headcanon generator for platonic bonds, found family dynamics, and loyalty moments between any two characters. No signup, works for any fandom.",
     url: "/friendship-headcanon-generator/",
   },
 };
@@ -82,7 +81,7 @@ export default function FriendshipHeadcanonGeneratorPage() {
 
           <div className="tool-intro animate-fade-up animate-delay-3" style={{ marginTop: "1.15rem" }}>
             <p>
-              Enter two character names and get instant platonic headcanon ideas — built for fanfiction writers,
+              Enter two character names and get instant platonic headcanon ideas — this tool, sometimes called a platonic headcanon generator, is built for fanfiction writers,
               roleplayers, and anyone exploring friendship dynamics between characters in any fandom.
             </p>
           </div>

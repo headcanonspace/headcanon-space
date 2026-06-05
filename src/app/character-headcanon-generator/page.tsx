@@ -4,11 +4,11 @@ import CharacterHeadcanonGenerator from "@/components/CharacterHeadcanonGenerato
 import FaqAccordion from "@/components/FaqAccordion";
 
 export const metadata: Metadata = {
-  title: "Character Headcanon Generator — Any Fandom [2026]",
-  description: "Free character headcanon generator for OCs, canon characters & any fandom. No signup, no limits. Works on mobile. Start generating now.",
+  title: "Character Headcanon Generator for OCs — Free & Instant",
+  description: "Free character headcanon generator built for OC development and canon character exploration. Generate unique traits, habits, and backstory ideas for any character instantly. No signup.",
   openGraph: {
-    title: "Character Headcanon Generator — Any Fandom [2026]",
-    description: "Free character headcanon generator for OCs, canon characters & any fandom. No signup, no limits. Works on mobile. Start generating now.",
+    title: "Character Headcanon Generator for OCs — Free & Instant",
+    description: "Free character headcanon generator built for OC development and canon character exploration. Generate unique traits, habits, and backstory ideas for any character instantly. No signup.",
     url: "https://headcanonspace.com/character-headcanon-generator/",
   },
   alternates: {
@@ -28,10 +28,6 @@ const characterFaqs = [
   {
     question: "How many headcanons can I generate?",
     answer: "Unlimited. Click generate as many times as you need. Each result is unique."
-  },
-  {
-    question: "Is this the same as an AI headcanon generator?",
-    answer: "This character headcanon generator uses curated template logic rather than open-ended AI, which means results stay focused and usable rather than generic."
   },
   {
     question: "Can I save my headcanons?",
@@ -63,11 +59,10 @@ export default function CharacterHeadcanonGeneratorPage() {
         <div className="relative mx-auto max-w-[760px] px-6">
 
           <h1 className="animate-fade-up animate-delay-1" style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(36px, 5vw, 56px)", lineHeight: 1.08, letterSpacing: "-1.2px", color: "var(--color-text)", marginBottom: "20px" }}>
-            Character Headcanon Generator
+            Character Headcanon Generator for Original Characters and Canon Fans
           </h1>
           <p className="animate-fade-up animate-delay-2" style={{ fontSize: "18px", fontWeight: 300, color: "var(--color-ink-3)", maxWidth: "520px", margin: "0 auto", lineHeight: 1.6 }}>
-            Give your character a life they never got on screen - generate
-            unique traits, habits, and secrets instantly.
+            Generate unique personality traits, habits, and backstory details for OCs and canon characters instantly. Built for writers, roleplayers, and OC developers who need a specific detail fast.
           </p>
         </div>
       </section>
@@ -112,14 +107,6 @@ export default function CharacterHeadcanonGeneratorPage() {
               },
               {
                 "@type": "Question",
-                "name": "Is this the same as an AI headcanon generator?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "This character headcanon generator uses curated template logic rather than open-ended AI, which means results stay focused and usable rather than generic."
-                }
-              },
-              {
-                "@type": "Question",
                 "name": "Can I save my headcanons?",
                 "acceptedAnswer": {
                   "@type": "Answer",
@@ -140,7 +127,7 @@ export default function CharacterHeadcanonGeneratorPage() {
             <p>
               A character headcanon generator creates personalized ideas and
               interpretations for any fictional character. It takes a name you
-              provide and builds unique traits, habits, and backstory details around them.
+              provide and builds unique traits, habits, and backstory details around them. It is especially useful for original characters (OCs) who have no established canon to draw from.
             </p>
             <p>
               Unlike random generators, this tool makes every result feel personal

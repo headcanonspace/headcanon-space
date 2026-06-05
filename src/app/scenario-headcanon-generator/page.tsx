@@ -4,15 +4,14 @@ import ScenarioHeadcanonGenerator from "@/components/ScenarioHeadcanonGenerator"
 import FaqAccordion from "@/components/FaqAccordion";
 
 export const metadata: Metadata = {
-  title: "Scenario Headcanon Generator (Creative Story Ideas)",
-  description:
-    "Free scenario headcanon generator - place characters into any setting and get dramatic story triggers instantly. Perfect for creative writing and roleplay.",
+  title: "Scenario Headcanon Generator — Free Story Settings & AU Ideas",
+  description: "Free scenario headcanon generator. Drop characters into any setting — coffee shop AU, school, war, modern — and get story moments and dramatic scenes instantly. No signup.",
   alternates: {
     canonical: "https://headcanonspace.com/scenario-headcanon-generator/",
   },
   openGraph: {
-    title: "Scenario Headcanon Generator",
-    description: "Free scenario headcanon generator - place characters into any setting and get dramatic story triggers instantly. Perfect for creative writing and roleplay.",
+    title: "Scenario Headcanon Generator — Free Story Settings & AU Ideas",
+    description: "Free scenario headcanon generator. Drop characters into any setting — coffee shop AU, school, war, modern — and get story moments and dramatic scenes instantly. No signup.",
     url: "/scenario-headcanon-generator/",
   },
 };
@@ -105,19 +104,7 @@ export default function ScenarioHeadcanonGeneratorPage() {
                   "@type": "Answer",
                   "text": "Yes. Generate a character headcanon first to establish who your character is, then use this tool to place them in a specific situation. The character headcanon generator and this tool work well as a pair."
                 }
-              }
-            ]
-          })
-        }}
-      />
-
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            "mainEntity": [
+              },
               {
                 "@type": "Question",
                 "name": "What is a scenario headcanon?",
@@ -163,9 +150,6 @@ export default function ScenarioHeadcanonGeneratorPage() {
         }}
       />
 
-      {/* ── Hero ────────────────────────────────────── */}
-      <section className="relative overflow-hidden hero-gradient" style={{ padding: "80px 0 64px", textAlign: "center" }}>
-        <div className="relative mx-auto max-w-[760px] px-6">
 
           <h1 className="animate-fade-up animate-delay-1" style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(36px, 5vw, 56px)", lineHeight: 1.08, letterSpacing: "-1.2px", color: "var(--color-text)", marginBottom: "20px" }}>
             Scenario Headcanon Generator

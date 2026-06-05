@@ -4,8 +4,8 @@ import CharacterHeadcanonGenerator from "@/components/CharacterHeadcanonGenerato
 import FaqAccordion from "@/components/FaqAccordion";
 
 export const metadata: Metadata = {
-  title: "OC Headcanon Generator - Free Original Character Ideas",
-  description: "Free OC headcanon generator - create unique traits, habits, and backstory ideas for your original characters instantly. Perfect for writers and world-builders.",
+  title: "OC Headcanon Generator — Free Original Character Traits & Ideas",
+  description: "Free OC headcanon generator — create unique personality traits, habits, and backstory details for your original characters instantly. Perfect for writers and world-builders. No signup.",
   alternates: {
     canonical: "https://headcanonspace.com/oc-headcanon-generator/",
   },

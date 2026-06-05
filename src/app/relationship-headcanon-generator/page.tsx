@@ -4,15 +4,14 @@ import RelationshipHeadcanonGenerator from "@/components/RelationshipHeadcanonGe
 import FaqAccordion from "@/components/FaqAccordion";
 
 export const metadata: Metadata = {
-  title: "Relationship Headcanon Generator",
-  description:
-    "Free relationship headcanon generator - create unique ship dynamics, emotional moments, and couple tension instantly. Perfect for fanfiction and roleplay.",
+  title: "Relationship Headcanon Generator — Ship Dynamics & Bonds (Free)",
+  description: "Free relationship headcanon generator for ships, rivals, and character pairs. Explore dynamics, unspoken tension, and bond moments for any fandom instantly. No signup.",
   alternates: {
     canonical: "https://headcanonspace.com/relationship-headcanon-generator/",
   },
   openGraph: {
-    title: "Relationship Headcanon Generator",
-    description: "Free relationship headcanon generator - create unique ship dynamics, emotional moments, and couple tension instantly. Perfect for fanfiction and roleplay.",
+    title: "Relationship Headcanon Generator — Ship Dynamics & Bonds (Free)",
+    description: "Free relationship headcanon generator for ships, rivals, and character pairs. Explore dynamics, unspoken tension, and bond moments for any fandom instantly. No signup.",
     url: "/relationship-headcanon-generator/",
   },
 };
@@ -132,8 +131,9 @@ export default function RelationshipHeadcanonGeneratorPage() {
             Relationship Headcanon Generator
           </h1>
           <p className="animate-fade-up animate-delay-2" style={{ fontSize: "18px", fontWeight: 300, color: "var(--color-ink-3)", maxWidth: "520px", margin: "0 auto", lineHeight: 1.6 }}>
-            Explore the dynamics between any two characters and generate
-            ship moments, conflicts, and tender scenes instantly.
+            This relationship headcanon generator creates ideas for ships, OTPs, and any two characters you want to explore. It works as a couple headcanon generator for romantic pairs or as a tool for complex platonic dynamics. AO3 fanfiction writers use it to build chemistry before writing. Enter two character names and a fandom, then use the{" "}
+            <Link href="/character-headcanon-generator/">character headcanon generator</Link>
+            {" "}to go deeper on either character individually.
           </p>
         </div>
       </section>
@@ -159,7 +159,7 @@ export default function RelationshipHeadcanonGeneratorPage() {
                 A
               </span>
               relationship headcanon describes how two characters interact,
-              behave, or feel about each other beyond what is officially shown.
+              behave, or feel about each other beyond what is officially shown. This tool is also known as a ship headcanon generator for fandom writers.
             </p>
             <p className="text-slate-700 text-base sm:text-lg leading-relaxed font-normal">
               Fans use relationship headcanons to explore emotional dynamics, hidden

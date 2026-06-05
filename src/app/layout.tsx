@@ -21,9 +21,9 @@ const dmSerif = DM_Serif_Display({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://headcanonspace.com"),
-  title: "Free Headcanon Generator - Create Ideas Instantly",
+  title: "Character Headcanon Generator — Free, Instant & Any Fandom",
   description:
-    "Generate creative headcanon ideas instantly with this free headcanon generator. Perfect for fandoms, characters, and stories.",
+    "Free character headcanon generator for fanfiction writers, roleplayers, and fandom fans. Build backstories, quirks, and relationships for any character instantly. No signup.",
   icons: {
     icon: "/icon.svg",
   },
@@ -31,8 +31,8 @@ export const metadata: Metadata = {
     canonical: "/",
   },
   openGraph: {
-    title: "Free Headcanon Generator - Create Ideas Instantly",
-    description: "Generate creative headcanon ideas instantly with this free headcanon generator. Perfect for fandoms, characters, and stories.",
+    title: "Character Headcanon Generator — Free, Instant & Any Fandom",
+    description: "Free character headcanon generator for fanfiction writers, roleplayers, and fandom fans. Build backstories, quirks, and relationships for any character instantly. No signup.",
     url: "https://headcanonspace.com",
     siteName: "Headcanon Space",
     locale: "en_US",
@@ -40,8 +40,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Free Headcanon Generator",
-    description: "Generate creative headcanon ideas instantly with this free headcanon generator.",
+    title: "Character Headcanon Generator — Free & Instant",
+    description: "Free character headcanon generator for fanfiction writers and fandom fans. Build backstories and quirks for any character instantly.",
   },
   verification: {
     google: "KGPWNRciCiabEXW-jn-HLECz6mOaZcjLA8OcNugXziw",

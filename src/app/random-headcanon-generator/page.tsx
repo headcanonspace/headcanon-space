@@ -118,8 +118,9 @@ export default function RandomHeadcanonGeneratorPage() {
             Random Headcanon Generator
           </h1>
           <p className="animate-fade-up animate-delay-2" style={{ fontSize: "18px", fontWeight: 300, color: "var(--color-ink-3)", maxWidth: "520px", margin: "0 auto", lineHeight: 1.6 }}>
-            No setup and no prompts. Just click and discover a fresh
-            creative idea every time.
+            This random headcanon generator gives you instant ideas for any character, ship, or original creation. No setup needed — just generate and go. Writers on AO3 use it to break creative blocks. Discord RP servers use it to spark new storylines. If you prefer building one character deeply, the{" "}
+            <Link href="/oc-headcanon-generator/">OC headcanon generator</Link>
+            {" "}is built for that. Random headcanons work best when you let the results surprise you.
           </p>
         </div>
       </section>

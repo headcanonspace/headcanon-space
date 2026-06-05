@@ -3,16 +3,14 @@ import type { Metadata } from "next";
 import FaqAccordion from "@/components/FaqAccordion";
 
 export const metadata: Metadata = {
-  title: "Headcanon vs Canon vs Fanfiction: What's the Difference?",
-  description:
-    "Confused about headcanon vs canon vs fanfiction? This guide explains each term clearly with examples so you can use them correctly in fandom discussions.",
+  title: "What Is a Headcanon? Headcanon vs Canon vs Fanfiction Explained",
+  description: "What is a headcanon? This guide explains headcanon vs canon vs fanfiction clearly with examples — so you can use these terms correctly in any fandom discussion.",
   alternates: {
     canonical: "https://headcanonspace.com/blog/headcanon-vs-canon/",
   },
   openGraph: {
-    title: "Headcanon vs Canon vs Fanfiction: What's the Difference?",
-    description:
-      "Confused about headcanon vs canon vs fanfiction? This guide explains each term clearly with examples so you can use them correctly in fandom discussions.",
+    title: "What Is a Headcanon? Headcanon vs Canon vs Fanfiction Explained",
+    description: "What is a headcanon? This guide explains headcanon vs canon vs fanfiction clearly with examples — so you can use these terms correctly in any fandom discussion.",
     url: "/blog/headcanon-vs-canon/",
   },
 };
@@ -199,6 +197,16 @@ export default function HeadcanonVsCanonPage() {
               T
             </span>
             These three words come up constantly in fandom spaces. People use them interchangeably, but they mean different things. Getting them wrong can make conversations confusing. Here is a clear breakdown so you can use each term correctly and confidently in any fandom discussion.
+          </p>
+        </section>
+
+        {/* What Is a Headcanon? (Direct Answer) */}
+        <section className="space-y-4 mb-10">
+          <h2 className="section__h2 mb-4">
+            What Is a Headcanon?
+          </h2>
+          <p className="text-[var(--color-text-muted)] leading-relaxed">
+            A headcanon is a personal interpretation of a fictional character, relationship, or story world that has not been officially confirmed by the original creator. Fans use headcanons to fill in the gaps canon leaves open — exploring habits, backstories, fears, and relationship moments the source material never showed.
           </p>
         </section>
 
